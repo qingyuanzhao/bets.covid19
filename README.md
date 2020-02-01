@@ -35,3 +35,14 @@ Please use [Issues](https://github.com/qingyuanzhao/Coronavirus-Data/issues) to 
 - How to impute the missing values.
 - How to better model the dynamics (from infection, international arrival, symptom onset, initial medical visit to case confimation) recorded in the dataset.
 - How to incorporate the lockdown on 23rd of January in the model.
+
+## Update: February 1st
+
+### Major update to the dataset
+
+- Added cases in Hong Kong and Macau (suggested by Cindy Chen).
+- The "Hospital" column has been splitted to "Initial" and "Hospital". The "Initial" column record when the patient first went (or was taken) to an outpatient clinic or emergency room after developing symptoms. The "Hospital" column records if the patient was not admitted immediately during the first visit, when he/she was eventually admitted to an hospital. **This split has only been done for Japan, Singapore, Taiwan, Hong Kong, Macau, South Korea.**
+
+### New preliminary analysis
+
+Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb1.html) to view the report. This report **has NOT been peer-reviewed** and extra caution is required to interpret the results.
