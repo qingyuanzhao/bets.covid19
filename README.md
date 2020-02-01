@@ -9,7 +9,7 @@ I am sharing this dataset I collected from public agencies or news media, contai
 I am hoping this can become a collaborative project by people across the world. You can contribute by either updating the dataset or by forming a team to analyze the dataset.
 
 ### Dataset
-The easiest way to contribute is to suggest comments in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1H4MzVxkug2txyzkiDJsGVKB04YveYcsHg9ijuer8clE/edit?usp=sharing). I will monitor the suggestions and update this GitHub every day.
+To contribute to the dataset, please suggest comments in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1H4MzVxkug2txyzkiDJsGVKB04YveYcsHg9ijuer8clE/edit?usp=sharing). The easiest way to help is to pick a random row and verify the information is correct by reading the link source. I will monitor the suggestions and update this GitHub every day.
 
 **Currently I need help with:**
 1. Japanese-speaking people to verify the information recorded for the Japanese cases.
