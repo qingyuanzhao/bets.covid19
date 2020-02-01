@@ -1,10 +1,37 @@
 # Data for the 2019-nCoV outbreak
 
-This dataset contains information about the coronavirus cases that have been confirmed outside China. Data are collected from public agencies or news media. This dataset is free to use and share provided that appropriate credits are given (see the [license](./LICENSE.md)).
+**On 30th of January, 2020, The World Health Organization has declared the [2019-nCoV outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)).** The outbreak originated from my hometown, Wuhan.
+
+I am sharing this dataset I collected from public agencies or news media, containing information about the 2019-nCov cases confirmed outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)).
 
 ## To Contribute
-The easiest way to contribute is to suggest comments in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1H4MzVxkug2txyzkiDJsGVKB04YveYcsHg9ijuer8clE/edit?usp=sharing). If you like to be acknowledged, please tell me your (real or nick) name in the comments. I will monitor the suggestions and update this GitHub every day.
 
-Please use [Issues](https://github.com/qingyuanzhao/Coronavirus-Data/issues) to make any long suggestion or discussion (for example, how to organize the data; how to impute the missing values; how to analyze this data).
+I am hoping this can become a collaborative project by people across the world. You can contribute by either updating the dataset or by forming a team to analyze the dataset.
 
-I am hoping this can become a collaborative project by people across the world. If you are interested in forming a team to analyze this dataset, please register your interest [here](https://github.com/qingyuanzhao/2019-nCov-Data/issues/1).
+### Dataset
+The easiest way to contribute is to suggest comments in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1H4MzVxkug2txyzkiDJsGVKB04YveYcsHg9ijuer8clE/edit?usp=sharing). I will monitor the suggestions and update this GitHub every day.
+
+**Currently I need help with:**
+1. Japanese-speaking people to verify the information recorded for the Japanese cases.
+2. Korean-speaking people to verify the information recorded for the Korean cases.
+3. I am having a hard time to obtain detailed information for cases in 
+- Australia;
+- France;
+- Russian;
+- Thailand;
+- United Kingdom;
+- United States;
+- Vietnam.
+
+Please only use publicly available information that I can confirm when making suggestions.
+
+If you like to be acknowledged for your contribution, please tell me your (real or nick) name in the comments.
+
+### Analysis
+
+If you would like to form a team to analyze this dataset, please register your interest [here](https://github.com/qingyuanzhao/2019-nCov-Data/issues/1). You are also welcome to use it for your own research.
+
+Please use [Issues](https://github.com/qingyuanzhao/Coronavirus-Data/issues) to make any long suggestion or discussion. You may want to first read the report of a [preliminary analysis](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb1.html). Some problems that we can all think about include:
+- How to impute the missing values.
+- How to better model the dynamics (from infection, international arrival, symptom onset, initial medical visit to case confimation) recorded in the dataset.
+- How to incorporate the lockdown on 23rd of January in the model.
