@@ -1,6 +1,6 @@
 # Data for the 2019-nCoV outbreak
 
-**On 30th of January, 2020, The World Health Organization has declared the [2019-nCoV outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)).** The outbreak originated from my hometown, Wuhan.
+On 30th of January, 2020, The World Health Organization has declared the [2019-nCoV outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)). **The outbreak originated from my hometown, Wuhan.**
 
 I am sharing this dataset I collected from public agencies or news media, containing information about the 2019-nCov cases confirmed outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)).
 
