@@ -1,0 +1,145 @@
+---
+title: "Preliminary analysis for 2019-nCoV cases reported in some Asian countries and regions"
+author: Qingyuan Zhao
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The goal of this preliminary analysis is to give a simple demonstration of what could be done with the dataset collected in https://github.com/qingyuanzhao/2019-nCov-Data. This report **has NOT been peer-reviewed** and **extra caution** is required to interpret the results.
+
+# Data preprocessing
+
+Load some useful functions for data processing and imputation:
+```{r}
+source("functions.R")
+```
+
+Read data and convert the dates to numerical values (x-Jan is converted to x):
+```{r}
+data <- read.table("Feb1.tsv", sep = "\t", header = TRUE)
+data$Confirmed <- date.process(data$Confirmed)
+data$Arrive <- date.process(data$Arrive)
+data$Symptom <- date.process(data$Symptom)
+data$Initial <- date.process(data$Initial)
+data$Hospital <- date.process(data$Hospital)
+```
+
+In this preliminary analysis, we will focus on a few Asian countries/regions: Japan, Singapore, Taiwan, HongKong, Macau, Korea. Compared to most other countries, they have more confirmed cases and provided more information about them.
+```{r}
+data$Country.or.Region <- do.call(rbind, strsplit(as.character(data$Case), "-"))[, 1]
+data <- subset(data, Country.or.Region %in% c("Japan", "Singapore", "Taiwan", "HongKong", "Macau", "Korea"))
+table(data$Country.or.Region)
+```
+
+# Visualization of the data
+
+Distribution of gender:
+```{r}
+table(data$Gender)
+```
+
+Distribution of age, arrival date, and confirmation date:
+```{r}
+par(mfrow = c(1, 3))
+hist(age.process(data$Age), freq = FALSE)
+hist(data$Arrive, freq = FALSE, breaks = 30)
+hist(data$Confirmed, freq = FALSE, breaks = 30)
+```
+
+Joint distribution of arrival, symptom onset, and confirmation dates:
+```{r}
+par(mfrow = c(1, 3))
+plot(jitter(data$Arrive, 1), jitter(data$Confirmed, 1), xlab = "Arrival date (if available)", ylab = "Confirmed date"); abline(v = 23, col = "red"); abline(0, 1, lty = "dashed");
+plot(jitter(data$Symptom, 1), jitter(data$Confirmed, 1), xlab = "Illness onset date (if available)", ylab = "Confirmed date"); abline(v = 23, col = "red"); abline(0, 1, lty = "dashed");
+plot(jitter(data$Arrive, 1), jitter(data$Symptom, 1), xlab = "Arrival date (if available)", ylab = "Illness onset date (if available)"); abline(v = 23, col = "red"); abline(0, 1, lty = "dashed");
+```
+
+A milestone in this epidemic is 23-Jan when all transportation from/to Wuhan are closed. This is indicated by a red line in the plots above. In the analysis below we will consider cases who were (most likely) infected in Wuhan and arrived on or before 23rd of January. (The Outside variable takes the value "Y" if the case is confirmed to be transmitted outside Wuhan.)
+ 
+```{r}
+data <- subset(data, Outside != "Y" & Arrive <= 23)
+nrow(data)
+```
+
+# Analysis
+
+In this preliminary analysis we will use the *earlyR* package to estimate the basic reproduction number, $R_0$. But before that we must impute the missing symptom onset date:
+```{r}
+data[is.na(data$Symptom), c("Case", "Gender", "Age", "Arrive", "Symptom", "Initial", "Hospital", "Confirmed")]
+```
+
+## Simple imputation
+
+The first method we will try is to impute the symptom onset date using the average lag till the initial medical visit or the case confirmation. This is implemented in the *simple.impute* function:
+```{r}
+onset <- simple.impute(data)
+```
+
+Now we can use *earlyR* to estimate $R_0$. For this particular analysis we will use all cases who showed symptoms on or before 23rd of January.
+
+```{r}
+library(incidence)
+incid <- incidence(onset + as.Date("2019-12-31"), last_date = as.Date("2020-01-23"))
+plot(incid, border = "white")
+
+library(earlyR)
+set.seed(20200201)
+fit <- get_R(incid, si_mean = 7.5, si_sd = 3.4) ## Estimated serial interval from Li et al paper on NEJM
+fit
+quantile(sample_R(fit, 10000), c(0.025, 0.25, 0.5, 0.75, 0.975))
+```
+
+## Multiple imputation
+
+There are several drawbacks of the above analysis:
+
+1. We only used a single imputation. This will be handled by using multiple imputations below.
+
+2. We only used cases who showed symptoms on or before 23rd of January. We will vary the last eligible date in the analysis below.
+
+3. The *earlyR* package assumes that the observations are the initial incidences of an epidemic. However, we only observe cases who travelled abroad, which is only a small fraction of the cases in Wuhan. Thus our dataset does not strictly follow the assumptions of *earlyR*. We WON'T attempt to solve this issue in this preliminary analysis as it will require more complicated statistical models and computation.
+
+We first impute the symptom onset dates using the arrival, initial medical visit, hospitalization, and confirmation dates. This is implemented in a wrapper *multiple.impute* calling the *mice* package. The function *multiple.impute* outputs a matrix, each column corresponding to an imputation of the symptom onset dates.
+```{r, message=FALSE}
+set.seed(20200201)
+onset <- multiple.impute(data)
+```
+
+We now vary the eligible period and use *earlyR* to estimate the $R_0$ in each imputation. We then pool the posterior samples of $R_0$ across the imputations and output the posterior median and 95% credible interval.
+```{r, message = FALSE}
+last_date <- as.Date("2020-01-23") + (-3:3)
+res <- matrix(0, length(last_date), 3)
+colnames(res) <- c("q2.5", "q50", "q97.5")
+for (s in 1:length(last_date)) {
+    R <- list()
+    for (i in 1:ncol(onset)) {
+        incid <- incidence(onset[, i] + as.Date("2019-12-31"), last_date = last_date[s])
+        fit <- get_R(incid, si_mean = 7.5, si_sd = 3.4)
+        R[[i]] <- sample_R(fit, 1000)
+    }
+    res[s, ] <- quantile(unlist(R), c(0.025, 0.5, 0.975))
+}
+(res <- cbind(last_date, data.frame(res)))
+```
+
+This result is plotted below:
+```{r}
+library(ggplot2)
+ggplot(res) + aes(x = last_date, y = q50, ymin = q2.5, ymax = q97.5) + geom_point(size = 2) + geom_errorbar() + ylim(0, max(res$q97.5) * 1.1) + theme_bw(base_size = 10) + xlab("Last date") + ylab("R0")
+```
+
+
+# Discussion
+
+In this report we perform a preliminary analysis of 2019-nCoV cases in some Asian countries and regions that are confirmed by 31st of January. Depending on the cases used in the analysis, the estimated $R_0$ are between 2.8 and 4.4 with confidence intervals even wider.
+
+An important limitation of this preliminary analysis is that our observations are only "shadows" of the real epidemic. This is not modeled by the *earlyR* package we used, so extra caution should be used when interpreting the results.
+
+Another limitation of using cases outside Wuhan for epidemic modeling is that foreign visitors of Wuhan showing symptoms could be worried about their health and thus are more likely to leave the city right before the lockdown. This can be seen from the plot of illness onset date versus arrival date earlier in this report. Three cases that arrived on 23rd of January showed symptoms on the same day or before, comparing to 1 in the previous two days. Thus we might see more cases showing symptoms near 23rd of January, which may bias the estimation of $R_0$.
+
+### To contribute
+
+If you would like to contribute to or analyze this dataset, please read the information at https://github.com/qingyuanzhao/2019-nCov-Data.
