@@ -32,9 +32,9 @@ If you like to be acknowledged for your contribution, please tell me your (real 
 If you would like to form a team to analyze this dataset, please register your interest [here](https://github.com/qingyuanzhao/2019-nCov-Data/issues/1). You are also welcome to use it for your own research.
 
 Please use [Issues](https://github.com/qingyuanzhao/Coronavirus-Data/issues) to make any long suggestion or discussion. You may want to first read the report of a [preliminary analysis](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb1.html). Some problems that we can all think about include:
-- How to impute the missing values.
-- How to better model the dynamics (from infection, international arrival, symptom onset, initial medical visit to case confimation) recorded in the dataset.
-- How to incorporate the lockdown on 23rd of January in the model.
+- How to impute the missing values [#3](https://github.com/qingyuanzhao/2019-nCov-Data/issues/3).
+- How to better model the dynamics (from infection, international arrival, symptom onset, initial medical visit to case confimation) recorded in the dataset [#4](https://github.com/qingyuanzhao/2019-nCov-Data/issues/4).
+- How to incorporate the lockdown on 23rd of January in the model [#5](https://github.com/qingyuanzhao/2019-nCov-Data/issues/5).
 
 ## Update: February 1st
 
