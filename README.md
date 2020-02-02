@@ -23,7 +23,7 @@ There are two ways to contribute to building this dataset (please only use publi
   - *Infected* (when the case was initially infected). This is rarely available, but anything (for example an interval) can help.
   - *Arrive* (when the case first arrived in the country/region). This is helpful to narrow down the infection time.
   - *Symptom* (when the case first showed symptom). This is useful because we can impute the infected time if we know the distribution of the incubation period.
-3. Make sure to record the URL to your source so everyone can confirm.
+3. Make sure to record the URL to your source so everyone can verify.
 
 ### Analysis
 
