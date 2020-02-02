@@ -19,10 +19,10 @@ There are two ways to contribute to building this dataset (please only use publi
 **Lessons I learned when building this dataset:**
 1. News articles don't always report the cases in the same order. It's useful to record the nationality/residence, gender and age of the cases to distinguish them.
 2. The most useful columns for data analysis are
-..-*Outside* (if the case is infected outside Wuhan). "Y" means yes, "L" means likely, empty means (almost certainly) no.
-..-*Infected* (when the case was initially infected). This is rarely available, but anything (for example an interval) can help.
-..-*Arrive* (when the case first arrived in the country/region). This is helpful to narrow down the infection time.
-..-*Symptom* (when the case first showed symptom). This is useful because we can impute the infected time if we know the distribution of the incubation period.
+  - *Outside* (if the case is infected outside Wuhan). "Y" means yes, "L" means likely, empty means (almost certainly) no.
+  - *Infected* (when the case was initially infected). This is rarely available, but anything (for example an interval) can help.
+  - *Arrive* (when the case first arrived in the country/region). This is helpful to narrow down the infection time.
+  - *Symptom* (when the case first showed symptom). This is useful because we can impute the infected time if we know the distribution of the incubation period.
 3. Make sure to record the URL to your source so everyone can confirm.
 
 ### Analysis
