@@ -12,7 +12,7 @@ I am hoping this can become a collaborative and transparent project by people ac
 
 There are two ways to contribute to building this dataset (please only use publicly available information that I can confirm):
 
-1. You can suggest comments in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1H4MzVxkug2txyzkiDJsGVKB04YveYcsHg9ijuer8clE/edit?usp=sharing). The easiest way to help is to pick a random row and verify the information is correct by reading the link source. Currently I am having a hard time to obtain detailed information for cases in *Australia*, *France*, *Thailand*, *United Kingdom*, *United States*, and *Vietnam*.
+1. You can suggest comments in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1H4MzVxkug2txyzkiDJsGVKB04YveYcsHg9ijuer8clE/edit?usp=sharing). The easiest way to help is to pick a random row and verify the information is correct by reading the link source. Record your result by commenting on the "Verified" cell in that row. Currently I am having a hard time to obtain detailed information for cases in *Australia*, *France*, *Thailand*, *United Kingdom*, *United States*, and *Vietnam*.
 
 2. You can also use the [Issues](https://github.com/qingyuanzhao/2019-nCov-Data/issues) to record information for new cases. Make sure you read the lessons below before posting.
 
