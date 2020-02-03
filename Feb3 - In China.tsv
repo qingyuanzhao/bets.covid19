@@ -1,0 +1,76 @@
+Case	Nationality/Residence	Gender	Age	Cluster	Note	Outside	Infected	Arrived	Symptom	Initial	Hospital	Confirmed	Discharged	Death	Verified	Source
+Hefei-01	Chinese/Maanshan	M	30		1月17日之前常住武汉			17-Jan	18-Jan	20-Jan	22-Jan	22-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-02	Chinese/Hefei	M	47		1.9在武汉换乘,轻病情		09-Jan	10-Jan	10-Jan	21-Jan		23-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-03	Chinese/Hefei	M	49		1.9在武汉换乘,病情较重		09-Jan	10-Jan	15-Jan	20-Jan		23-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-04	Chinese/Hefei	F	47		与确诊病例接触，无武汉暴露史	Y			17-Jan	20-Jan		23-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-05	Chinese/Hefei	F	50		轻病情		06-Jan	07-Jan	10-Jan	21-Jan		23-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-06	Chinese/Hefei	M	30					21-Jan	17-Jan	22-Jan		23-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-07	Chinese/Hefei	F	40	Contact with Hefei-05		Y			15-Jan	21-Jan		24-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-08	Chinese/Hefei	M	51	Contact with Hefei-05		Y			17-Jan	21-Jan		24-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-09	Chinese/Hefei	M	37				15-Jan to 19-Jan	22-Jan	19-Jan	22-Jan		25-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-10	Chinese/Hefei	M	55		发病前2周一直居住于蚌埠，无武汉人员接触史	Y		17-Jan	18-Jan	18-Jan		25-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-11	Chinese/Wuhan	M	32					22-Jan	22-Jan	22-Jan		25-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-12	Chinese/Wuhan	M	24					21-Jan	17-Jan	21-Jan		25-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-13	Chinese/Wuhan	M	39					22-Jan	23-Jan	24-Jan		25-Jan				http://www.bjnews.com.cn/news/2020/01/27/680324.html
+Hefei-14	Chinese/Hefei	F	49			Y			17-Jan	24-Jan		27-Jan				http://ah.people.com.cn/n2/2020/0128/c358428-33747650.html
+Hefei-15	Chinese/Wuhan	F	25					22-Jan	22-Jan	23-Jan		27-Jan				http://ah.people.com.cn/n2/2020/0128/c358428-33747650.html
+Hefei-16	Chinese/Hefei	M	40	Contact with Hefei-07		Y			24-Jan	24-Jan		27-Jan				http://ah.people.com.cn/n2/2020/0128/c358428-33747650.html
+Hefei-17	Chinese/Hefei	M	22					19-Jan	22-Jan	23-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-18	Chinese/Hefei	M	22	Party with Hefei-17		Y	21-Jan		24-Jan	25-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-19	Chinese/Hefei	M	22	Party with Hefei-17		Y	21-Jan	6-Jan	25-Jan	27-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-20	Chinese/Hefei	M	22	Party with Hefei-17		Y	21-Jan		24-Jan	25-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-21	Chinese/Hefei	M	24	Party with Hefei-17		Y	21-Jan		22-Jan	25-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-22	Chinese/Hefei	M	22	Party with Hefei-17		Y	21-Jan		24-Jan	25-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-23	Chinese/Wuhan	M	30					23-Jan	22-Jan	26-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-24	Chinese/Wuhan	F	30					23-Jan	25-Jan	26-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-25	Chinese/Chaohu	F	64					20-Jan	23-Jan	26-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-26	Chinese/Hefei	F	52		常居武汉			24-Jan	26-Jan	27-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-27	Chinese/Wuhan	F	45					22-Jan	23-Jan	26-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-28	Chinese/Hefei	M	40		发病前上海工作	Y		10-Jan	21-Jan	26-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-29	Chinese/Hefei	F	52		身边人前往武汉	Y			20-Jan	22-Jan		28-Jan				https://www.guancha.cn/politics/2020_01_29_533588.shtml
+Hefei-30	Chinese/Wuhan	F	56						18-Jan	24-Jan		29-Jan				https://m.chinanews.com/wap/detail/zw/sh/2020/01-30/9073457.shtml
+Hefei-31	Chinese/Hefei	M	49					18-Jan	19-Jan	26-Jan		29-Jan				https://m.chinanews.com/wap/detail/zw/sh/2020/01-30/9073457.shtml
+Hefei-32	Chinese/Hefei	F	34				? to 10-Jan	20-Jan	21-Jan	25-Jan		29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-33	Chinese/Hefei	M	71				10-Jan to 20-Jan	21-Jan	24-Jan	27-Jan		29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-34	Chinese/Hefei	F	22			Y		NO	25-Jan	25-Jan		29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-35	Chinese/Hefei	F	16			Y		NO	26-Jan	26-Jan		29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-36	Chinese/Wuhan	M	28					21-Jan	27-Jan	28-Jan		29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-37	Chinese/Hefei	F	47			Y			19-Jan			29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-38	Chinese/Fuyang	M	35			Y			26-Jan			29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-39	Chinese/Wuhan	M	37		只知道常居武汉				28-Jan			29-Jan				http://www.cnr.cn/ah/news/20200130/t20200130_524953535.shtml
+Hefei-40	Chinese/Hefei	F	67		曾到某酒店家庭聚餐	Y		NO	25-Jan	25-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-41	Chinese/Hefei	M	23		发病前到合肥市火车站接人	Y	? to 22-Jan	NO	23-Jan	27-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-42	Chinese/Hefei	M	53		近期有海南，巢湖旅居史，合肥南站接人	Y	? to 22-Jan		23-Jan	28-Jan	29-Jan	30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-43	Chinese/Hefei	M	51		与确诊病例接触	Y			21-Jan	28-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-44	Chinese/Hefei	M	30		与确诊病例接触	Y			27-Jan	29-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-45	Chinese/Hefei	F	51		与武汉反肥人员接触	Y			23-Jan	27-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-46	Chinese/Wuhan	F	27		1月23日乘D3034次从武汉到合肥南站			23-Jan	27-Jan	28-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-47	Chinese/Wuhan	M	28	Husband of Hefei-46	1月23日乘D3034次从武汉到合肥南站			23-Jan	28-Jan	28-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-48	Chinese/Hefei	M	49		1月18日，1月20日2次开车前往武汉		18-Jan to 20-Jan		26-Jan	28-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-49	Chinese/Shanxitaiyuan	M	5		1月23日前常住武汉		? to 23-Jan	23-Jan	25-Jan	27-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-50	Chinese/Hefei	M	57		与确诊病例有流行病学关联	Y			21-Jan	28-Jan		30-Jan				http://society.people.com.cn/n1/2020/0131/c1008-31565828.html
+Hefei-51	Chinese/Hefei	F	31		与确诊病例接触	Y			24-Jan	30-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-52	Chinese/Hefei	F	28		与武汉游客接触	Y			28-Jan	28-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-53	Chinese/Hefei	M	37			Y		22-Jan	20-Jan	23-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-54	Chinese/Wuhan	F	51					21-Jan	24-Jan	29-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-55	Chinese/Hefei	F	45			Y			27-Jan	30-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-56	Chinese/Hefei	F	27			Y			28-Jan	29-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-57	Chinese/Wuhan	M	32					22-Jan	24-Jan	28-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-58	Chinese/Taiyuan	M	35				23-Jan	23-Jan	30-Jan	30-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-59	Chinese/Taiyuan	F	34	Wife of Hefei-58			23-Jan	23-Jan	30-Jan	30-Jan		31-Jan				https://mp.weixin.qq.com/s/m_EbuUYMqJy16Rdk9Q301Q
+Hefei-60	Chinese/Hefei	M	48		与确诊病例接触	Y			25-Jan	27-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-61	Chinese/Wuhan	M	21					21-Jan	30-Jan	31-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-62	Chinese/Haozhou	M	58		医生	Y			27-Jan	30-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-63	Chinese/Hefei	F	53			Y			24-Jan	28-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-64	Chinese/Hefei	M	32		与确诊病例接触	Y			25-Jan	28-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-65	Chinese/Hefei	F	37		医院陪护	Y			24-Jan	30-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-66	Chinese/Wuhan	F	56					20-Jan	29-Jan	29-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-67	Chinese/Hefei	M	68			Y			26-Jan	29-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-68	Chinese/Hefei	F	60			Y			30-Jan	30-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-69	Chinese/Hefei	M	44		与确诊病例接触				30-Jan	31-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-70	Chinese/Hefei	M	41					27-Jan	30-Jan	30-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-71	Chinese/Hefei	F	43			Y			26-Jan	27-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-72	Chinese/Hefei	M	43				15-Jan or 19-Jan	21-Jan	25-Jan	26-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-73	Chinese/Hefei	F	49		20-Jan去湖北仙桃	Y	20-Jan	22-Jan	24-Jan	28-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-74	Chinese/Hefei	F	50			Y			20-Jan	31-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg
+Hefei-75	Chinese/Wuhan	M	57	husband of Hefei-30	与确诊病例林某夫妻			23-Jan	19-Jan	24-Jan		2-Feb				https://mp.weixin.qq.com/s/uhsgv_QO8DiXPjCkanMsfg

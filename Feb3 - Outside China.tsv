@@ -1,0 +1,177 @@
+Case	Nationality/Residence	Gender	Age	Cluster	Note	Outside	Infected	Arrived	Symptom	Initial	Hospital	Confirmed	Discharged	Death	Verified	Source
+Australia-01	Chinese	M	50s					19-Jan	23-Jan		24-Jan	25-Jan				https://www.theguardian.com/science/2020/jan/25/coronavirus-five-people-in-nsw-being-tested-for-deadly-disease
+Australia-02		M	53					20-Jan	20-Jan		21-Jan	25-Jan				https://www.theguardian.com/science/2020/jan/25/coronavirus-five-people-in-nsw-being-tested-for-deadly-disease
+Australia-03		M	35		Contact with Wuhan, fly from Shenzhen	L		6-Jan	15-Jan		15-Jan	25-Jan				https://www.theguardian.com/science/2020/jan/25/coronavirus-five-people-in-nsw-being-tested-for-deadly-disease
+Australia-04		M	43					18-Jan	24-Jan		24-Jan	25-Jan				https://www.theguardian.com/science/2020/jan/25/coronavirus-five-people-in-nsw-being-tested-for-deadly-disease
+Australia-05	Chinese	F	21					23-Jan	24-Jan		24-Jan	27-Jan				https://www.reuters.com/article/us-china-health-australia/australia-confirms-fifth-coronavirus-case-from-last-flight-out-of-wuhan-idUSKBN1ZQ0D1
+Australia-06	Australian	M	60s					21-Jan	23-Jan			29-Jan				https://www.dailymail.co.uk/news/article-7942065/SEVENTH-coronavirus-case-Australia-confirmed.html
+Australia-07	Chinese	M	44									29-Jan				https://www.sbs.com.au/news/chinese-national-in-queensland-confirmed-as-ninth-australian-coronavirus-case
+Australia-08	Hubei	F	40s									30-Jan				https://www.dailymail.co.uk/news/article-7946339/Chinese-woman-Melbourne-confirmed-coronavirus.html
+Australia-09	Wuhan	F	42		same tour as Austrlia-7	L						30-Jan				https://www.sbs.com.au/news/chinese-national-in-queensland-confirmed-as-ninth-australian-coronavirus-case
+Australia-10		F	20s		Went to Wuhan			25-Jan	27-Jan			1-Feb				https://www.news.com.au/travel/travel-updates/health-safety/queenslands-premier-demands-government-ban-china-flights-after-tenth-australian-case-confirmed/news-story/6006599d9ddfef68bcc01890a2f0156a
+Australia-11		M	60s									1-Feb				https://www.news.com.au/travel/travel-updates/health-safety/queenslands-premier-demands-government-ban-china-flights-after-tenth-australian-case-confirmed/news-story/6006599d9ddfef68bcc01890a2f0156a
+Australia-12		F	60s	Wife of Australia-11								1-Feb				https://www.news.com.au/travel/travel-updates/health-safety/queenslands-premier-demands-government-ban-china-flights-after-tenth-australian-case-confirmed/news-story/6006599d9ddfef68bcc01890a2f0156a
+Cambodia-01	Wuhan	M	60					23-Jan	25-Jan		25-Jan to 26-Jan	27-Jan				https://www.voanews.com/science-health/coronavirus-outbreak/cambodia-confirms-first-coronavirus-case
+Canada-01		M	50s					22-Jan			23-Jan	25-Jan				https://news.ontario.ca/mohltc/en/2020/01/ontario-confirms-first-case-of-wuhan-novel-coronavirus.html https://www.ctvnews.ca/canada/second-presumptive-case-of-coronavirus-diagnosed-in-canada-first-case-confirmed-1.4784799
+Canada-02		F	50s	Wife of Canada-1		Y						27-Jan				https://www.ctvnews.ca/canada/second-presumptive-case-of-coronavirus-diagnosed-in-canada-first-case-confirmed-1.4784799
+Canada-03		M	40s								26-Jan	28-Jan				https://news.gov.bc.ca/releases/2020HLTH0015-000151
+Canada-04		F	20s					23-Jan	24-Jan		24-Jan	31-Jan				https://globalnews.ca/news/6489956/3rd-case-coronavirus-confirmed-ontario/
+Finland-01	Wuhan	F	32					23-Jan	26-Jan		28-Jan	29-Jan				https://www.helsinkitimes.fi/finland/finland-news/domestic/17272-finland-s-first-coronavirus-patient-began-to-show-symptoms-three-days-ago.html
+France-01	Chinese French		48					22-Jan	23-Jan			24-Jan				https://www.thelocal.fr/20200130/coronavirus-in-france-what-you-need-to-know
+France-02	Wuhan		31					18-Jan	after 18-Jan			24-Jan				https://www.thelocal.fr/20200130/coronavirus-in-france-what-you-need-to-know
+France-03	Wuhan		30	Partner of France-2		L		18-Jan	after 18-Jan			24-Jan				https://www.thelocal.fr/20200130/coronavirus-in-france-what-you-need-to-know
+France-04	Chinese	M	80s		From a town close to Wuhan							28-Jan				https://www.thelocal.fr/20200130/coronavirus-in-france-what-you-need-to-know
+France-05	Chinese	F		daugther of France-4		L						29-Jan				https://www.thelocal.fr/20200130/coronavirus-in-france-what-you-need-to-know
+France-06	French			doctor infected by France-1		Y		NO				30-Jan				https://www.thelocal.fr/20200130/coronavirus-in-france-what-you-need-to-know
+Germany-01	German	M	33			Y	21-Jan	NO				27-Jan				https://www.dw.com/en/germany-confirms-human-transmission-of-coronavirus/a-52169007
+Germany-02	German	M		Same company as Germany-1		Y	21-Jan	NO				28-Jan				https://www.stmgp.bayern.de/presse/drei-weitere-coronavirus-faelle-in-bayern-zusammenhang-mit-dem-ersten-fall-bayerns/
+Germany-03	German	M		Same company as Germany-1		Y	21-Jan	NO				28-Jan				https://www.stmgp.bayern.de/presse/drei-weitere-coronavirus-faelle-in-bayern-zusammenhang-mit-dem-ersten-fall-bayerns/
+Germany-04	German	F		Same company as Germany-1		Y	21-Jan	NO				28-Jan				https://www.stmgp.bayern.de/presse/drei-weitere-coronavirus-faelle-in-bayern-zusammenhang-mit-dem-ersten-fall-bayerns/
+Germany-05	German	M		Same company as Germany-1		Y	21-Jan	NO				30-Jan				https://www.dw.com/en/germany-reports-fifth-coronavirus-case/a-52210558
+Germany-06	German			Child of Germany-5		Y		NO				31-Jan				https://www.stmgp.bayern.de/presse/aktuelle-informationen-zur-coronavirus-lage-in-bayern-bayerisches-gesundheitsministerium-2/
+Germany-07	German	M	52	Same company as Germany-1		Y		NO				1-Feb				https://www.stmgp.bayern.de/presse/aktuelle-informationen-zur-coronavirus-lage-in-bayern-bayerisches-gesundheitsministerium-7/
+Germany-08	German	M	33	Same company as Germany-1		Y		NO				1-Feb				https://www.stmgp.bayern.de/presse/aktuelle-informationen-zur-coronavirus-lage-in-bayern-bayerisches-gesundheitsministerium-8/
+HongKong-01	Wuhan	M	39		Arrived by train			21-Jan	21-Jan	21-Jan		23-Jan				https://www.info.gov.hk/gia/general/202001/22/P2020012200924.htm
+HongKong-02	Hong Kong	M	56		Arrived through Shenzhen		10-Jan to 19-Jan	19-Jan	18-Jan	19-Jan	21-Jan	23-Jan				https://www.info.gov.hk/gia/general/202001/23/P2020012300029.htm
+HongKong-03	Wuhan	F	62		Arrived by train			19-Jan	20-Jan	23-Jan	24-Jan	24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
+HongKong-04	Wuhan	F	62		Arrived by train			20-Jan	23-Jan	23-Jan		24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
+HongKong-05	Wuhan	M	63		Husband of HongKong-4, arrived by train	L		20-Jan	23-Jan	23-Jan		24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
+HongKong-06	Wuhan	M	47		Arrived by train			23-Jan	20-Jan	21-Jan	25-Jan	26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
+HongKong-07	Shenzhen	F	68		Arrived by train, been to Wuhan			25-Jan	21-Jan			26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
+HongKong-08	Wuhan	M	64		Husband of HongKong-3, arrived by train	L		19-Jan	25-Jan	25-Jan		26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
+HongKong-09	Wuhan	F	73					22-Jan	25-Jan	28-Jan		29-Jan				https://www.info.gov.hk/gia/general/202001/29/P2020012900784.htm
+HongKong-10	Wuhan	M	72	Husband of HongKong-9				22-Jan	25-Jan	28-Jan		29-Jan				https://www.info.gov.hk/gia/general/202001/29/P2020012900784.htm
+HongKong-11	Hong Kong	F	37	Daughter of HongKong-9&10		Y	22-Jan to 28-Jan	NO	28-Jan	30-Jan		30-Jan				https://www.info.gov.hk/gia/general/202001/31/P2020013100014.htm
+HongKong-12	Hong Kong	M	75		Never been to Wuhan	Y			22-Jan	24-Jan		30-Jan				https://www.info.gov.hk/gia/general/202001/31/P2020013100014.htm
+HongKong-13	Hong Kong	M	39		Arrived by train		21-Jan to 23-Jan	23-Jan	29-Jan			31-Jan				https://www.info.gov.hk/gia/general/202001/31/P2020013100794.htm
+HongKong-14	Hong Kong	M	80		In mainland China for a few hours on 10-Jan, in Japan from 17-Jan to 19-Jan	Y		25-Jan	19-Jan			1-Feb				https://www.info.gov.hk/gia/general/202002/01/P2020020100791.htm
+HongKong-15	Hong Kong	F	72	Mother of HongKong-13		Y		NO	1-Feb	1-Feb		2-Feb				
+India-01		F			Student							30-Jan				
+Italy-01	Chinese							23-Jan				30-Jan				https://www.ilsole24ore.com/art/coronavirus-vittime-salgono-170-il-rimpatrio-italiani-ACA72XFB?refresh_ce=1
+Italy-02	Chinese			Partner of Italy-1		L		23-Jan				30-Jan				https://www.ilsole24ore.com/art/coronavirus-vittime-salgono-170-il-rimpatrio-italiani-ACA72XFB?refresh_ce=1
+Japan-01	Japanese	M	30s					6-Jan	3-Jan	3-Jan	10-Jan	16-Jan	15-Jan			https://www.mhlw.go.jp/stf/newpage_08906.html
+Japan-02	Wuhan	M	40s					19-Jan	14-Jan	15-Jan	22-Jan	24-Jan				https://www.mhlw.go.jp/stf/newpage_09079.html
+Japan-03	Wuhan	F	30s					18-Jan	21-Jan	23-Jan		25-Jan				https://www.mhlw.go.jp/stf/newpage_09099.html
+Japan-04	Wuhan	M	40s					22-Jan	23-Jan	24-Jan	24-Jan	26-Jan				https://www.mhlw.go.jp/stf/newpage_09100.html
+Japan-05	Wuhan	M	40s					20-Jan	22-Jan	26-Jan	28-Jan	28-Jan				https://www.mhlw.go.jp/stf/newpage_09154.html
+Japan-06	Japanese	M	60s		Bus driver	Y	8-Jan to 16-Jan	NO	14-Jan	17-Jan	25-Jan	28-Jan				https://www.mhlw.go.jp/stf/newpage_09153.html
+Japan-07	Wuhan	F	40s					21-Jan	<=26-Jan	27-Jan	27-Jan	28-Jan				https://www.mhlw.go.jp/stf/newpage_09158.html
+Japan-08	Japanese	F	40s	same bus as Japan-6		Y	12-Jan to 17-Jan	NO	20-Jan	20-Jan	23-Jan	29-Jan				https://www.mhlw.go.jp/stf/newpage_09201.html
+Japan-09	Japanese in Wuhan	M	50s		Evacuee			29-Jan	<=29-Jan	NO	29-Jan	30-Jan				https://www.mhlw.go.jp/stf/newpage_09205.html
+Japan-10	Japanese	M	40s		Evacuee,  1st asymptomatic			29-Jan	NO	NO	NO	30-Jan				https://www.mhlw.go.jp/stf/newpage_09205.html
+Japan-11	Japanese	F	50s		Evacuee,  2nd asymptomatic			29-Jan	NO	NO	NO	30-Jan				https://www.mhlw.go.jp/stf/newpage_09205.html
+Japan-12	Japanese	M	50s		10th case		24-Dec to 13-Jan	13-Jan	25-Jan	27-Jan	29-Jan	30-Jan				https://www.mhlw.go.jp/stf/newpage_09236.html
+Japan-13	Chinese, Hunan	F	30s		11th case		19-Jan	20-Jan	24-Jan	24-Jan	30-Jan	30-Jan				https://www.mhlw.go.jp/stf/newpage_09237.html
+Japan-14	Chinese in Japan	F	20s		12th case		17-Jan to 18-Jan	22-Jan	23-Jan	28-Jan		30-Jan				https://www.mhlw.go.jp/stf/newpage_09239.html
+Japan-15	Japanese	F	20s		13th case	Y	17-Jan to 22-Jan	NO	20-Jan	29-Jan		31-Jan				https://www.mhlw.go.jp/stf/newpage_09271.html
+Japan-16	Japanese	M	30s		evacuee, 3rd asymptomatic			30-Jan	NO			31-Jan				https://www.mhlw.go.jp/stf/newpage_09273.html
+Japan-17	Japanese	M	30s		evacuee, 4th asymptomatic			30-Jan	NO			31-Jan				https://www.mhlw.go.jp/stf/newpage_09273.html
+Japan-18		M	40s		Evacuee (3rd flight), 14th case 			31-Jan	31-Jan			1-Feb				https://www.mhlw.go.jp/stf/newpage_09278.html
+Japan-19	China	M	40s	close contact with Japan-18 (how can that be???)	15th case 			29-Jan	26-Jan			1-Feb				https://www.mhlw.go.jp/stf/newpage_09278.html
+Japan-20	Japanese	M	30s		Evacuee (3rd flight), 5th asymptomatic			31-Jan	NO			1-Feb				https://www.mhlw.go.jp/stf/newpage_09278.html
+Korea-01	Wuhan	F	35					19-Jan	18-Jan	18-Jan	19-Jan	20-Jan				https://www.who.int/csr/don/21-january-2020-novel-coronavirus-republic-of-korea-ex-china/en/
+Korea-02	Korean	M	55					22-Jan	10-Jan	19-Jan	22-Jan	23-Jan				https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=365864&tag=&nPage=1
+Korea-03	Korean	M	54					20-Jan	22-Jan	25-Jan		26-Jan				https://www.bbc.com/korean/news-51320986
+Korea-04	Korean	M	55					20-Jan	21-Jan	25-Jan	26-Jan	27-Jan				https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=365876&tag=&nPage=1
+Korea-05	Korean	M	32					24-Jan	>=24-Jan			30-Jan				https://www.bbc.com/korean/news-51320986
+Korea-06	Korean	M	56	Infected during dinner with Korea-3		Y	22-Jan	NO				30-Jan				https://www.bbc.com/korean/news-51320986
+Korea-07	Korean	M	28					23-Jan	26-Jan	29-Jan		30-Jan				https://www.bbc.com/korean/news-51320986
+Korea-08	Korean	F	62		Transit(?) via Qingdao			23-Jan	21-Jan			31-Jan				https://www.bbc.com/korean/news-51320986 http://www.hitnews.co.kr/news/articleView.html?idxno=14580
+Korea-09	Korean	M	28	Contact of Korea-5		Y						31-Jan				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
+Korea-10	Korean	F	52	family of Korea-6		Y		NO	29-Jan			31-Jan				http://english.hani.co.kr/arti/english_edition/e_international/926436.html https://www.mdon.co.kr/news/article.html?no=25327
+Korea-11	Korean	F	25	family of Korea-6		Y		NO	30-Jan			31-Jan				http://english.hani.co.kr/arti/english_edition/e_international/926436.html https://www.mdon.co.kr/news/article.html?no=25327
+Korea-12	Chinese	M	49	contact with a Japan case	Visited from Japan (a tour guide)	Y		19-Jan				1-Feb				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
+Korea-13	Korean	M	28		evacuee			31-Jan	1-Feb			2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
+Korea-14	Chinese	F	40	wife of Korea-12		Y		NO				2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
+Korea-15	Korean	M	43					20-Jan				2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
+Macau-01	Wuhan	F	52		Arrived from ZhuHai			19-Jan	15-Jan			22-Jan				http://www.xinhuanet.com/politics/2020-01/22/c_1125493888.htm
+Macau-02	Wuhan	M	66		Arrived from ZhuHai			22-Jan	<=22-Jan	22-Jan		23-Jan				http://www.xinhuanet.com/2020-01/23/c_1125497089.htm
+Macau-03	Wuhan	F	58		Arrived via ferry from Hong Kong			23-Jan	23-Jan	23-Jan		26-Jan				http://www.xinhuanet.com/politics/2020-01/26/c_1125503329.htm
+Macau-04	Wuhan	F	39		Arrived from ZhuHai			22-Jan	25-Jan	25-Jan		26-Jan				http://www.xinhuanet.com/politics/2020-01/26/c_1125503329.htm
+Macau-05	Wuhan	F	21		Arrived from ZhuHai			23-Jan	25-Jan	25-Jan		26-Jan				http://www.xinhuanet.com/politics/2020-01/26/c_1125503329.htm
+Macau-06	Wuhan	M	15	Son of Macau-4	Arrived from ZhuHai	L		22-Jan	NO			27-Jan				http://www.xinhuanet.com/politics/2020-01/27/c_1125505813.htm
+Macau-07	Wuhan	F	67		Arrived by train			23-Jan	26-Jan	27-Jan		27-Jan				http://www.xinhuanet.com/politics/2020-01/28/c_1125506614.htm
+Macau-08	Macau	F	64		Hospitalized in Zhuhai before, contact with wild birds 22-Jan to 23-Jan	Y		NO	27-Jan	27-Jan	1-Feb	2-Feb				https://www.gov.mo/zh-hant/news/316170/
+Malaysia-01	Wuhan	F	65	Wife of Singapore-1		L		20-Jan				25-Jan				https://www.straitstimes.com/asia/se-asia/malaysia-confirms-first-cases-of-wuhan-coronavirus-infection
+Malaysia-02	Wuhan	M	11	Grandson of Singapore-1		L		20-Jan				25-Jan				https://www.straitstimes.com/asia/se-asia/malaysia-confirms-first-cases-of-wuhan-coronavirus-infection
+Malaysia-03	Wuhan	M	2	Grandson of Singapore-1		L		20-Jan				25-Jan				https://www.straitstimes.com/asia/se-asia/malaysia-confirms-first-cases-of-wuhan-coronavirus-infection
+Malaysia-04	Wuhan	M	40	Same tour as Malaysia-1		Y		NO	23-Jan			25-Jan				https://www.straitstimes.com/asia/se-asia/malaysia-confirms-first-cases-of-wuhan-coronavirus-infection
+Malaysia-05	Chinese	F		Mother of Malaysia-2		Y	25-Jan to 29-Jan					29-Jan				https://www.straitstimes.com/asia/se-asia/wuhan-virus-malaysia-says-3-new-cases-of-virus-infection-bringing-total-to-7
+Malaysia-06	Chinese	F	4									29-Jan				https://www.straitstimes.com/asia/se-asia/wuhan-virus-malaysia-says-3-new-cases-of-virus-infection-bringing-total-to-7
+Malaysia-07	Chinese	M	52									29-Jan				https://www.straitstimes.com/asia/se-asia/wuhan-virus-malaysia-says-3-new-cases-of-virus-infection-bringing-total-to-7
+Malaysia-08	Chinese	F	49	Wife of Malaysia-7		L						30-Jan				https://www.freemalaysiatoday.com/category/nation/2020/01/30/1-more-coronavirus-case-confirmed-bringing-total-to-8/
+Nepal-01	Nepalese	M	30s					9-Jan			13-Jan	25-Jan				https://www.scmp.com/news/china/society/article/3047625/china-coronavirus-nepal-reports-first-case-infection-virus
+Phillipines-01	Wuhan	F	38					21-Jan	25-Jan		25-Jan	30-Jan				https://edition.cnn.com/asia/live-news/coronavirus-outbreak-01-30-20-intl-hnk/h_196b88233baee37963f367f8481eb226
+Russia-01	Chinese											31-Jan				
+Russia-02	Chinese											31-Jan				
+Singapore-01	Wuhan	M	66					20-Jan	20-Jan	22-Jan		23-Jan				https://www.moh.gov.sg/news-highlights/details/confirmed-imported-case-of-novel-coronavirus-infection-in-singapore-multi-ministry-taskforce-ramps-up-precautionary-measures
+Singapore-02	Wuhan	F	53					21-Jan	21-Jan	22-Jan		24-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-cases-of-confirmed-imported-case-of-novel-coronavirus-infection-in-singapore
+Singapore-03	Wuhan	M	37	Son of Singapore-1		L		20-Jan	23-Jan			24-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-cases-of-confirmed-imported-case-of-novel-coronavirus-infection-in-singapore
+Singapore-04	Wuhan	M	36					22-Jan	23-Jan	24-Jan		25-Jan				https://www.moh.gov.sg/news-highlights/details/fourth-confirmed-imported-case-of-wuhan-coronavirus-infection-in-singapore
+Singapore-05	Wuhan	F	56					18-Jan	24-Jan	26-Jan		27-Jan				https://www.moh.gov.sg/news-highlights/details/fifth-confirmed-imported-case-of-wuhan-coronavirus-infection-in-singapore-27Jan
+Singapore-06	Wuhan	M	56					19-Jan	25-Jan	26-Jan		27-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
+Singapore-07	Wuhan	M	35					23-Jan	24-Jan	24-Jan		27-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
+Singapore-08	Wuhan	M	56					19-Jan	24-Jan	27-Jan		28-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
+Singapore-09	Wuhan	F	56	Wife of Singapore-8		L		19-Jan	24-Jan	27-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
+Singapore-10	Wuhan	M	56					20-Jan	21-Jan	28-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
+Singapore-11	Wuhan	F	31	travelled with Singapore-4		Y		22-Jan	27-Jan	NO		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
+Singapore-12	Wuhan	F	37					22-Jan	26-Jan	29-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
+Singapore-13	Wuhan	F	73	Close contact with Singapore-2		L	21-Jan	21-Jan	28-Jan	NO		30-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
+Singapore-14	Chinese in Singapore	M	31			L		26-Jan	28-Jan	30-Jan		30-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
+Singapore-15	Singaporean	F	47		Evacuee			30-Jan	30-Jan	NO		31-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
+Singapore-16	Wuhan	M	38					22-Jan	23-Jan	31-Jan		31-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
+Singapore-17	Singaporean	F	47		Evacuee (not Singpoare-15??)			30-Jan	30-Jan	NO		31-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
+Singapore-18	Wuhan	F	31					22-Jan				1-Feb				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
+Spain-01	German			Contact with a German case		Y										https://www.nytimes.com/reuters/2020/02/01/world/asia/31reuters-china-health-spain.html https://www.express.co.uk/travel/articles/1236723/coronavirus-spain-canary-islands-first-case-confirmed-latest-news
+Srilanka-01	Chinese	F	40s					19-Jan	25-Jan			28-Jan				https://www.reuters.com/article/us-health-china-sri-lanka/sri-lanka-confirms-first-case-of-coronavirus-health-official-idUSKBN1ZQ1WF
+Sweden-01		F	20s					24-Jan				31-Jan				https://www.thelocal.se/20200131/first-case-of-coronavirus-confirmed-in-jonkoping-sweden/amp
+Taiwan-01	Taiwan in Wuhan	F	50s					20-Jan	Before 20-Jan	20-Jan		21-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/pVg_jRVvtHhp94C6GShRkQ?typeid=158
+Taiwan-02	Wuhan	F	50s					21-Jan		23-Jan		24-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/xzPuzBOQiW0Gjw1MfyNKnw?typeid=158
+Taiwan-03	Taiwan	M	50s					21-Jan	23-Jan	23-Jan		24-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/xzPuzBOQiW0Gjw1MfyNKnw?typeid=158
+Taiwan-04	Taiwan in Wuhan	F	50s		Went to Europe on 16-Jan before return to Taiwan		13-Jan to 15-Jan	25-Jan	22-Jan	25-Jan		26-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/ium6WF2Y4-QJUIu2ho9dpQ?typeid=158
+Taiwan-05	Taiwan in Wuhan	F	50s					20-Jan	25-Jan	25-Jan		27-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/xqKoyQbbLYCBTwQvFpdcBA?typeid=158
+Taiwan-06	Wuhan	F	70s					22-Jan	25-Jan	25-Jan		28-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/3-5SDzWWHj91fu_NLgS0gg?typeid=158
+Taiwan-07	Wuhan	F	70s	Same tour as Taiwan-6		L		22-Jan	25-Jan			28-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/3-5SDzWWHj91fu_NLgS0gg?typeid=158
+Taiwan-08	Taiwan	M	50s	Husband of Taiwan-5		Y		NO	27-Jan	28-Jan		30-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/-dU_LiC4WQm82jB-lb9KqQ?typeid=158
+Taiwan-09	Taiwan	F	40s	Wife of Taiwan-10		Y		NO	27-Jan	28-Jan		30-Jan				https://heho.com.tw/archives/65879
+Taiwan-10	Taiwan in Wuhan	M						12-Jan	21-Jan	22-Jan		31-Jan				https://news.cts.com.tw/cts/society/202001/202001311989092.html
+Thailand-01	Wuhan	F	61					8-Jan	5-Jan		8-Jan	13-Jan				https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/
+Thailand-02	Wuhan	F	74					13-Jan	13-Jan or before		13-Jan	17-Jan				https://www.channelnewsasia.com/news/asia/wuhan-pneumonia-outbreak-thailand-second-case-coronavirus-12272486
+Thailand-03	Wuhan	M	68									22-Jan				https://www.thephuketnews.com/discovery-of-fifth-case-in-thailand-shows-screening-effective-74535.php
+Thailand-04	Thai	F	73		Returned from China							22-Jan				https://www.bangkokpost.com/thailand/general/1841199/first-thai-infected-with-coronavirus
+Thailand-05	Wuhan	F	33					21-Jan	21-Jan or before		23-Jan	24-Jan				https://www.reuters.com/article/us-china-health-thailand/thailand-confirms-fifth-case-of-new-coronavirus-idUSKBN1ZN0ZF
+Thailand-06	Wuhan		73					19-Jan	23-Jan		23-Jan	25-Jan				https://thepattayanews.com/2020/01/25/thai-authorities-confirm-sixth-case-of-coronavirus-found-in-thailand-in-city-of-hua-hin/
+Thailand-07	Chinese											25-Jan				https://www.pptvhd36.com/news/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%99%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%99/118387
+Thailand-08	Chinese											26-Jan				https://www.pptvhd36.com/news/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%99%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%99/118387
+Thailand-09	Chongqing		6--70			Y						28-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-cases-number-new-12361040
+Thailand-10	Chinese		6--70									28-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-cases-number-new-12361040
+Thailand-11	Chinese		6--70	Same family as Thailand-10		L						28-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-cases-number-new-12361040
+Thailand-12	Chinese		6--70	Same family as Thailand-10		L						28-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-cases-number-new-12361040
+Thailand-13	Chinese		6--70	Same family as Thailand-10		L						28-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-cases-number-new-12361040
+Thailand-14	Chinese		6--70	Same family as Thailand-10		L						28-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-cases-number-new-12361040
+Thailand-15	Chinese											31-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-first-human-coronavirus-transmission-12374356
+Thailand-16	Chinese											31-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-first-human-coronavirus-transmission-12374356
+Thailand-17	Chinese											31-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-first-human-coronavirus-transmission-12374356
+Thailand-18	Chinese											31-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-first-human-coronavirus-transmission-12374356
+Thailand-19	Thai				taxi driver	Y		NO				31-Jan				https://www.channelnewsasia.com/news/asia/wuhan-virus-thailand-first-human-coronavirus-transmission-12374356
+UAE-01	Wuhan	F	9					16-Jan				29-Jan				https://www.thenational.ae/uae/health/coronavirus-uae-records-first-case-1.971253
+UAE-02	Wuhan			Grandmother of UAE-1		L		16-Jan			23-Jan	29-Jan				https://www.thenational.ae/uae/health/coronavirus-uae-records-first-case-1.971253
+UAE-03	Wuhan			Mother of UAE-1		L		16-Jan				29-Jan				https://www.thenational.ae/uae/health/coronavirus-uae-records-first-case-1.971253
+UAE-04	Wuhan			Father of UAE-1		L		16-Jan				29-Jan				https://www.thenational.ae/uae/health/coronavirus-uae-records-first-case-1.971253
+UAE-05	Wuhan											1-Feb				https://gulfnews.com/uae/health/fifth-chinese-person-detected-with-coronavirus-in-uae-1.1580574286874
+UK-01	Chinese											31-Jan				https://www.bbc.co.uk/news/health-51325192
+UK-02	Chinese			same family as UK-1		L						31-Jan				https://www.bbc.co.uk/news/health-51325192
+USA-01	Chinese	M	30s					15-Jan	19-Jan		19-Jan	21-Jan				https://www.nytimes.com/2020/01/21/health/cdc-coronavirus.html
+USA-02	American	F	60s					13-Jan	after 13-Jan			24-Jan				https://www.npr.org/sections/health-shots/2020/01/24/799208865/a-second-u-s-case-of-wuhan-coronavirus-is-confirmed?t=1580320173839
+USA-03	Wuhan	M	50s		Orange County							26-Jan				https://edition.cnn.com/2020/01/26/us/coronavirus-orange-county/index.html
+USA-04	Chinese				Los Angeles County							26-Jan				https://www.nbcnews.com/health/health-news/cdc-reports-3rd-case-new-coronavirus-virus-u-s-n1123236
+USA-05	Chinese				Arizona							26-Jan				https://www.nbcnews.com/health/health-news/cdc-reports-3rd-case-new-coronavirus-virus-u-s-n1123236
+USA-06	American	M	60s	Husband of USA-2		Y		NO				30-Jan				https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak_by_country_and_territory#United_States
+USA-07		M			Santa Clara County			24-Jan				31-Jan				https://nypost.com/2020/01/31/california-man-tests-positive-for-coronavirus-7th-us-case/
+USA-08	Wuhan	M	20s		Boston					29-Jan		1-Feb				https://edition.cnn.com/2020/02/01/us/coronavirus-us-massachusetts/index.html
+Vietnam-01	Wuhan	M	65					13-Jan	17-Jan	22-Jan		22-Jan				https://www.nejm.org/doi/full/10.1056/NEJMc2001272
+Vietnam-02	Vietnam	M	27	Son of Vietnam-1, never		Y	17-Jan to 19-Jan	NO	20-Jan	22-Jan		22-Jan				https://www.nejm.org/doi/full/10.1056/NEJMc2001272
+Vietnam-03	Vietnamese				returned from Wuhan							30-Jan				https://www.vietnam-briefing.com/news/vietnam-business-operations-and-the-coronavirus-updates.html/
+Vietnam-04	Vietnamese				returned from Wuhan							30-Jan				https://www.vietnam-briefing.com/news/vietnam-business-operations-and-the-coronavirus-updates.html/
+Vietnam-05	Vietnamese				returned from Wuhan							30-Jan				https://www.vietnam-briefing.com/news/vietnam-business-operations-and-the-coronavirus-updates.html/
+Vietnam-06	Vietnamese	F	25	Works in hotel of Vietnam-1&2		Y	17-Jan	NO	19-Jan			1-Feb				https://vietnamnews.vn/society/591717/viet-nam-announces-sixth-coronavirus-case.html
