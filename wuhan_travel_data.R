@@ -16,5 +16,5 @@ macau_air <- 6145
 
 ## Source: Wuhan Major (Zhou Xianwang)
 
-wuhan_population_Jan26 <- 9000000
-wuhan_population_Jan10 <- 14000000
+WP_Jan26 <- 9000000
+WP_Jan10 <- 14000000
