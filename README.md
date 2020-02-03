@@ -34,6 +34,18 @@ Please use the GitHub Issues to make any long suggestion or discussion. You may 
 - How to better model the dynamics (from infection, international arrival, symptom onset, initial medical visit to case confimation) recorded in the dataset [#4](https://github.com/qingyuanzhao/2019-nCov-Data/issues/4).
 - How to incorporate the lockdown on 23rd of January in the model [#5](https://github.com/qingyuanzhao/2019-nCov-Data/issues/5).
 
+## Update: February 3rd
+
+### Major update to the dataset
+
+- Included a new dataset for cases in China (suggested by Cindy Chen). Elsa Yang have recorded 76 cases in Hefei that are confirmed by February 2nd.
+- Updated most countries to February 3rd.
+
+### New report
+
+Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb3.html) to view the report. This analysis fits an exponential growth model to infection time imputed using symptom onset and reported incubation interval. This report **has NOT been peer-reviewed** and extra caution is required to interpret the results.
+
+
 ## Update: February 1st
 
 ### Major update to the dataset
