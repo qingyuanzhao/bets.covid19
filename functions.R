@@ -16,14 +16,50 @@ age.process <- function(age) {
     }
 }
 
-#' Transform date to numeric ("23-Jan" to 23)
+#' Transform date to numeric
+#'
+#' For example, "23-Jan" to 23+31 = 52 (start date is set to December 1st, 2019).
+#'
 date.process <- function(date) {
-    as.numeric(as.Date(date, "%d-%b") - as.Date("2020-01-01")) + 1
+
+    tmp <- as.numeric(as.Date(date, "%d-%b") - as.Date("2019-12-01")) + 1
+
+    for (i in which(!is.na(tmp))) {
+        if (tmp[i] > 365) {
+            tmp[i] <- tmp[i] - 365
+        }
+    }
+
+    tmp
+
+}
+
+#' Parse the infected date
+parse.infected <- function(data) {
+    parse.one.infected <- function(infected) {
+        tmp <- strsplit(as.character(infected), "to")[[1]]
+        if (length(tmp) == 0) {
+            return(c(-Inf, Inf))
+        } else if (length(tmp) == 1) {
+            return(rep(date.process(tmp), 2))
+        } else {
+            return(date.process(tmp))
+        }
+    }
+
+    infected_interval <- t(sapply(data$Infected, parse.one.infected))
+
+    data$Infected_first <- pmax(infected_interval[, 1], 1)
+    data$Infected_last <- pmin(infected_interval[, 2],
+                               data$Arrived, data$Symptom,
+                               data$Initial, data$Confirmed, na.rm = TRUE)
+
+    data
 }
 
 #' Simple imputation
 #'
-simple.impute <- function(data) {
+simple.impute.onset <- function(data) {
 
     na.ind <- is.na(data$Symptom)
     print(paste(sum(na.ind), "of", nrow(data), "symptom onset date(s) are missing."))
@@ -47,9 +83,39 @@ simple.impute <- function(data) {
 
 #' Multiple imputation
 #'
-multiple.impute <- function(data, m = 50) {
+multiple.impute.onset <- function(data, m = 50) {
     library(mice)
-    data.imputed <- mice(data[, c("Arrive", "Symptom", "Initial", "Hospital", "Confirmed")], m, print = FALSE)
+    data.imputed <- mice(data[, c("Arrived", "Symptom", "Initial", "Hospital", "Confirmed")], m, print = FALSE)
 
     sapply(1:m, function(i) complete(data.imputed, i)$Symptom)
+}
+
+#' Impute infected using symptom onset and the distribution of the incubation period, respecting information about the infected time
+#'
+#' @param symptom symptom onset date
+#' @param infected_first beginning of possible infection time
+#' @param infected_end end of the possible infection time
+#' @param incubation_alpha alpha parameter in the gamma distribution of incubation
+#' @param incubation_beta beta parameter in the gamma distribution of incubation
+#'
+impute.infected <- function(symptom, infected_first, infected_last,
+                            incubation_alpha = 1.92, incubation_beta = 0.37 ## not exactly the same as NEJM paper
+                            ) {
+
+    stopifnot(length(symptom) == length(infected_first))
+    stopifnot(length(symptom) == length(infected_last))
+    if (sum(is.na(symptom)) > 0) {
+        stop("Symptom onset date cannot be missing. Use simple.impute.onset or multiple.imput.onset to impute the missing values!")
+    }
+
+    infected <- rep(NA, length(symptom))
+    for (i in 1:length(symptom)) {
+        infected[i] <- round(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
+        while (infected[i] < infected_first[i] ||
+               infected[i] > infected_last[i]) {
+            infected[i] <- round(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
+        }
+    }
+
+    infected
 }
