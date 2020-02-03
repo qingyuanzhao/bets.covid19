@@ -17,7 +17,7 @@ We first read and pre-process the data. This is very similar to the [first preli
 ```{r}
 source("functions.R")
 
-data <- read.table("Feb2.tsv", sep = "\t", header = TRUE)
+data <- read.table("Feb3 - Outside China.tsv", sep = "\t", header = TRUE)
 
 data$Confirmed <- date.process(data$Confirmed)
 data$Arrived <- date.process(data$Arrived)
@@ -59,7 +59,7 @@ symptom.imputed <- simple.impute.onset(data)
 The infection date is imputed by the symptom onset date minus a random draw from the distribution of the incubation period, truncated to the infection interval. This is implemented in the *impute.infected* function. Notice that [Li et al. (2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316) only reported the estimated mean (5.2 days) and 95% quantile (12.5 days) of the incubation period. I matched them with a gamma distribution, although the histogram is slightly different from Figure 2A in that article.
 ```{r}
 infected.imputed <- impute.infected(symptom.imputed, data$Infected_first, data$Infected_last,
-                                    incubation_alpha = 1.92, incubation_beta = 0.37) 
+                                    incubation_alpha = 1.92, incubation_beta = 0.37)
 ```
 
 We can visualize the imputed infection time by counting the incidences on each day:
@@ -84,7 +84,7 @@ symptom_imputed <- multiple.impute.onset(data, m = m)
 infected_imputed <- matrix(0, nrow(data), m)
 OI_imputed <- matrix(0, N, m)
 for (impute in 1:m) {
-    infected_imputed[, impute] <- impute.infected(symptom_imputed[, impute], 
+    infected_imputed[, impute] <- impute.infected(symptom_imputed[, impute],
                                                   data$Infected_first, data$Infected_last)
     OI_imputed[, impute] <- as.count(infected_imputed[, impute])
 }
@@ -97,7 +97,7 @@ df <- melt(OI_imputed[, 1:100])
 names(df) <- c("date", "impute", "count")
 df$date <- df$date - 1 + as.Date("2019-12-01")
 ggplot(df) + aes(x = date, y = count) +
-  geom_point(data = df, position = position_jitter(width = 0.5), alpha = 0.2) + 
+  geom_point(data = df, position = position_jitter(width = 0.5), alpha = 0.2) +
   geom_smooth(method = "loess", span = 0.1)
 ```
 
@@ -144,10 +144,10 @@ This is much higher than the $R_0$ estimated by [Li et al. (2020)](https://www.n
 The above analysis does not recognize the fact that the distribution of $(OI_t)_{t=1}^N$ is drawn based on the observed cases, which is only a small (hopefully random) sample of the cases in Wuhan. We use Bayesian inference to quantify the sampling uncertainty. For each draw of $(OI_t)_{t=1}^n$, we fit the above model with the following prior:
 \begin{align*}
   r &\sim \text{Exponential}(\text{mean} = \log(2)/7.4),\\
-  WI_{32} &\sim \text{Gamma}(\text{mean} = 50, \text{sd} = 100),
+  WI_{32} &\sim \text{Gamma}(\text{mean} = 50, \text{sd} = 100), \\
   OP \sim \text{Exponential}(OP_\text{prior}).
 \end{align*}
-The prior mean of $r$ is chosen as the estimate from [Li et al. (2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316) who estimated the cases were doubly every $7.4$ days. We choose to put a diffuse Gamma prior on $WI_{32}$, the number of new infections on January 31st, which is more interpretable than $WI_1$. 
+The prior mean of $r$ is chosen as the estimate from [Li et al. (2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316) who estimated the cases were doubly every $7.4$ days. We choose to put a diffuse Gamma prior on $WI_{32}$, the number of new infections on January 1st, which is more interpretable than $WI_1$.
 ```{r}
 stan_data <- list(N = N,
                   r_prior_mean = log(2) / 7.4,
@@ -220,7 +220,8 @@ set.seed(2020020319)
 posterior <- list()
 for (impute in 1:m) {
     infected_imputed <- impute.infected(symptom_imputed[, impute],
-                                        data$Infected_first, data$Infected_last)
+                                        data$Infected_first, data$Infected_last,
+                                        incubation_alpha = 1.92, incubation_beta = 0.37)
     stan_data$OI <- as.count(infected_imputed, N)
     capture.output(fit <- sampling(sm, data  = stan_data, init = 3, iter = 20000, thin = 100),
                    file = "NUL") # supress the output of stan
@@ -245,10 +246,10 @@ my.summary(r.to.R(r_posterior)) ## R0
 
 # Sensitivity analysis
 
-In the *stan* code we have also generated the total number of infections in Wuhan by the end of January 23. 
+In the *stan* code we have also generated the total number of infections in Wuhan by the end of January 23.
 
 ```{r}
-WT_Jan23_posterior <- 
+WT_Jan23_posterior <-
   unlist(lapply(posterior, function(posterior) posterior$WT[, N]))
 my.summary(WT_Jan23_posterior)
 ```
@@ -264,12 +265,13 @@ set.seed(2020020319)
 posterior2 <- list()
 for (impute in 1:m) {
     infected_imputed <- impute.infected(symptom_imputed[, impute],
-                                        data$Infected_first, data$Infected_last)
+                                        data$Infected_first, data$Infected_last,
+                                        incubation_alpha = 1.92, incubation_beta = 0.37)
     stan_data$OI <- as.count(infected_imputed, N)
     capture.output(fit2 <- sampling(sm, data  = stan_data, init = 3, iter = 20000, thin = 100),
                    file = "NUL") # supress the output of stan
     if (impute %% 10 == 0)
-      print(fit, pars = "r")
+      print(fit2, pars = "r")
     posterior2[[impute]] <- extract(fit2)
 }
 ```
@@ -277,7 +279,7 @@ for (impute in 1:m) {
 ```{r}
 r_posterior2 <- unlist(lapply(posterior2, function(posterior) posterior$r))
 my.summary(r_posterior2)
-WT_Jan23_posterior2 <- 
+WT_Jan23_posterior2 <-
   unlist(lapply(posterior2, function(posterior) posterior$WT[, N]))
 my.summary(WT_Jan23_posterior2)
 ```
