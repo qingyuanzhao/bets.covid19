@@ -113,7 +113,7 @@ impute.infected <- function(symptom, infected_first, infected_last,
         infected[i] <- round(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
         while (infected[i] < infected_first[i] ||
                infected[i] > infected_last[i]) {
-            infected[i] <- round(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
+            infected[i] <- ceiling(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
         }
     }
 
