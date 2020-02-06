@@ -49,7 +49,7 @@ parse.infected <- function(data) {
 
     infected_interval <- t(sapply(data$Infected, parse.one.infected))
 
-    data$Infected_first <- pmax(infected_interval[, 1], 1)
+    data$Infected_first <- pmax(infected_interval[, 1], 1, na.rm = TRUE)
     data$Infected_last <- pmin(infected_interval[, 2],
                                data$Arrived, data$Symptom,
                                data$Initial, data$Confirmed, na.rm = TRUE)
