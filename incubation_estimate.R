@@ -8,11 +8,15 @@ data$Symptom <- date.process(data$Symptom)
 data$Initial <- date.process(data$Initial) 
 data$Hospital <- date.process(data$Hospital)
 
+case72 <- data[72,]
 data <- data[-72, ] # Don't know how to parse this infected date yet
 data <- parse.infected(data)
-
-## Only consider cases with known symptom onset, arrived on or before
-##January 23 
+case72$Infected_first <- date.process("15-Jan")
+case72$Infected_last <- date.process("21-Jan")
+data <- rbind(data, case72)
+    
+    
+## Only consider cases with known symptom onset, arrived on or before January 23 
 data <- subset(data, !is.na(Symptom))
 data <- subset(data, Arrived <= 23+31) 
 data <- subset(data, !(is.na(Arrived) & Infected_first == 1 & Infected_last == Symptom)) # remove cases with no information
@@ -37,15 +41,19 @@ myfun <- function(par) {
 }
 
 fit <- optim(c(7.5, 3.4), myfun, control = list(fnscale = -1))
+print(fit)
 
 pars <- expand.grid(mean = seq(5, 15, 0.1), sd = seq(3, 10, 0.1))
-
 pars$loglike <- apply(pars, 1, myfun)
-
+print(pars[which.max(pars$loglike),]) ## print the grid-search MLE to terminal
 pars$in.CR <- (pars$loglike > fit$value - qchisq(0.95, 1) / 2)
 
 library(ggplot2) 
-ggplot(pars) + aes(x = mean, y = sd, fill = in.CR) +geom_tile()
+p1 <- ggplot(pars) + aes(x = mean, y = sd, fill = loglike) + geom_tile()
+p1
+
+p2 <- ggplot(pars) + aes(x = mean, y = sd, fill = in.CR) +geom_tile()
+p2
 
 ## MLE for incubation period: mean = 6.8, sd = 4.2 CI for mean
 ## incubation period: about 5.5 to 9.0
