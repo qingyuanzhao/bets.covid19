@@ -9,7 +9,7 @@ data$Initial <- date.process(data$Initial)
 data$Hospital <- date.process(data$Hospital)
 
 case72 <- data[72,]
-data <- data[-72, ] # Don't know how to parse this infected date yet
+data <- data[-c(72,19,95), ] # Don't know how to parse these infected date yet
 data <- parse.infected(data)
 case72$Infected_first <- date.process("15-Jan")
 case72$Infected_last <- date.process("21-Jan")
