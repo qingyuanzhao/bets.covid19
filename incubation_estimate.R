@@ -27,6 +27,7 @@ data <- subset(data, Infected_last != Symptom)
 dim(data)
 hist(data$Symptom - data$Infected_last)
 hist(data$Symptom - data$Infected_first)
+hist(data$Infected_last - data$Infected_first)
 
 #' Compute the likelihood
 #'
