@@ -4,7 +4,7 @@ On 30th of January, 2020, The World Health Organization has declared the [2019-n
 
 This dataset is collected from public agencies or news media, containing information about the 2019-nCov cases confirmed in and outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)). It can be loaded in R as a package:
 ```r
-install_github("qingyuanzhao/2019-nCov-Data")
+devtools::install_github("qingyuanzhao/2019-nCov-Data")
 library(nCoV2019.data)
 ```
 
