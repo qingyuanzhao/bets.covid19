@@ -1,6 +1,6 @@
-source("functions.R")
+source("../R/functions.R")
 
-data <- read.table("Feb10InChina.tsv", sep = "\t", header = TRUE)
+data <- read.table("../1st-Report/Feb10InChina.tsv", sep = "\t", header = TRUE)
 
 data$Confirmed <- date.process(data$Confirmed) 
 data$Arrived <- date.process(data$Arrived) 
@@ -24,10 +24,12 @@ data <- subset(data, !is.na(Symptom))
 # data <- subset(data, !(is.na(Arrived))) ## only consider outside cases
 data <- subset(data, Infected_first != 1)
 data <- subset(data, Infected_last != Symptom)
+
 dim(data)
 hist(data$Symptom - data$Infected_last)
 hist(data$Symptom - data$Infected_first)
 hist(data$Infected_last - data$Infected_first)
+summary(data$Infected_last - data$Infected_first)
 
 #' Compute the likelihood
 #'
@@ -38,13 +40,13 @@ infection.likelihood <- function(symptom, infected_first, infected_last, GT) {
     for (i in 1:nrow(data)) {
         min.incub <- symptom[i] - infected_last[i] 
         max.incub <- symptom[i] - infected_first[i]
-        loglike <- loglike + log(sum(GT$GT[1 +(min.incub):(max.incub)])) 
+        loglike <- loglike + log(sum(GT$GT[1 + (min.incub):(max.incub)])) ## should + 1 be included
     } 
     loglike 
 }
 
 myfun <- function(par) { 
-    GT <- R0::generation.time("lognormal", par,truncate = 100); 
+    GT <- R0::generation.time("gamma", par,truncate = 100); 
     infection.likelihood(data$Symptom, data$Infected_first, data$Infected_last, GT) 
 }
 
@@ -58,7 +60,7 @@ pars$in.CR <- (pars$loglike > fit$value - qchisq(0.95, 1) / 2)
 
 library(ggplot2) 
 p1 <- ggplot(pars) + aes(x = mean, y = sd, fill = loglike) + geom_tile()
-p1
+# p1
 
 p2 <- ggplot(pars) + aes(x = mean, y = sd, fill = in.CR) +geom_tile()
 p2
