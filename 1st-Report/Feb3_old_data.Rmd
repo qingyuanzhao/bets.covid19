@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*This report has been updated from a previous version.*
+*This report only uses confirmed cases up till January 28 as in [this Lancet article](https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930260-9).*
 
 The 2nd preliminary analysis uses almost the same dataset as the [first preliminary analysis](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb1.html) but attempts to use a simple model to acknowledge that this dataset contains only "shadows" of the real epidemic in Wuhan. Another important distinction is that we will directly model the infection time that can be imputed by the symptom onset time and the incubation interval reported in [Li et al. (2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316).
 
@@ -31,8 +31,8 @@ data$Hospital <- date.process(data$Hospital)
 We focus on the following countries/regions: Japan, Singapore, Taiwan, HongKong, Macau, Korea, and only consider confirmed cases who were (most certainly) infected in Wuhan and arrived on or before 23th of January:
 ```{r}
 data$Country_or_Region <- do.call(rbind, strsplit(as.character(data$Case), "-"))[, 1]
-data <- subset(data, Country_or_Region %in% c("Japan", "Singapore", "Taiwan", "Korea", "Hong Kong", "Macau"))
-data <- subset(data, ! (Outside %in% c("Y", "L")) & Arrived <= 23+31)
+data <- subset(data, Country_or_Region %in% c("Japan", "Singapore", "Taiwan", "Korea", "HongKong", "Macau"))
+data <- subset(data, ! (Outside %in% c("Y", "L")) & Arrived <= 23+31 & Confirmed <= 28+31)
 table(data$Country_or_Region)
 ```
 
@@ -145,10 +145,11 @@ This estimate means that the epidemic was doubling every
 ```{r}
 log(2) / r
 ```
-days. We can use the equation (3.4) in [Wallinga and Lipsitch (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2006.3754) to estimate the basic reproduction number from $r$. This formula assumes the serial interval is normally distributed, and we will use the mean 7.5 and standard deviation 3.4 reported by [Li et al. (2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316).
+days. We can use the formula in [Wallinga and Lipsitch (2006)](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2006.3754) to estimate the basic reproduction number from $r$, which is implemented in the *R0* package. This formula assumes the serial interval is normally distributed, and we will use the mean 7.5 and standard deviation 3.4 reported by [Li et al. (2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316).
 ```{r}
 r.to.R <- function(r, si_mean = 7.5, si_sd = 3.4) {
-    exp(r * si_mean - r^2 * si_sd^2 / 2)
+    GT <- R0::generation.time("gamma", c(si_mean, si_sd))
+    as.numeric(R0:::R.from.r(r, GT))
 }
 r.to.R(r)
 ```
@@ -224,7 +225,7 @@ rstan_options(auto_write = TRUE)
 sm <- stan_model(model_code = stan_code)
 ```
 
-We draw 200 samples of $(OI)_{t=1}^N$ and obtain posterior samples of $r$, $WI_{32}$, and $AP$ in this model:
+We draw 100 samples of $(OI)_{t=1}^N$ and obtain posterior samples of $r$, $WI_{32}$, and $AP$ in this model:
 ```{r, message = FALSE, cache = FALSE, warning = FALSE, message = "hide"}
 obtain.posterior <- function(symptom_imputed, stan_data, incubation_alpha = 1.92, incubation_beta = 0.37) {
   
@@ -244,7 +245,7 @@ obtain.posterior <- function(symptom_imputed, stan_data, incubation_alpha = 1.92
 
 }
 
-m <- 200
+m <- 100
 
 set.seed(20200204)
 symptom_imputed <- multiple.impute.onset(data, m = m)

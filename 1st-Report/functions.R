@@ -1,8 +1,11 @@
 #' Processing age to print its distribution
 #'
-#' @param age a vector of age, each entry is either a number (like 34) or age group (like 30s)
+#' @param age a vector of age, each entry is either a number (like 34) or age by decade (like 30s)
 #'
 #' @return each age is either repeated 10 times or expanded to 10 numbers (for example, 30s is expanded to 30, 31, ..., 39).
+#'
+#' @export
+#'
 age.process <- function(age) {
     if (length(age) > 1) { # a vector
         return(as.vector(sapply(age, age.process)))
@@ -18,7 +21,11 @@ age.process <- function(age) {
 
 #' Transform date to numeric
 #'
-#' For example, "23-Jan" to 23+31 = 52 (start date is set to December 1st, 2019).
+#' @param date a vector of dates of the form "DD-MMM" (for example, 23-Jan).
+#'
+#' @return a vector of days since December 1st, 2019 (or example, 23-Jan is converted to 23+31 = 52).
+#'
+#' @export
 #'
 date.process <- function(date) {
 
@@ -35,7 +42,15 @@ date.process <- function(date) {
 }
 
 #' Parse the infected date
+#'
+#' @param data a data frame with the following columns: Infected, Arrived, Symptom, Initial, Confirmed.
+#'
+#' @return the data frame with two new columns, Infected_first and Infected_last
+#'
+#' @export
+#'
 parse.infected <- function(data) {
+
     parse.one.infected <- function(infected) {
         tmp <- strsplit(as.character(infected), "to")[[1]]
         if (length(tmp) == 0) {
@@ -57,7 +72,13 @@ parse.infected <- function(data) {
     data
 }
 
-#' Simple imputation
+#' Simple imputation of symptom onset date
+#'
+#' @param data a data frame with the following columns: Symptom, Initial, Confirmed.
+#'
+#' @return a vector of symptom onset dates with all the missing values imputed using initial medical visit date or confirmation date.
+#'
+#' @export
 #'
 simple.impute.onset <- function(data) {
 
@@ -81,22 +102,33 @@ simple.impute.onset <- function(data) {
     data$Symptom
 }
 
-#' Multiple imputation
+#' Multiple imputation of symptom onset date
+#'
+#' @param data a data frame with the following columns: Arrived, Symptom, Initial, Hospital, Confirmed.
+#'
+#' @return a matrix of symptom onset dates with missing values imputed using the mice package.
+#'
+#' @import mice
+#' @export
 #'
 multiple.impute.onset <- function(data, m = 50) {
-    library(mice)
     data.imputed <- mice(data[, c("Arrived", "Symptom", "Initial", "Hospital", "Confirmed")], m, print = FALSE)
 
     sapply(1:m, function(i) complete(data.imputed, i)$Symptom)
 }
 
-#' Impute infected using symptom onset and the distribution of the incubation period, respecting information about the infected time
+#' Simulated infection time using symptom onset
 #'
-#' @param symptom symptom onset date
-#' @param infected_first beginning of possible infection time
-#' @param infected_end end of the possible infection time
-#' @param incubation_alpha alpha parameter in the gamma distribution of incubation
-#' @param incubation_beta beta parameter in the gamma distribution of incubation
+#' Uses distribution of the incubation period and respects information about the infected time
+#'
+#' @param symptom a vector of symptom onset dates
+#' @param infected_first a vector of the first possible infection dates
+#' @param infected_end a vector of the last possible infection dates
+#' @param incubation_alpha alpha parameter in the gamma distribution of incubation period
+#' @param incubation_beta beta parameter in the gamma distribution of incubation period
+#'
+#' @return a vector of simulated infection dates.
+#' @export
 #'
 impute.infected <- function(symptom, infected_first, infected_last,
                             incubation_alpha = 1.92, incubation_beta = 0.37 ## not exactly the same as NEJM paper

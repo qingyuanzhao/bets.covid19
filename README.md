@@ -2,7 +2,15 @@
 
 On 30th of January, 2020, The World Health Organization has declared the [2019-nCoV outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)). **The outbreak originated from my hometown, Wuhan.**
 
-I am sharing this dataset I collected from public agencies or news media, containing information about the 2019-nCov cases confirmed outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)).
+This dataset is collected from public agencies or news media, containing information about the 2019-nCov cases confirmed in and outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)). It can be loaded in R as a package:
+```r
+devtools::install_github("qingyuanzhao/2019-nCov-Data")
+library(nCoV2019.data)
+data(cases.in.china)
+data(cases.outside.china)
+```
+
+A preliminary report is avaiable as a [on medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). This report is currently being peer-reviewed. It is based on the analysis in [Feb6.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.R) and [Feb6.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.Rmd) (results available [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.html)).
 
 ## To Contribute
 
@@ -34,6 +42,16 @@ Please use the GitHub Issues to make any long suggestion or discussion. You may 
 - How to better model the dynamics (from infection, international arrival, symptom onset, initial medical visit to case confimation) recorded in the dataset [#4](https://github.com/qingyuanzhao/2019-nCov-Data/issues/4).
 - How to incorporate the lockdown on 23rd of January in the model [#5](https://github.com/qingyuanzhao/2019-nCov-Data/issues/5).
 
+## Update: Febraury 11th
+
+### Major update to the GitHub repository
+
+- The project has been restructured as a R package.
+
+### Major update to the dataset
+
+- Now more than 300 cases in China.
+
 ## Update: February 3rd
 
 ### Major update to the dataset
@@ -43,7 +61,7 @@ Please use the GitHub Issues to make any long suggestion or discussion. You may 
 
 ### New report
 
-Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb3.html) to view the report. This analysis fits an exponential growth model to infection time imputed using symptom onset and reported incubation interval. This report **has NOT been peer-reviewed** and extra caution is required to interpret the results.
+Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb3.html) to view the report. This analysis fits an exponential growth model to infection time imputed using symptom onset and reported incubation interval. This report **has NOT been peer-reviewed** and extra caution is required to interpret the results.
 
 
 ## Update: February 1st
@@ -55,4 +73,4 @@ Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzh
 
 ### New preliminary analysis
 
-Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/Feb1.html) to view the report. This report **has NOT been peer-reviewed** and extra caution is required to interpret the results.
+Please click [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb1.html) to view the report. This report **has NOT been peer-reviewed** and extra caution is required to interpret the results.
