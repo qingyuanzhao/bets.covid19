@@ -1,11 +1,14 @@
-source("functions.R")
+devtools::load_all()
 
-data <- read.table("Feb10InChina.tsv", sep = "\t", header = TRUE)
+data <- read.table("../data-raw/Feb13 - In China.tsv", sep = "\t", header = TRUE)
+cases.in.china <- data[c(1:161, 208:449), ]
+library(devtools)
+use_data(cases.in.china, overwrite = TRUE)
 
-data$Confirmed <- date.process(data$Confirmed) 
-data$Arrived <- date.process(data$Arrived) 
+data$Confirmed <- date.process(data$Confirmed)
+data$Arrived <- date.process(data$Arrived)
 data$Symptom <- date.process(data$Symptom)
-data$Initial <- date.process(data$Initial) 
+data$Initial <- date.process(data$Initial)
 data$Hospital <- date.process(data$Hospital)
 
 case72 <- data[72,]
@@ -14,9 +17,9 @@ data <- parse.infected(data)
 case72$Infected_first <- date.process("15-Jan")
 case72$Infected_last <- date.process("21-Jan")
 data <- rbind(data, case72)
-    
-    
-## Only consider cases with known symptom onset, arrived on or before January 23 
+
+
+## Only consider cases with known symptom onset, arrived on or before January 23
 data <- subset(data, !is.na(Symptom))
 data <- subset(data, Arrived <= 23+31)
 data <- subset(data, !(is.na(Arrived) & Infected_first == 1 & Infected_last == Symptom)) # remove cases with no information
@@ -26,18 +29,18 @@ data <- subset(data, !(is.na(Arrived) & Infected_first == 1 & Infected_last == S
 #' GT is a discretized distribution for the generation time
 #'
 infection.likelihood <- function(symptom, infected_first, infected_last, GT) {
-    loglike <- 0 
+    loglike <- 0
     for (i in 1:nrow(data)) {
-        min.incub <- symptom[i] - infected_last[i] 
+        min.incub <- symptom[i] - infected_last[i]
         max.incub <- symptom[i] - infected_first[i]
-        loglike <- loglike + log(sum(GT$GT[1 +(min.incub):(max.incub)])) 
-    } 
-    loglike 
+        loglike <- loglike + log(sum(GT$GT[1 +(min.incub):(max.incub)]))
+    }
+    loglike
 }
 
-myfun <- function(par) { 
-    GT <- R0::generation.time("gamma", par,truncate = 100); 
-    infection.likelihood(data$Symptom, data$Infected_first, data$Infected_last, GT) 
+myfun <- function(par) {
+    GT <- R0::generation.time("gamma", par,truncate = 100);
+    infection.likelihood(data$Symptom, data$Infected_first, data$Infected_last, GT)
 }
 
 fit <- optim(c(7.5, 3.4), myfun, control = list(fnscale = -1))
@@ -48,7 +51,7 @@ pars$loglike <- apply(pars, 1, myfun)
 print(pars[which.max(pars$loglike),]) ## print the grid-search MLE to terminal
 pars$in.CR <- (pars$loglike > fit$value - qchisq(0.95, 1) / 2)
 
-library(ggplot2) 
+library(ggplot2)
 p1 <- ggplot(pars) + aes(x = mean, y = sd, fill = loglike) + geom_tile()
 p1
 
