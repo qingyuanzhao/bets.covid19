@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-source("../R/functions.R")
-
-data <- read.table("../1st-Report/Feb10InChina.tsv", sep = "\t", header = TRUE)
-=======
 devtools::load_all()
 
 data <- read.table("../data-raw/Feb13 - In China.tsv", sep = "\t", header = TRUE)
 cases.in.china <- data[c(1:161, 208:449), ]
 library(devtools)
 use_data(cases.in.china, overwrite = TRUE)
->>>>>>> upstream/master
 
 data$Confirmed <- date.process(data$Confirmed)
 data$Arrived <- date.process(data$Arrived)
@@ -23,14 +17,11 @@ data <- parse.infected(data)
 case72$Infected_first <- date.process("15-Jan")
 case72$Infected_last <- date.process("21-Jan")
 data <- rbind(data, case72)
-<<<<<<< HEAD
     
 ## Only consider cases with known symptom onset
-=======
 
 
 ## Only consider cases with known symptom onset, arrived on or before January 23
->>>>>>> upstream/master
 data <- subset(data, !is.na(Symptom))
 ## only consider cases arrived on or before January 23 
 # data <- subset(data, Arrived <= 23+31) ## this will remove outside cases
@@ -55,15 +46,9 @@ infection.likelihood <- function(symptom, infected_first, infected_last, GT) {
     for (i in 1:nrow(data)) {
         min.incub <- symptom[i] - infected_last[i]
         max.incub <- symptom[i] - infected_first[i]
-<<<<<<< HEAD
         loglike <- loglike + log(sum(GT$GT[1 + (min.incub):(max.incub)])) ## should + 1 be included
     } 
     loglike 
-=======
-        loglike <- loglike + log(sum(GT$GT[1 +(min.incub):(max.incub)]))
-    }
-    loglike
->>>>>>> upstream/master
 }
 
 myfun <- function(par) {
