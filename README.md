@@ -10,7 +10,7 @@ data(cases.in.china)
 data(cases.outside.china)
 ```
 
-A preliminary report is avaiable as a [on medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). This report is currently being peer-reviewed. It is based on the analysis in [Feb6.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.R) and [Feb6.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.Rmd) (results available [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.html)).
+A preliminary report is avaiable as a preprint on [medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). This report is currently being peer-reviewed. It is based on the analysis in [Feb6.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.R) and [Feb6.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.Rmd) (results available [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.html)).
 
 ## To Contribute
 
