@@ -128,11 +128,13 @@ multiple.impute.onset <- function(data, m = 50) {
 #' @param incubation_beta beta parameter in the gamma distribution of incubation period
 #'
 #' @return a vector of simulated infection dates.
+#'
+#' @importFrom R0 generation.time
 #' @export
 #'
 impute.infected <- function(symptom, infected_first, infected_last,
-                            incubation_alpha = 1.92, incubation_beta = 0.37 ## not exactly the same as NEJM paper
-                            ) {
+                            incubation_mean = 6.4, incubation_sd = 2.3) {
+    ## default is weibull(2.99, 7.18)
 
     stopifnot(length(symptom) == length(infected_first))
     stopifnot(length(symptom) == length(infected_last))
@@ -140,12 +142,14 @@ impute.infected <- function(symptom, infected_first, infected_last,
         stop("Symptom onset date cannot be missing. Use simple.impute.onset or multiple.imput.onset to impute the missing values!")
     }
 
+    mGT <- generation.time("weibull", c(incubation_mean, incubation_sd))
+
     infected <- rep(NA, length(symptom))
     for (i in 1:length(symptom)) {
-        infected[i] <- ceiling(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
+        infected[i] <- symptom[i] - sample(1:length(mGT$time), 1, prob = mGT$GT) + 1
         while (infected[i] < infected_first[i] ||
                infected[i] > infected_last[i]) {
-            infected[i] <- ceiling(symptom[i] - rgamma(1, incubation_alpha, incubation_beta))
+            infected[i] <- symptom[i] - sample(1:length(mGT$time), 1, prob = mGT$GT) + 1
         }
     }
 

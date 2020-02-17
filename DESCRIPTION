@@ -3,7 +3,8 @@ Title: Dataset and analysis for the 2019-nCoV outbreak
 Version: 0.1
 Authors@R: c(person("Qingyuan", "Zhao", email = "qyzhao@statslab.cam.ac.uk", role = c("aut", "cre")),person("Elsa (Yachong)", "Yang", email = "yachong@wharton.upenn.edu", role = "aut"),person("Phyllis", "Ju", email = "nju@g.harvard.edu", role = "aut"),person("Zilu", "Zhou", email = "zhouzilu@pennmedicine.upenn.edu", role= "aut"))
 Description: Contains trajectory of confirmed cases of the 2019-nCoV outbreak and some demos of statistical analysis.
-Depends: R (>= 3.4.3)
+Depends: R (>= 3.4.3),
+Imports: R0
 License: CC-BY-4.0
 Encoding: UTF-8
 LazyData: true
