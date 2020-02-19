@@ -4,19 +4,24 @@
 \alias{impute.infected}
 \title{Simulated infection time using symptom onset}
 \usage{
-impute.infected(symptom, infected_first, infected_last,
-  incubation_alpha = 1.92, incubation_beta = 0.37)
+impute.infected(
+  symptom,
+  infected_first,
+  infected_last,
+  incubation_mean = 6.4,
+  incubation_sd = 2.3
+)
 }
 \arguments{
 \item{symptom}{a vector of symptom onset dates}
 
 \item{infected_first}{a vector of the first possible infection dates}
 
+\item{infected_end}{a vector of the last possible infection dates}
+
 \item{incubation_alpha}{alpha parameter in the gamma distribution of incubation period}
 
 \item{incubation_beta}{beta parameter in the gamma distribution of incubation period}
-
-\item{infected_end}{a vector of the last possible infection dates}
 }
 \value{
 a vector of simulated infection dates.

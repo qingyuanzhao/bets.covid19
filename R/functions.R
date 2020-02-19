@@ -133,8 +133,8 @@ multiple.impute.onset <- function(data, m = 50) {
 #' @export
 #'
 impute.infected <- function(symptom, infected_first, infected_last,
-                            incubation_mean = 6.4, incubation_sd = 2.3) {
-    ## default is weibull(2.99, 7.18)
+                            incubation_mean = 6.5, incubation_sd = 2.6) {
+    ## default incubation period is gamma-distributed
 
     stopifnot(length(symptom) == length(infected_first))
     stopifnot(length(symptom) == length(infected_last))
@@ -142,14 +142,18 @@ impute.infected <- function(symptom, infected_first, infected_last,
         stop("Symptom onset date cannot be missing. Use simple.impute.onset or multiple.imput.onset to impute the missing values!")
     }
 
-    mGT <- generation.time("weibull", c(incubation_mean, incubation_sd))
+    mGT <- generation.time("gamma", c(incubation_mean, incubation_sd))
 
     infected <- rep(NA, length(symptom))
     for (i in 1:length(symptom)) {
-        infected[i] <- symptom[i] - sample(1:length(mGT$time), 1, prob = mGT$GT) + 1
+        infected[i] <- symptom[i] - sample(1:length(mGT$time) - 1, 1, prob = mGT$GT)
+        boundary.keep <- sample(c(TRUE, FALSE), 1)
         while (infected[i] < infected_first[i] ||
-               infected[i] > infected_last[i]) {
-            infected[i] <- symptom[i] - sample(1:length(mGT$time), 1, prob = mGT$GT) + 1
+               infected[i] > infected_last[i] ||
+               (infected[i] == infected_first[i] & !boundary.keep) ||
+               (infected[i] == infected_last[i] & !boundary.keep)) {
+                   infected[i] <- symptom[i] - sample(1:length(mGT$time) - 1, 1, prob = mGT$GT)
+                   boundary.keep <- sample(c(TRUE, FALSE), 1)
         }
     }
 
