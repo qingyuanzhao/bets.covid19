@@ -72,6 +72,42 @@ parse.infected <- function(data) {
     data
 }
 
+
+
+#' Parse the information about infection (exposure) experiod
+#'
+#' @param data a data frame with the following columns: Infected, Arrived, Symptom, Initial, Confirmed. Already converted to number of days starting from 1-Dec-2019.
+#'
+#' @return the data frame with two new columns, Infected_first and Infected_last
+#'
+#' @export
+#'
+parse.exposure <- function(data) {
+    ## parse date information, either date1 to date2 or date1 
+    parse.one.infected <- function(infected) {
+        tmp <- strsplit(as.character(infected), "to")[[1]]
+        if (length(tmp) == 0) { ## if no information 
+            return(c(-Inf, Inf))
+        } else if (length(tmp) == 1) { ## if format is date1
+            return(rep(date.process(tmp), 2))
+        } else {## if format is date1 to date2
+            return(date.process(tmp))
+        }
+    }
+    
+    infected_interval <- t(sapply(data$Infected, parse.one.infected))
+    
+    
+    data$Infected_first <- pmax(infected_interval[, 1], 1, na.rm = TRUE)
+    data$Infected_last <- pmin(infected_interval[,2], data$Symptom, na.rm = TRUE)
+    # data$Infected_last <- pmin(infected_interval[, 2],
+    #                            data$Arrived, data$Symptom,
+    #                            data$Initial, data$Confirmed, na.rm = TRUE) ## this assumes the people who return from Wuhan are infected in Wuhan 
+    data
+}
+
+
+
 #' Simple imputation of symptom onset date
 #'
 #' @param data a data frame with the following columns: Symptom, Initial, Confirmed.

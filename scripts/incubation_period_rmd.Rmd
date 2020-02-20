@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(devtools)
 library(dplyr)
 library(ggplot2)
+# library(knitr)
+# purl("incubation_period_rmd.Rmd")
 devtools::load_all()
 ```
 
@@ -22,7 +24,7 @@ data <- read.table("../data-raw/Feb14 - In China.tsv", sep = "\t", header = TRUE
 # use_data(cases.in.china, overwrite = TRUE)
 ```
 
-We convert the dates to 'days since 1-Dec-2019' format. In order to estimate the incubation period, we only include records with known symptom onset date or period. We assume that 'symptom onset date' is missing completely at random. Currently, the `parse.infected' function assumes Arrival > Symptom. Which is violated by ~ 32 cases.
+We convert the dates to 'days since 1-Dec-2019' format. In order to estimate the incubation period, we only include records with known symptom onset date or period. We assume that 'symptom onset date' is missing completely at random. Currently, the `parse.infected' function assumes Arrival > Symptom, which is violated by ~ 32 cases. The new data.exposure function does not assume infection happens before arrival from Wuhan. 
 ```{r process data}
 ## convert the dates to days since 1-Dec-2019
 data$Confirmed <- date.process(data$Confirmed)
@@ -31,20 +33,18 @@ data$Symptom <- date.process(data$Symptom)
 data$Initial <- date.process(data$Initial)
 data$Hospital <- date.process(data$Hospital)
 data$Source <- data$Cluster <- data$Death <- data$Discharged <- data$Verified <- data$Note <- NULL ## for visualization
+## Only consider cases with known symptom onset
+data <- subset(data, !is.na(Symptom))
 ## parse data
 case72 <- data[72,] ## manually parse hefei-72
 data <- data[-72,]
-data <- parse.infected(data)
+# data <- parse.infected(data)
+data <- parse.exposure(data)
 case72$Infected_first <- date.process("15-Jan")
 case72$Infected_last <- date.process("21-Jan")
 data <- rbind(data, case72)
 ```
 
-The function parse.infection might problematic, because there are 6 cases whose imputed first infection date is greater than last infection date. 
-```{r error}
-print(data[which(data$Infected_first > data$Infected_last),])
-data <- data %>% subset(Infected_first <= Infected_last)
-```
 
 
 We denote by $T_i > 0$ the infection period of each patient, the time from infection to symptom onset. Confirmed cases who had not shown symptoms at the time of confirmation are excluded in this analysis. Infection date information is available for two types of patients: 
@@ -56,15 +56,15 @@ We denote by $T_i > 0$ the infection period of each patient, the time from infec
 * Most of the secondary infections were due to living with family members from outside and their infection date must be later than the arrival date of the family member. As a result, an upper bound can be imputed $0 < T_i \leq U_i.$ For those families that self-quarantined, we can impute also a lower bound $L_i < T_i < U_i$.
 
 ```{r subset data}
-## Only consider cases with known symptom onset
-data <- subset(data, !is.na(Symptom))
 ## we may choose only to study patients that left Wuhan on or before January 23
 # data <- subset(data, Arrived <= 23+31)
-## remove outside cases without Ui
-data <- subset(data, !(is.na(Arrived) & Infected_first == 1)) 
-## this is what we have earlier, it considers only the cases with both bounds
+# data <- subset(data, Symptom - Infected_last <= 20) ## removing outliers
+# data <- subset(data, Confirmed <= 28 + 31) ## cutoff by confirmation date
+## remove cases with no information at all 
+data <- subset(data, !(Infected_first == 1 & Infected_last == Symptom))
 print(dim(data))
 ```
+
 ```{r include=FALSE}
 upper <- data %>% subset(Infected_last == Symptom & Infected_first != 1 & Infected_first < Infected_last) %>% mutate(upper = Symptom - Infected_first)
 lower <- data %>% subset(Infected_first == 1) %>% mutate(lower = Symptom - Infected_last)
@@ -74,11 +74,11 @@ band <- data %>% subset( (Infected_first != 1) & (Infected_first < Infected_last
 
 |  type |count   |
 |---|---|
-| upper bound only  |  29 |  
-| lower bound only  | 133  | 
-| lower and upper bound | 35 |
-| knows the date of infection  |46   |
-| total  |  243 |
+| upper bound only  |  33 |  
+| lower bound only  | 16  | 
+| lower and upper bound | 34 |
+| knows the date of infection  |49 |
+| total  | 132   |
 For these patients we only have an lower bound for $T$.
 
 
@@ -95,29 +95,58 @@ hist(band$band, xlab = 'max.incub - min.incub', main = 'Both upper and lower bou
 We start with simple parametric models that does not incorporate covariates such as age and gender.
 
 ```{r}
-symptom <- data$Symptom
-infected_first <- data$Infected_first
-infected_last <- data$Infected_last
+# data <- data %>% mutate(min.incub = Symptom - Infected_last - 0.5, max.incub = Symptom - Infected_first + 0.5)
+# attach(data)
+# loglikelihood <- function(par, family = 'gamma'){
+##### function under construction
+#   ## reparametrization (mean, sd) -> shape, rate, scale etc.
+#   if (family == 'gamma'){
+#     b <- par[1] / par[2]**2
+#     a <- par[1] * b
+#     logweights <- log(pgamma(q = max.incub, shape = a, rate = b) - pgamma(q = min.incub, shape = a, rate = b))
+#   }
+#   if (family == 'lognormal'){
+#     meanlog = 2 * log(par[1]) - 0.5 * log( par[1]**2 + par[2]**2)
+#     sdlog = sqrt(log(par[2]**2 + par[1]**2) - 2 * log(par[1]))
+#     logweights <- log(plnorm(q = max.incub, meanlog = meanlog, sdlog = sdlog) - plnorm(q = min.incub, meanlog = meanlog, sdlog = sdlog))
+#   }
+#   if (family == 'weibull'){
+#     aa <- ((par[2]/par[1])**2  + 1) /2 ## kGamma(2/k) / Gamma(1/k)
+#     logaa <- log(aa)
+#     ## find k such that logk + loggamma(2/k) - loggamma(1/k) - a = 0
+#     k <- uniroot(f = function(x) log(x) + lgamma(2/x) - lgamma(1/x) - logaa, interval = c(1,10))$root
+#     ## check 
+#     if (abs(log(k) + lgamma(2/k) - lgamma(1/k) - logaa) > 1e-5) print('weibull numerical solver problem')
+#     l <- gamma(1 + 1/k) / par[1]
+#     logweights <- log(pweibull(q = max.incub, shape = k, scale = l) - pweibull(q = min.incub, shape = k, scale = l))
+#     }
+#   maxlogweights <- max(logweights)
+#   logweights <- logweights - maxlogweights
+#   loglik <- log(sum(exp(logweights))) + maxlogweights
+#   loglik
+# }
 
+data <- data %>% mutate(min.incub = Symptom - Infected_last) %>% mutate(max.incub = Symptom - Infected_first)
 loglikelihood <- function(par, family = 'gamma') {
     GT <- R0::generation.time(type = family, par, truncate = 100);
     loglike <- 0
     for (i in 1:nrow(data)) {
-        min.incub <- symptom[i] - infected_last[i]
-        max.incub <- symptom[i] - infected_first[i]
-        if (max.incub == 0){
-          loglike <- loglike + log(GT$GT[2])
+        if (data$max.incub[i] == 0){
+            loglike <- loglike + log(GT$GT[2])
         }else{
-          loglike <- loglike + log(sum(GT$GT[1 + (min.incub):(max.incub)])) ## +1 for starting at zero
+            loglike <- loglike + log(sum(GT$GT[1 + (data$min.incub[i]):(data$max.incub[i])])) ## +1 for starting at zero
         }
         if (is.infinite(loglike)){
-          print(i)
-          print(data[i,])
-          break
+            print(i)
+            print(data[i,])
+            break
         }
-    } 
-    loglike 
+    }
+    loglike
 }
+
+par <- c(7.5, 3.5)
+loglikelihood(par, family = 'lognormal')
 ```
 
 
@@ -174,8 +203,29 @@ The incubation period estimate reported here is much higher than previous studie
 
 ## Outliers 
 
-Some cases have very large lower bound for $T_i$.
+One case has very large lower bound for $T_i$. This should not affect our analysis.
 ```{r outliers}
 subset(data, Symptom - Infected_last > 20)
+```
+
+
+## Data collection bias?
+```{r}
+cutoff_date <- (31 + 24) : max(data$Confirmed)
+family <- 'gamma'
+results <- data.frame(date = cutoff_date, mean_mle = NA, sd_ml = NA)
+data_copy <- data
+for (i in length(cutoff_date) : 1){
+  data <- data %>% subset(Confirmed <= cutoff_date[i])
+  mle <- calculate_mle(family = 'gamma')$par
+  results[i,c(2,3)] <- mle
+}
+results
+```
+
+```{r}
+plot(results$date, results$mean_mle, type  = 'l', 
+     xlab = 'number of days since 1-Dec-2019', 
+     ylab = 'estimated mean')
 ```
 
