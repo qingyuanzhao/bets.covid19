@@ -44,6 +44,7 @@ date.process <- function(date) {
 
 }
 
+
 #' Simple imputation of symptom onset date
 #'
 #' @param data a data frame with the following columns: Symptom, Initial, Confirmed.
