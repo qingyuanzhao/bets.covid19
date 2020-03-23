@@ -29,6 +29,9 @@ age.process <- function(age) {
 #'
 date.process <- function(date) {
 
+    options(tz="UTC")
+    Sys.setenv(TZ = "UTC")
+
     tmp <- as.numeric(as.Date(date, "%d-%b") - as.Date("2019-12-01")) + 1
 
     for (i in which(!is.na(tmp))) {
@@ -39,37 +42,6 @@ date.process <- function(date) {
 
     tmp
 
-}
-
-#' Parse the infected date
-#'
-#' @param data a data frame with the following columns: Infected, Arrived, Symptom, Initial, Confirmed.
-#'
-#' @return the data frame with two new columns, Infected_first and Infected_last
-#'
-#' @export
-#'
-parse.infected <- function(data) {
-
-    parse.one.infected <- function(infected) {
-        tmp <- strsplit(as.character(infected), "to")[[1]]
-        if (length(tmp) == 0) {
-            return(c(-Inf, Inf))
-        } else if (length(tmp) == 1) {
-            return(rep(date.process(tmp), 2))
-        } else {
-            return(date.process(tmp))
-        }
-    }
-
-    infected_interval <- t(sapply(data$Infected, parse.one.infected))
-
-    data$Infected_first <- pmax(infected_interval[, 1], 1, na.rm = TRUE)
-    data$Infected_last <- pmin(infected_interval[, 2],
-                               data$Arrived, data$Symptom,
-                               data$Initial, data$Confirmed, na.rm = TRUE)
-
-    data
 }
 
 #' Simple imputation of symptom onset date

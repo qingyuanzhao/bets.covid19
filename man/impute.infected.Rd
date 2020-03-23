@@ -8,8 +8,8 @@ impute.infected(
   symptom,
   infected_first,
   infected_last,
-  incubation_mean = 6.4,
-  incubation_sd = 2.3
+  incubation_mean = 6.5,
+  incubation_sd = 2.6
 )
 }
 \arguments{
