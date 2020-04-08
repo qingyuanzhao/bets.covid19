@@ -3,13 +3,13 @@ HongKong-01	Wuhan	M	39		Arrived by train	Y			21-Jan		21-Jan	21-Jan	21-Jan		23-Ja
 HongKong-02	Hong Kong	M	56		Arrived through Shenzhen	Y		10-Jan	19-Jan	10-Jan to 19-Jan	19-Jan	18-Jan	19-Jan	21-Jan	23-Jan				https://www.info.gov.hk/gia/general/202001/23/P2020012300029.htm
 HongKong-03	Wuhan	F	62		Arrived by train	Y			19-Jan		19-Jan	20-Jan	23-Jan	24-Jan	24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
 HongKong-04	Wuhan	F	62		Arrived by train	Y			22-Jan		22-Jan	23-Jan	23-Jan		24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
-HongKong-05	Wuhan	M	63	Husband of HongKong-4	arrived by train	Y	L		22-Jan		22-Jan	23-Jan	23-Jan		24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
+HongKong-05	Wuhan	M	63	Husband of HongKong-04	arrived by train	Y	L		22-Jan		22-Jan	23-Jan	23-Jan		24-Jan				https://www.info.gov.hk/gia/general/202001/24/P2020012400882.htm
 HongKong-06	Wuhan	M	47		Arrived by train	Y			23-Jan		23-Jan	20-Jan	21-Jan	25-Jan	26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
 HongKong-07	Shenzhen	F	68		Arrived by train, been to Wuhan	Y			? to 21-Jan		25-Jan	21-Jan			26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
-HongKong-08	Wuhan	M	64	Husband of HongKong-3	arrived by train	Y	L		19-Jan		19-Jan	25-Jan	25-Jan		26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
+HongKong-08	Wuhan	M	64	Husband of HongKong-03	arrived by train	Y	L		19-Jan		19-Jan	25-Jan	25-Jan		26-Jan				https://www.info.gov.hk/gia/general/202001/27/P2020012700048.htm
 HongKong-09	Wuhan	F	73			Y			22-Jan		22-Jan	25-Jan	28-Jan		29-Jan				https://www.info.gov.hk/gia/general/202001/29/P2020012900784.htm
-HongKong-10	Wuhan	M	72	Husband of HongKong-9		Y	L		22-Jan		22-Jan	25-Jan	28-Jan		29-Jan				https://www.info.gov.hk/gia/general/202001/29/P2020012900784.htm
-HongKong-11	Hong Kong	F	37	Daughter of HongKong-9&10		Y	Y	NO	NO	22-Jan to 28-Jan	NO	28-Jan	30-Jan		30-Jan				https://www.info.gov.hk/gia/general/202001/31/P2020013100014.htm
+HongKong-10	Wuhan	M	72	Husband of HongKong-09		Y	L		22-Jan		22-Jan	25-Jan	28-Jan		29-Jan				https://www.info.gov.hk/gia/general/202001/29/P2020012900784.htm
+HongKong-11	Hong Kong	F	37	Daughter of HongKong-09&HongKong-10		Y	Y	NO	NO	22-Jan to 28-Jan	NO	28-Jan	30-Jan		30-Jan				https://www.info.gov.hk/gia/general/202001/31/P2020013100014.htm
 HongKong-12	Hong Kong	M	75		Never been to Wuhan		Y	NO	NO		14-Jan	22-Jan	24-Jan		30-Jan				https://www.info.gov.hk/gia/general/202001/31/P2020013100014.htm
 HongKong-13	Hong Kong	M	39		Arrived by train	Y		21-Jan	23-Jan	21-Jan to 23-Jan	23-Jan	29-Jan			31-Jan		4-Feb		https://www.info.gov.hk/gia/general/202001/31/P2020013100794.htm
 HongKong-14	Hong Kong	M	80		In mainland China for a few hours on 10-Jan, in Japan from 17-Jan to 19-Jan		Y	NO	NO	10-Jan	25-Jan	19-Jan			1-Feb				https://www.info.gov.hk/gia/general/202002/01/P2020020100791.htm
@@ -18,8 +18,8 @@ HongKong-16	Hong Kong	F	64				Y	NO	NO		NO	23-Jan	23-Jan	1-Feb	4-Feb				https://w
 HongKong-17	Hong Kong	M	60				Y	NO	NO		NO	22-Jan	30-Jan		4-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020400730.htm
 HongKong-18	Hong Kong	F	25				Y	NO	NO		NO	28-Jan	29-Jan	3-Feb	4-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020400730.htm
 HongKong-19	Hong Kong	F	56	wife of HongKong-17		Y	Y	NO	NO		NO	4-Feb			5-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020500660.htm
-HongKong-20	Hong Kong	F	28	daughter of HongKong17 and HongKong-19		Y	Y	NO	NO		NO	30-Jan	<= 4-Feb	4-Feb	5-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020500660.htm
-HongKong-21	Hong Kong	M	56	Traveled to Japan from 28-Jan to 1-Feb		Y	Y	NO	NO		2-Feb	30-Jan	2-Feb	4-Feb	5-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020500660.htm
+HongKong-20	Hong Kong	F	28	daughter of HongKong17 & HongKong-19		Y	Y	NO	NO		NO	30-Jan	<= 4-Feb	4-Feb	5-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020500660.htm
+HongKong-21	Hong Kong	M	56		Traveled to Japan from 28-Jan to 1-Feb	Y	Y	NO	NO		2-Feb	30-Jan	2-Feb	4-Feb	5-Feb				https://www.info.gov.hk/gia/general/202002/05/P2020020500660.htm
 HongKong-22	Hong Kong	F	55	Wife of HongKong-21		Y	Y	NO	NO		2-Feb	1-Feb	2-Feb	5-Feb	6-Feb				https://www.info.gov.hk/gia/general/202002/06/P2020020600671.htm
 HongKong-23	Hong Kong	F	63				Y	NO	NO		NO	26-Jan	5-Feb		6-Feb				https://www.info.gov.hk/gia/general/202002/06/P2020020600671.htm
 HongKong-24	Hong Kong	F	65				Y	NO	NO		NO	28-Jan	29-Jan	5-Feb	6-Feb				https://www.info.gov.hk/gia/general/202002/06/P2020020600671.htm
@@ -40,7 +40,7 @@ HongKong-38	Hong Kong	M	52	Husband of HongKong-32	Family party with HongKong-27 
 HongKong-39	Hong Kong	M	69				Y	NO	NO		NO	30-Jan	7-Feb	9-Feb	10-Feb				https://www.info.gov.hk/gia/general/202002/10/P2020021000753.htm
 HongKong-40	Hong Kong	F	63	Wife of HongKong-39		Y	Y	NO	NO		NO	30-Jan	10-Feb		10-Feb				https://www.info.gov.hk/gia/general/202002/10/P2020021000753.htm
 HongKong-41	Hong Kong	F	86	Mother of HongKong-40		Y	Y	NO	NO		NO	28-Jan	10-Feb		10-Feb				https://www.info.gov.hk/gia/general/202002/10/P2020021000753.htm
-HongKong-42	Hong Kong	F	62	Same building as HongKong-12	Been to Macau 18-Jan to 19-Jan	Y	Y	NO	NO		19-Jan	3-Feb	3-Feb	9-Feb	10-Feb				https://www.info.gov.hk/gia/general/202002/10/P2020021000753.htm
+HongKong-42	Hong Kong	F	62	Same building with HongKong-12	Been to Macau 18-Jan to 19-Jan	Y	Y	NO	NO		19-Jan	3-Feb	3-Feb	9-Feb	10-Feb				https://www.info.gov.hk/gia/general/202002/10/P2020021000753.htm
 HongKong-43	Hong Kong	M	59				Y	NO	NO		NO	2-Feb	6-Feb	10-Feb	11-Feb				https://www.info.gov.hk/gia/general/202002/11/P2020021100729.htm
 HongKong-44	Hong Kong	F	60	Colleague of HongKong-29		Y	Y	NO	NO	26-Jan to ?	NO	1-Feb	2-Feb	10-Feb	11-Feb				https://www.info.gov.hk/gia/general/202002/11/P2020021100729.htm
 HongKong-45	Hong Kong	M	71				Y	NO	NO		NO	5-Feb	10-Feb		11-Feb				https://www.info.gov.hk/gia/general/202002/11/P2020021100729.htm
@@ -63,13 +63,13 @@ Japan-04	Wuhan	M	40s			Y			22-Jan		22-Jan	23-Jan	24-Jan	24-Jan	26-Jan				https:/
 Japan-05	Wuhan	M	40s			Y			20-Jan		20-Jan	22-Jan	26-Jan	28-Jan	28-Jan				https://www.mhlw.go.jp/stf/newpage_09154.html
 Japan-06	Japanese	M	60s		Bus driver	Y	Y	NO	NO	8-Jan to 16-Jan	NO	14-Jan	17-Jan	25-Jan	28-Jan				https://www.mhlw.go.jp/stf/newpage_09153.html
 Japan-07	Wuhan	F	40s			Y			21-Jan		21-Jan	26-Jan	27-Jan	27-Jan	28-Jan				https://www.mhlw.go.jp/stf/newpage_09158.html
-Japan-08	Japanese	F	40s	same bus as Japan-6		Y	Y	NO	NO	12-Jan to 17-Jan	NO	20-Jan	20-Jan	23-Jan	29-Jan				https://www.mhlw.go.jp/stf/newpage_09201.html
-Japan-09	Japanese	M	50s		10th case	Y			13-Jan	24-Dec to 13-Jan	13-Jan	25-Jan	27-Jan	29-Jan	30-Jan				https://www.mhlw.go.jp/stf/newpage_09236.html
+Japan-08	Japanese	F	40s	same bus with Japan-6		Y	Y	NO	NO	12-Jan to 17-Jan	NO	20-Jan	20-Jan	23-Jan	29-Jan				https://www.mhlw.go.jp/stf/newpage_09201.html
+Japan-09	Japanese	M	50s		10th case	Y		24-Dec	13-Jan	24-Dec to 13-Jan	13-Jan	25-Jan	27-Jan	29-Jan	30-Jan				https://www.mhlw.go.jp/stf/newpage_09236.html
 Japan-10	Chinese, Hunan	F	30s		11th case	Y		19-Jan	19-Jan	19-Jan	20-Jan	24-Jan	24-Jan	30-Jan	30-Jan				https://www.mhlw.go.jp/stf/newpage_09237.html
-Japan-11	Chinese in Japan	F	20s		12th case	Y		16-Jan	22-Jan	17-Jan to 18-Jan	22-Jan	23-Jan	28-Jan		30-Jan				https://www.mhlw.go.jp/stf/newpage_09239.html
+Japan-11	Chinese in Japan	F	20s		12th case	Y		16-Jan	22-Jan	16-Jan to 22-Jan	22-Jan	23-Jan	28-Jan		30-Jan				https://www.mhlw.go.jp/stf/newpage_09239.html
 Japan-12	Japanese	F	20s	Contact with Japan-6	13th case	Y	Y	NO	NO	17-Jan to 22-Jan	NO	20-Jan	29-Jan		31-Jan				https://www.mhlw.go.jp/stf/newpage_09271.html
 Japan-13	Wuhan	F	30s		17th case	Y			21-Jan		21-Jan	31-Jan			4-Feb				https://www.mhlw.go.jp/stf/newpage_09310.html
-Japan-14	Chinese, Hubei	M	50s	same bus Japan 4th	19-th case	Y	Y	NO	NO	22-Jan to 24-Jan	22-Jan	26-Jan			4-Feb				https://www.mhlw.go.jp/stf/newpage_09311.html
+Japan-14	Chinese, Hubei	M	50s	same bus with Japan 4th	19-th case	Y	Y	NO	NO	22-Jan to 24-Jan	22-Jan	26-Jan			4-Feb				https://www.mhlw.go.jp/stf/newpage_09311.html
 Japan-15	Wuhan	M	40s	husband of Japan-13	20th case	Y	L		21-Jan		21-Jan	24-Jan	27-Jan		5-Feb				https://www.mhlw.go.jp/stf/newpage_09333.html
 Japan-16	Japanese	M	20s		served Chinese tourists, 21st case	Y	Y	NO	NO		NO	24-Jan	27-Jan	31-Jan	4-Feb				https://www.mhlw.go.jp/stf/newpage_09336.html
 Japan-17	Japanese	M	50s		26-th case, quarantine officer		Y	NO	NO	3-Feb to ?	NO				12-Feb				https://www.mhlw.go.jp/stf/newpage_09424.html
@@ -84,24 +84,24 @@ Japan-25	Japanese	M	70s		34th case		Y	NO	NO	15-Jan	NO	20-Jan	21-Jan	27-Jan	14-Fe
 Japan-26	Japanese	M	60s		35th case		Y	NO	NO		7-Feb	3-Feb	8-Feb	13-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
 Japan-27	Japanese	M	50s		36th case		Y	NO	NO		NO	31-Jan	3-Feb	11-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
 Japan-28	Japanese	M	30s		37th case		Y	NO	NO	10-Feb	NO	10-Feb			14-Feb				https://www.mhlw.go.jp/stf/newpage_09541.html
-Japan-29	Japanese	M	50s	works at same hospital as Japan-20	38th case	Y	Y	NO	NO		NO	4-Feb	6-Feb	14-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09543.html
-Japan-30	Japanese	F	50s	husband works at same hospital as Japan-20	39th case	Y	Y	NO	NO		NO	7-Feb			14-Feb				https://www.mhlw.go.jp/stf/newpage_09543.html
+Japan-29	Japanese	M	50s	same hospital as Japan-20	38th case	Y	Y	NO	NO		NO	4-Feb	6-Feb	14-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09543.html
+Japan-30	Japanese	F	50s	wife of Japan-29	39th case	Y	Y	NO	NO		NO	7-Feb			14-Feb				https://www.mhlw.go.jp/stf/newpage_09543.html
 Japan-31	Japanese	M	60s	patient of Japan-20	40th case	Y	Y	NO	NO		NO				15-Feb				https://www.mhlw.go.jp/stf/newpage_09543.html
 Korea-01	Wuhan	F	35			Y			19-Jan		19-Jan	18-Jan	18-Jan	19-Jan	20-Jan	6-Feb			https://www.who.int/csr/don/21-january-2020-novel-coronavirus-republic-of-korea-ex-china/en/ https://en.yna.co.kr/view/AEN20200206007451320
 Korea-02	Korean	M	55			Y		?	22-Jan		22-Jan	10-Jan	19-Jan	22-Jan	23-Jan	4-Feb?			https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=365864&tag=&nPage=1
 Korea-03	Korean	M	54			Y		?	20-Jan		20-Jan	22-Jan	25-Jan		26-Jan				https://www.bbc.com/korean/news-51320986
 Korea-04	Korean	M	55			Y		?	20-Jan		20-Jan	21-Jan	25-Jan	26-Jan	27-Jan	9-Feb			https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=365876&tag=&nPage=1 https://en.yna.co.kr/view/AEN20200209000754320
 Korea-05	Korean	M	32			Y		?	24-Jan		24-Jan	24-Jan to 30-Jan			30-Jan				https://www.bbc.com/korean/news-51320986
-Korea-06	Korean	M	56	Infected during dinner with Korea-3		Y	Y	NO	NO	22-Jan	NO				30-Jan				https://www.bbc.com/korean/news-51320986
+Korea-06	Korean	M	56	contact with Korea-3		Y	Y	NO	NO	22-Jan	NO				30-Jan				https://www.bbc.com/korean/news-51320986
 Korea-07	Korean	M	28			Y		?	23-Jan		23-Jan	26-Jan	29-Jan		30-Jan				https://www.bbc.com/korean/news-51320986
 Korea-08	Korean	F	62		Transit via Qingdao	Y			23-Jan		23-Jan	21-Jan			31-Jan				https://www.bbc.com/korean/news-51320986 http://www.hitnews.co.kr/news/articleView.html?idxno=14580
-Korea-09	Korean	M	28	Contact of Korea-5		Y	Y	NO	NO						31-Jan				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
+Korea-09	Korean	M	28	contact with Korea-5		Y	Y	NO	NO						31-Jan				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
 Korea-10	Korean	F	52	family of Korea-6		Y	Y	NO	NO		NO	29-Jan			31-Jan				http://english.hani.co.kr/arti/english_edition/e_international/926436.html https://www.mdon.co.kr/news/article.html?no=25327
 Korea-11	Korean	F	25	family of Korea-6		Y	Y	NO	NO		NO	30-Jan			31-Jan				http://english.hani.co.kr/arti/english_edition/e_international/926436.html https://www.mdon.co.kr/news/article.html?no=25327
-Korea-12	Chinese	M	49	contact with a Japan case	Visited from Japan (a tour guide)	Y	Y	NO	NO	? to 19-Jan	19-Jan				1-Feb				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
+Korea-12	Chinese	M	49	contact with a Japan case	Visited from Japan (a tour guide), contact with a Japan case	Y	Y	NO	NO	? to 19-Jan	19-Jan				1-Feb				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
 Korea-13	Korean	M	28		evacuee	Y	E		31-Jan		31-Jan	1-Feb			2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
 Korea-14	Chinese	F	40	wife of Korea-12		Y	Y	NO	NO		NO				2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
-Korea-15	Korean	M	43	same flight as Korea-4		Y	Y	NO	NO	20-Jan	20-Jan	1-Feb			2-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=365941&tag=&nPage=1
+Korea-15	Korean	M	43	contact with Korea-4		Y	Y	NO	NO	20-Jan	20-Jan	1-Feb			2-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=365941&tag=&nPage=1
 Korea-16	Korean	F	42		Arrived from Thailand		Y	NO	NO		19-Jan	25-Jan			4-Feb				https://en.yna.co.kr/view/AEN20200204003153320
 Korea-17	Korean	M	38		visited Singapore, contact with Malaysian case there, Evacuee	Y	Y	NO	NO	18-Jan to 24-Jan	24-Jan		4-Feb		5-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=365993&tag=&nPage=1 https://en.yna.co.kr/view/AEN20200205002351320
 Korea-18	Korean	F	21	daughter of Korea-16		Y	Y	NO	NO		NO				5-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=365993&tag=&nPage=1
@@ -116,7 +116,7 @@ Korea-26	Korean	M	51	Family of Korea-25	visited Guangdong	Y	Y	NO	NO		31-Jan				9
 Korea-27	Korean	F	37	Family of Korea-25		Y	Y	NO	NO		31-Jan				9-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366134&tag=&nPage=1
 Korea-28	Chinese	F		friend of Korea-3		Y	Y	NO	NO		NO				11-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366148&tag=&nPage=1
 Korea-29	Korean	M	82				Y	NO	NO		NO				17-Feb				
-Korea-30	Korean	F	68	Familiy (wife) of Korea-29		Y	Y	NO	NO		NO				17-Feb				
+Korea-30	Korean	F	68	wife of Korea-29		Y	Y	NO	NO		NO				17-Feb				
 Korea-31	Korean	F	61		living in Daegu city		Y	NO	NO		NO				18-Feb				
 Macau-01	Wuhan	F	52		Arrived from ZhuHai	Y			19-Jan		19-Jan	15-Jan			22-Jan				http://www.xinhuanet.com/politics/2020-01/22/c_1125493888.htm
 Macau-02	Wuhan	M	66		Arrived from ZhuHai	Y			22-Jan		22-Jan	22-Jan	22-Jan		23-Jan				http://www.xinhuanet.com/2020-01/23/c_1125497089.htm
@@ -138,7 +138,7 @@ Singapore-07	Wuhan	M	35			Y			23-Jan		23-Jan	24-Jan	24-Jan		27-Jan				https://ww
 Singapore-08	Wuhan	M	56			Y			19-Jan		19-Jan	24-Jan	27-Jan		28-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
 Singapore-09	Wuhan	F	56	Wife of Singapore-8		Y	L		19-Jan		19-Jan	24-Jan	27-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
 Singapore-10	Wuhan	M	56			Y			20-Jan		20-Jan	21-Jan	28-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
-Singapore-11	Wuhan	F	31	travelled with Singapore-4		Y	L		22-Jan		22-Jan	27-Jan	NO		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
+Singapore-11	Wuhan	F	31	travel companion with Singapore-4		Y	L		22-Jan		22-Jan	27-Jan	NO		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
 Singapore-12	Wuhan	F	37			Y			22-Jan		22-Jan	26-Jan	29-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
 Singapore-13	Wuhan	F	73	Close contact with Singapore-2		Y	L		21-Jan	21-Jan	21-Jan	28-Jan	NO		30-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
 Singapore-14	Chinese in Singapore	M	31			Y		?	?	? to 26-Jan	26-Jan	28-Jan	30-Jan		30-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
@@ -151,7 +151,7 @@ Singapore-20	Singapore	F	48	colleague of Singapore-19		Y	Y	NO	NO		NO	25-Jan	3-Fe
 Singapore-21	Indonesian	F	44	foreign domestic colleague of Singapore-19		Y	Y	NO	NO		NO	2-Feb	3-Feb		4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
 Singapore-22	Singaporean in Wuhan	M	41		Evacuee, no symptom during flight	Y	E		30-Jan		30-Jan	NO			4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
 Singapore-23	Singaporean in Wuhan	M	17		Evacuee, no symptom during flight	Y	E		30-Jan		30-Jan	NO			4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
-Singapore-24	Singaporean	F	32	tourist guide, contact with Singapore-19, Singapore-20		Y	Y	NO	NO		NO	30-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
+Singapore-24	Singaporean	F	32	contact with Singapore-19, Singapore-20		Y	Y	NO	NO		NO	30-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-25	Singaporean	M	40	husband of Singapore-24		Y	Y	NO	NO		NO	24-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-26	Chinese	F	42	daughter of Singapore-13	asymptomatic	Y	L		21-Jan		21-Jan	28-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-27	Singaporean 	M	45	Husband of Singapore-19		Y	Y	NO	NO		NO	1-Feb	2-Feb		5-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
@@ -214,10 +214,10 @@ Taiwan-08	Taiwan	M	50s	Husband of Taiwan-5		Y	Y	NO	NO		NO	27-Jan	28-Jan		30-Jan	
 Taiwan-09	Taiwan	F	40s	Wife of Taiwan-10		Y	Y	NO	NO		NO	27-Jan	28-Jan		30-Jan				https://heho.com.tw/archives/65879
 Taiwan-10	Taiwan in Wuhan	M				Y			12-Jan		12-Jan	21-Jan	22-Jan		31-Jan				https://news.cts.com.tw/cts/society/202001/202001311989092.html
 Taiwan-11	Taiwan in Wuhan	M	50s		evacuee	Y	E		4-Feb		4-Feb				4-Feb				https://www.cdc.gov.tw/Bulletin/Detail/UkMLn272PYqss-tXBbIFoQ?typeid=9
-Taiwan-12	Taiwan in Wuhan	M	40s	Left Wuhan on 17-Jan		Y	L		17-Jan		2-Feb	3-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
-Taiwan-13	Wuhan	F	20s	via Shenzhen		Y			21-Jan		21-Jan	1-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
+Taiwan-12	Taiwan in Wuhan	M	40s		Left Wuhan on 17-Jan	Y	L		17-Jan		2-Feb	3-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
+Taiwan-13	Wuhan	F	20s		via Shenzhen	Y			21-Jan		21-Jan	1-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
 Taiwan-14	Taiwan	M	50s		transit to Italy via Hong Kong on 22-Jan and 1-Feb		Y	NO	NO	22-Jan?	1-Feb	26-Jan	1-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/IvbkRyP8-l32MqhrMakCBw?typeid=9
-Taiwan-15	Taiwan	F	50s	Wife of Taiwan-15	transit to Italy via Hong Kong on 22-Jan and 1-Feb	Y	Y	NO	NO	22-Jan?	1-Feb	28-Feb	3-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/IvbkRyP8-l32MqhrMakCBw?typeid=9
+Taiwan-15	Taiwan	F	50s	Wife of Taiwan-14	transit to Italy via Hong Kong on 22-Jan and 1-Feb	Y	Y	NO	NO	22-Jan?	1-Feb	28-Jan	3-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/IvbkRyP8-l32MqhrMakCBw?typeid=9
 Taiwan-16	Taiwan	F	40s		21-Jan to 24-Jan in Macau		Y	NO	NO	21-Jan? to 24-Jan?	24-Jan	1-Feb	3-Feb	5-Feb	6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/IvbkRyP8-l32MqhrMakCBw?typeid=9
 Taiwan-17	Taiwan	M	20s	son of Taiwan-14, Taiwan-15	transit to Italy via Hong Kong on 22-Jan and 1-Feb	Y	Y	NO	NO	22-Jan?	1-Feb	27-Jan	7-Feb		8-Feb				
 Taiwan-18	Taiwan	M	20s	son of Taiwan-14, Taiwan-15	transit to Italy via Hong Kong on 22-Jan and 1-Feb	Y	Y	NO	NO		1-Feb				9-Feb				

@@ -57,21 +57,22 @@ parse.one.infected <- function(infected) {
 #' Prepare data frame for analysis
 #'
 #' @param data A data frame
-#' @param infected.in Either "Wuhan" or "Outside"
+#' @param infected_in Either "Wuhan" or "Outside"
+#' @param symptom_impute Whether to use initial medical visit and confirmation to impute missing symptom onset.
 #'
 #' @return A data frame
 #' @details here is a summary of the procedures
 #' \enumerate{
 #'   \item Convert all dates to number of days since 1-Dec-2019.
-#'   \item Restrict to cases with a known symtom onset date.
 #'   \item Separates data into those returned from Wuhan and those infected outside of wuhan.
+#'   \item Restrict to cases with a known symtom onset date.
 #'   \item Parse column 'Infected' into two columns: Infected_first and Infected_last.
 #'   \item For all cases, set Infected_first to 1 if it is missing.
 #'   \item For outside cases, set Infected_last to be no later than symptom onset.
-#'   \item For Wuhan-exported cases, set Infected_last to no later than symptom onset and arrival.
+#'   \item For Wuhan-exported cases, set Infected_last to no later than symptom onset and end of Wuhan stay.
 #' }
 #'
-#' @author Nianqiao Ju <nju@g.harvard.edu>
+#' @author Nianqiao Ju <nju@g.harvard.edu>, Qingyuan Zhao <qyzhao@statslab.cam.ac.uk>
 #' @examples
 #'
 #' data <- cases.in.china
@@ -79,12 +80,12 @@ parse.one.infected <- function(infected) {
 #'
 #' @export
 #'
-preprocess.data <- function(data, infected_in = c("Wuhan", "Outside")){
+preprocess.data <- function(data, infected_in = c("Wuhan", "Outside"), symptom_impute = FALSE){
 
     infected_in <- match.arg(infected_in, c("Wuhan", "Outside"))
 
     ## Step 1: Convert all dates to 'number of days since 1-Dec-2019'
-    for (column in c("Confirmed", "Arrived", "Symptom", "Initial", "Hospital")) {
+    for (column in c("Confirmed", "Begin_Wuhan", "End_Wuhan", "Arrived", "Symptom", "Initial", "Hospital")) {
         data[[column]] <- date.process(data[[column]])
     }
     ## For visualization, remove some columns
@@ -92,18 +93,24 @@ preprocess.data <- function(data, infected_in = c("Wuhan", "Outside")){
     ## Initialize columns
     data$Infected_last  <-  data$Infected_first <- NA
 
-    ## Step 2: Considers only cases with a known symtom onset date
-    print(paste("Removing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates:", sum(!is.na(data$Symptom)), "cases left."))
-    data <- subset(data, !is.na(Symptom))
-    data$Infected <- as.character(data$Infected)
-
-    ## Step 3: separates data into two parts: Wuhan-exported and local transmitted
+    ## Step 2: separates data into two parts: Wuhan-exported and local transmitted
     data <- switch(infected_in,
                    Wuhan = subset(data, Outside == '' ),
                    Outside = subset(data, Outside != '' ))
     print(paste0("Only keeping cases who were infected in ", infected_in, ": ", nrow(data), " cases left."))
 
+    ## Step 3: Considers only cases with a known symtom onset date
+    if (!symptom_impute) {
+        print(paste("Removing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates:", sum(!is.na(data$Symptom)), "cases left."))
+        data <- subset(data, !is.na(Symptom))
+    } else {
+        print(paste("Imputing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates."))
+        data$Symptom[is.na(data$Symptom)] <- data$Initial[is.na(data$Symptom)] - 2
+        data$Symptom[is.na(data$Symptom)] <- data$Confirmed[is.na(data$Symptom)] - 7
+    }
+
     ## Step 4: Parse column 'Infected' into two columns: Infected_first and Infected_last.
+    data$Infected <- as.character(data$Infected)
     infected_interval <- t(sapply(data$Infected, parse.one.infected))
 
     ## Step 5: For all cases, set Infected_first to 1 if it is missing.
@@ -114,9 +121,12 @@ preprocess.data <- function(data, infected_in = c("Wuhan", "Outside")){
         data$Infected_last <- pmin(infected_interval[ ,2], data$Symptom, na.rm = TRUE)
     }
 
-    ## Step 7: For Wuhan-exported cases, set Infected_last to be no greater than min(Symptom, Arrived)
+    ## Step 7: For Wuhan-exported cases, set Infected_last to be no greater than min(Symptom, End_Wuhan)
     if (infected_in == "Wuhan") {
-        data$Infected_last <- pmin(infected_interval[ ,2], data$Symptom, data$Arrived, na.rm = TRUE)
+        data$Begin_Wuhan[is.na(data$Begin_Wuhan)] <- 0
+        data$End_Wuhan[is.na(data$End_Wuhan)] <- 54
+        data$Infected_first <- pmax(infected_interval[ ,1], data$Begin_Wuhan, na.rm = TRUE)
+        data$Infected_last <- pmin(infected_interval[ ,2], data$Symptom, data$End_Wuhan, na.rm = TRUE)
     }
 
     return(data)
