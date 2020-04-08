@@ -40,7 +40,8 @@ simulate.case <- function(n = 1e7,
     ind_visitor <- (B > 0)
     E[ind_visitor] <- sample(c(0, Inf), sum(ind_visitor), replace = TRUE, prob = c(lambda_v * L, 1 - lambda_v * L))
     ind_left <- (E == 0)
-    E[ind_left] <- B[ind_left] + runif(sum(ind_left)) * (L - B[ind_left])
+    E[ind_left] <- runif(sum(ind_left)) * L
+    E[E < B] <- Inf
 
     ## Transmission
     FT <- runif(n)
@@ -52,7 +53,7 @@ simulate.case <- function(n = 1e7,
     ind_transmitted <- (T < Inf)
     S[ind_transmitted] <- T[ind_transmitted] + rgamma(sum(ind_transmitted), alpha, beta)
 
-    ind <- (T < E) & (E < L) & (T < S)
+    ind <- (T < E) & (E < L) & (T < S) & (S < Inf)
 
     data.frame(B = B[ind],
                E = E[ind],
