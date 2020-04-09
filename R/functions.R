@@ -40,6 +40,7 @@ date.process <- function(date) {
         }
     }
 
+    tmp[date == "NO"] <- Inf
     tmp
 
 }

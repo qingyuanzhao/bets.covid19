@@ -89,7 +89,7 @@ preprocess.data <- function(data, infected_in = c("Wuhan", "Outside"), symptom_i
         data[[column]] <- date.process(data[[column]])
     }
     ## For visualization, remove some columns
-    data$Source <- data$Cluster <- data$Death <- data$Discharged <- data$Verified <- data$Note <- NULL
+    data$Source <- data$Death <- data$Discharged <- data$Verified <- data$Note <- NULL
     ## Initialize columns
     data$Infected_last  <-  data$Infected_first <- NA
 
@@ -125,6 +125,7 @@ preprocess.data <- function(data, infected_in = c("Wuhan", "Outside"), symptom_i
     if (infected_in == "Wuhan") {
         data$Begin_Wuhan[is.na(data$Begin_Wuhan)] <- 0
         data$End_Wuhan[is.na(data$End_Wuhan)] <- 54
+        data$Arrived[is.na(data$End_Wuhan)] <- 54
         data$Infected_first <- pmax(infected_interval[ ,1], data$Begin_Wuhan, na.rm = TRUE)
         data$Infected_last <- pmin(infected_interval[ ,2], data$Symptom, data$End_Wuhan, na.rm = TRUE)
     }
