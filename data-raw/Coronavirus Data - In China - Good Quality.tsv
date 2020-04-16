@@ -115,7 +115,7 @@ Shenzhen-113	Wuhan	M	53		53岁男性患者，常住于湖北省武汉市。2020�
 Shenzhen-114	Longhua	M	36		36岁男性患者，常住于深圳市龙华区。2020年1月16日从深圳前往湖南冷水江市探亲，19日发病， 27日从邵阳抵达深圳，当日入院就诊。目前情况稳定。		Y	NO	NO		27-Jan	19-Jan	19-Jan		31-Jan				
 Shenzhen-115	Wuhan	M	64		64岁男性患者，常住于湖北省武汉市。2020年1月17日从武汉抵达深圳，18日发病，22日入院就诊。目前情况稳定。	Y			17-Jan		17-Jan	18-Jan	22-Jan		31-Jan				
 Shenzhen-116	Wuhan	M	49		49岁男性患者，常住于湖北省武汉市。患者原计划从罗马经深圳返回武汉，27日因其妻子在飞机上咳嗽，测体温略高（且14天内有武汉居住史），随即入院就诊。目前情况稳定。	Y			? to 27-Jan		27-Jan	? to 27-Jan	27-Jan		31-Jan	10-Feb			
-Shenzhen-117	Longhua	F	64		64岁女性患者，常住于深圳市龙华区。2020年1月13日从深圳前往武汉，到达武汉后乘私车回到孝感市老家，23日发病，24日抵达广州，25日返回深圳，27日入院就诊。目前情况稳定。	Y	L	13-Jan	13-Jan	13-Jan to ?	25-Jan	23-Jan	27-Jan		31-Jan				
+Shenzhen-117	Longhua	F	64		64岁女性患者，常住于深圳市龙华区。2020年1月13日从深圳前往武汉，到达武汉后乘私车回到孝感市老家，23日发病，24日抵达广州，25日返回深圳，27日入院就诊。目前情况稳定。	Y		13-Jan	13-Jan	13-Jan	25-Jan	23-Jan	27-Jan		31-Jan				
 Shenzhen-118	Futian	F	39		39岁女性患者，常住于深圳市福田区。2020年1月11日前往武汉，18日从武汉返回深圳，20日发病，23日入院就诊。目前情况稳定。2月3日已痊愈出院。	Y		11-Jan	18-Jan	11-Jan to 18-Jan	18-Jan	20-Jan	23-Jan		31-Jan	3-Feb			
 Shenzhen-119	Wuhan	F	73		73岁女性患者，常住于湖北省武汉市。2020年1月17日从武汉至深圳，20日发病，23日入院就诊。目前情况稳定。2月6日已痊愈出院。	Y			17-Jan		17-Jan	20-Jan	23-Jan		31-Jan	6-Feb			
 Shenzhen-120	Nanshan	F	35	daugther of Shenzhen-87	35岁女性患者，常住于深圳市南山区。2020年1月22日接触从武汉来深的父母（患者父亲已确诊），26日发病入院就诊。目前情况稳定。	Y	Y	NO	NO	22-Jan	NO	26-Jan	26-Jan		31-Jan				
@@ -133,10 +133,10 @@ Shenzhen-131	Wuhan	F	6		6岁女性患者，常住于湖北武汉。2020年1月17
 Shenzhen-132	Longhua	F	39		39岁女性患者，常住于深圳市龙华区。2020年1月18日由深圳出发自驾前往武汉探亲，23日自驾由武汉返回深圳，24日发病，27日入院就诊。目前情况稳定。	Y		18-Jan	23-Jan	18-Jan to 23-Jan	23-Jan	24-Jan	27-Jan		31-Jan				
 Shenzhen-133	Futian	M	51	husband of Shenzhen-129	51岁男性患者，常住于深圳市福田区。2020年1月24日发病，28日入院就诊，为重症肺炎病例。	Y	Y	NO	NO		NO	24-Jan	28-Jan		31-Jan				
 Shenzhen-134	Futian	F	25	daugther of Shenzhen-129	25岁女性患者，常住于深圳市福田区。2020年1月23日发病，28日入院就诊。目前情况稳定。2月8日已痊愈出院。	Y	Y	NO	NO		NO	23-Jan	28-Jan		31-Jan	8-Feb			
-Shenzhen-135	Beijing	F	47		47岁女性患者，常住北京。1月15日前往武汉探亲，22日乘私家车前往深圳。1月23日发病，1月27日入院，目前情况稳定。	Y	L	15-Jan	22-Jan	15-Jan to ?	22-Jan	23-Jan	27-Jan		31-Jan				
+Shenzhen-135	Beijing	F	47	daughter-in-law of Shenzhen-274	47岁女性患者，常住北京。1月15日前往武汉探亲，22日乘私家车前往深圳。1月23日发病，1月27日入院，目前情况稳定。	Y	L	15-Jan	22-Jan	15-Jan to ?	22-Jan	23-Jan	27-Jan		31-Jan				
 Shenzhen-136	Hubei, Shiyan	F	4	daugther of Shenzhen-98	4岁女性患者，常住湖北省十堰市。在密切接触者采样检测中，发现新型冠状病毒阳性，故于1月27日入院，目前情况稳定。	Y	Y	NO	NO	22-Jan to ?	NO	NO	27-Jan		31-Jan				
 Shenzhen-137	Wuhan	M	56		56岁男性患者，常住湖北省武汉市。1月21号前往深圳。1月26日发病，1月28日入院，目前情况稳定。	Y			21-Jan		21-Jan	26-Jan	28-Jan		31-Jan				
-Shenzhen-138	Longhua	M	59		59岁男性患者，常住深圳市龙华区。1月16日自驾从深圳前往武汉，1月23日开车回到深圳。1月26日发病，当日入院，目前情况稳定。	Y	L	16-Jan	23-Jan	16-Jan to 23-Jan	23-Jan	26-Jan	26-Jan		31-Jan				
+Shenzhen-138	Longhua	M	59	husband of Shenzhen-139	59岁男性患者，常住深圳市龙华区。1月16日自驾从深圳前往武汉，1月23日开车回到深圳。1月26日发病，当日入院，目前情况稳定。	Y	L	16-Jan	23-Jan	16-Jan to 23-Jan	23-Jan	26-Jan	26-Jan		31-Jan				
 Shenzhen-139	Longhua	F	57	wife of Shenzhen-138	57岁女性患者，常住深圳市龙华区。1月16日自驾深圳前往武汉，1月23日开车回到深圳。1月24日发病，1月26日入院，目前情况稳定。	Y		16-Jan	23-Jan	16-Jan to 23-Jan	23-Jan	24-Jan	26-Jan		31-Jan				
 Shenzhen-140	Wuhan	F	66		66岁女性患者，常住湖北省武汉市。1月22日前往深圳。1月23日发病，1月28日入院，目前情况稳定。	Y			22-Jan		22-Jan	23-Jan	28-Jan		31-Jan				
 Shenzhen-141	Wuhan	M	78		78岁男性患者，常住湖北省武汉市。1月16日前往深圳探亲。1月26日发病，1月27日入院，目前情况稳定。	Y			16-Jan		16-Jan	26-Jan	27-Jan		31-Jan				
@@ -160,7 +160,7 @@ Shenzhen-158	Wuhan	F	32		32岁女性患者，常住湖北省武汉市。1月22�
 Shenzhen-159	Wuhan	F	54		54岁女性患者，常住湖北省武汉市。1月17日从原籍京山经武汉前往深圳。1月16日发病，1月25日入院，目前情况稳定。	Y	Y	17-Jan	17-Jan		17-Jan	16-Jan	25-Jan		31-Jan	11-Feb			
 Shenzhen-160	Wuhan	M	68		68岁男性患者，常住湖北省武汉市。1月22日前往深圳。1月24日发病，1月25日入院，目前情况稳定。	Y			22-Jan		22-Jan	24-Jan	25-Jan		31-Jan				
 Shenzhen-161	Longgang	F	62		62岁女性患者，常住深圳市龙岗区。1月6日曾参加某会议，会议中有从湖北返深的员工。1月15日发病，1月26日入院，目前情况稳定。	Y	Y	NO	NO	6-Jan	NO	15-Jan	26-Jan		31-Jan				
-Shenzhen-162	Longgang	M	48		48岁男性患者，常住深圳市龙岗区。1月10日前往湖北省黄石市，1月18日乘车前往武汉市武昌区，后出发深圳。1月24日发病，1月27日入院，目前情况稳定。	Y	L	18-Jan	18-Jan	18-Jan	18-Jan	24-Jan	27-Jan		31-Jan	10-Feb			
+Shenzhen-162	Longgang	M	48	husband of Shenzhen-163	48岁男性患者，常住深圳市龙岗区。1月10日前往湖北省黄石市，1月18日乘车前往武汉市武昌区，后出发深圳。1月24日发病，1月27日入院，目前情况稳定。	Y	L	18-Jan	18-Jan	18-Jan	18-Jan	24-Jan	27-Jan		31-Jan	10-Feb			
 Shenzhen-163	Longgang	F	46	wife of Shenzhen-162	46岁女性患者，常住深圳市龙岗区。1月10日从深圳前往湖北，后乘车到黄石市，1月18日乘车前往武汉市武昌区出发深圳。1月21日发病，1月26日入院，目前情况稳定。	Y		18-Jan	18-Jan	18-Jan	18-Jan	21-Jan	26-Jan		31-Jan				
 Shenzhen-164	Wuhan	F	60		60岁女性患者，常住湖北省武汉市。1月23日前往深圳。1月25日发病，1月26日入院，目前情况稳定。	Y			23-Jan		23-Jan	25-Jan	26-Jan		31-Jan				
 Shenzhen-165	Longhua	M	14	son of Shenzhen-132	14岁男性患者，常住深圳市龙华区。1月18日乘私家车前往武汉探亲，23日乘私家车返回深圳。1月27日发病，1月28日入院，目前情况稳定。	Y	L	18-Jan	23-Jan	18-Jan to ?	23-Jan	27-Jan	28-Jan		31-Jan				
@@ -170,7 +170,7 @@ Shenzhen-168	Wuhan	M	70	husband of Shenzhen-127	70岁男性患者。1月20日，
 Shenzhen-169	Longgang	M	37	son of Shenzhen-115	37岁男性患者，常住深圳市龙岗区。1月24日发病，1月28日入院，目前情况稳定。	Y	Y	NO	NO	17-Jan to ?	NO	24-Jan	28-Jan		31-Jan				
 Shenzhen-170	Longgang	F	38		38岁女性患者，常住深圳市龙岗区。1月16日，从深圳前往上海，并于当日乘车前往武汉探亲，1月21日自驾前往湖北省天门市，1月24日自驾返回深圳。1月21日发病，1月26日入院，目前情况稳定。2月7日已痊愈出院。	Y		16-Jan	21-Jan	16-Jan to 21-Jan	24-Jan	21-Jan	26-Jan		31-Jan				
 Shenzhen-171	Nanshan	M	66		66岁男性患者，常住深圳南山。发病前2周内否认有外出旅游史，有武汉来深人员密切接触史，1月29日发病，当日入院，目前病情危重。	Y	Y	NO	NO		NO	29-Jan	29-Jan		1-Feb				
-Shenzhen-172	Wuhan	M	41		41岁男性患者，常住湖北武汉。1月19日前往深圳，1月23日发病，1月29日入院，目前病情稳定。	Y	L		19-Jan		19-Jan	23-Jan	29-Jan		1-Feb				
+Shenzhen-172	Wuhan	M	41	husband of Shenzhen-233	41岁男性患者，常住湖北武汉。1月19日前往深圳，1月23日发病，1月29日入院，目前病情稳定。	Y	L		19-Jan		19-Jan	23-Jan	29-Jan		1-Feb				
 Shenzhen-173	Longhua	M	45	husband of Shenzhen-167	45岁男性患者，常住深圳龙华。1月24日驾车从深圳到湖北大冶市，25日返回深圳，1月30日发病，当日入院，目前病情稳定。	Y	Y	NO	NO	24-Jan to ?	25-Jan	30-Jan	30-Jan		1-Feb				
 Shenzhen-174	Guangming	F	60	wife of Shenzhen-166	60岁女性患者，常住深圳光明。1月17日驾车到武汉，23日到达江西井冈山，24日返回深圳。1月29日发病，当日入院，目前病情稳定。	Y	L	17-Jan	23-Jan	17-Jan to ?	24-Jan	29-Jan	29-Jan		1-Feb				
 Shenzhen-175	Nanshan	M	20		20岁男性患者，常住深圳南山。1月20日前往武汉，22日返回深圳。1月29日发病，当日入院，目前病情稳定。	Y		20-Jan	22-Jan	20-Jan to 22-Jan	22-Jan	29-Jan	29-Jan		1-Feb				
@@ -188,7 +188,7 @@ Shenzhen-186	Longgang	M	37		37岁男性患者，常住深圳龙岗。1月15日�
 Shenzhen-187	Nanshan	F	31		31岁女性患者，常住深圳南山。1月22日从深圳经武汉到鄂州，25日驾车到江西，后返回深圳，25日发病，29日入院，目前病情稳定。	Y		22-Jan	22-Jan	22-Jan	25-Jan	25-Jan	29-Jan		1-Feb				
 Shenzhen-188	Nanshan	F	25	contact of Shenzhen-12	25岁女性患者，常住深圳南山。有确诊患者接触史。1月25日发病，26日入院，目前病情稳定。	Y	Y	NO	NO	15-Jan to ?	NO	25-Jan	26-Jan		1-Feb				
 Shenzhen-189	Wuhan	F	62		62岁女性患者，常住湖北武汉。1月23日前往柬埔寨，28日从柬埔寨到深圳。26日发病，29日入院，目前病情稳定。	Y			23-Jan	? to 23-Jan	28-Jan	26-Jan	29-Jan		1-Feb				
-Shenzhen-190	Wuhan	F	58		58岁女性患者，常住湖北武汉。1月23日前往柬埔寨，29日从柬埔寨到深圳。28日发病，29日入院，目前病情稳定。	Y	L		23-Jan		28-Jan	28-Jan	29-Jan		1-Feb				
+Shenzhen-190	Wuhan	F	58	wife of Shenzhen-197	58岁女性患者，常住湖北武汉。1月23日前往柬埔寨，29日从柬埔寨到深圳。28日发病，29日入院，目前病情稳定。	Y	L		23-Jan		28-Jan	28-Jan	29-Jan		1-Feb				
 Shenzhen-191	Wuhan	F	34	mother of Shenzhen-131	34岁女性患者，常住湖北武汉。1月17日从武汉到昆明，期间参加旅游团， 24日从昆明抵达深圳。27日发病，28日入院，目前病情稳定。	Y	L		17-Jan		24-Jan	27-Jan	28-Jan		1-Feb				
 Shenzhen-192	Wuhan	F	61		61岁女性患者，常住湖北武汉。1月22日前往深圳。当日发病，29日入院，目前病情稳定。	Y			22-Jan		22-Jan	22-Jan	29-Jan		1-Feb				
 Shenzhen-193	Baoan	M	35		35岁男性患者，常住深圳宝安。1月20日驾车前往湖北咸宁，25日返回深圳。27日发病，29日入院，目前病情稳定。	Y	Y	NO	NO	20-Jan to 25-Jan	25-Jan	27-Jan	29-Jan		1-Feb				
@@ -272,7 +272,7 @@ Shenzhen-270	Nanshan	F	50		50岁女性患者，常住深圳南山。近期无湖
 Shenzhen-271	Luohu	F	45		45岁女性患者，常住深圳罗湖。1月22日前往沈阳后，乘私家车到抚顺，27日回深圳。25日发病，2月2日入院，目前病情稳定。		Y	NO	NO		27-Jan	25-Jan	2-Feb		4-Feb				
 Shenzhen-272	Baoan	F	59		59岁女性患者，常住于深圳宝安。1月12日前往武汉，23日自驾返深。28日发病，2月2日入院，目前病情稳定。	Y		12-Jan	23-Jan	12-Jan to 23-Jan	23-Jan	28-Jan	2-Feb		4-Feb				
 Shenzhen-273	Longgang	M	45		45岁男性患者，常住于深圳龙岗。1月18日前往武汉，21日到孝感老家，24日乘私家车到广东中山，25日换乘的士到广州返回深圳。26日发病，30日入院，目前病情稳定。	Y		18-Jan	21-Jan	18-Jan to 21-Jan	25-Jan	26-Jan	30-Jan		4-Feb				
-Shenzhen-274	Hubei, Jinzhou	F	79	mother-in-low of Shenzhen-135	79岁女性患者，常住于湖北荆州。1月22日乘私家车经汉口前往深圳。22日发病，31日入院，目前病情稳定。	Y			22-Jan		22-Jan	22-Jan	31-Jan		4-Feb				
+Shenzhen-274	Hubei, Jinzhou	F	79	mother-in-law of Shenzhen-135	79岁女性患者，常住于湖北荆州。1月22日乘私家车经汉口前往深圳。22日发病，31日入院，目前病情稳定。	Y			22-Jan		22-Jan	22-Jan	31-Jan		4-Feb				
 Shenzhen-275	Longgang	F	37	daugther of Shenzhen-89	37岁女性患者，常住于深圳龙岗。否认近期有湖北相关旅居史。1月28日发病，2月1日入院，目前病情稳定。	Y	Y	NO	NO	22-Jan to ?	NO	28-Jan	1-Feb		4-Feb				
 Shenzhen-276	Futian	M	28		28岁男性患者，常住于深圳福田。1月17日前往武汉，22日返回深圳。当日发病，25日入院，目前病情稳定。	Y		17-Jan	22-Jan	17-Jan to 22-Jan	22-Jan	22-Jan	25-Jan		4-Feb				
 Shenzhen-277	Longgang	M	58		58岁男性患者，常住于深圳龙岗。1月20日前往武汉，22日返回深圳。30日发病，31日入院，目前病情稳定。	Y		20-Jan	22-Jan	20-Jan to 22-Jan	22-Jan	30-Jan	31-Jan		4-Feb				
@@ -299,9 +299,9 @@ Shenzhen-297	Longgang	M	38		38岁男性患者，常住于深圳龙岗。1月19�
 Shenzhen-298	Wuhan	M	52		52岁男性患者，常住于湖北武汉。1月22日前往湖南株洲，然后乘私家车到湖南醴陵，24日经株洲回深圳。当日发病，2月3日入院，目前病情稳定。	Y			22-Jan	? to 22-Jan	24-Jan	24-Jan	3-Feb		5-Feb				
 Shenzhen-299	Baoan	F	23		23岁女性患者，常住于深圳宝安。1月22日前往江西赣州，28日驾车返回深圳。2月4日发病，当日入院，目前病情稳定。		Y	NO	NO		28-Jan	4-Feb	4-Feb		5-Feb				
 Shenzhen-300	Baoan	M	31	boyfriend of Shenzhen-299	31岁男性患者，常住于深圳宝安。1月19-24日在菲律宾马尼拉市进修。24日从马尼拉市返回深圳，27日驾车前往江西赣州，28日返回深圳。2月3日发病，当日入院，目前病情稳定。	Y	Y	NO	NO		28-Jan	3-Feb	3-Feb		5-Feb				
-Shenzhen-301	Nanshan	M	23		23岁男性患者，常住于深圳南山。1月9日前往武汉，然后乘车到湖北鄂州，19日抵达浙江杭州，21日前往福建厦门，22日到鼓浪屿，23日返回深圳。25日发病，2月3日入院，目前病情稳定。	Y	L	9-Jan	19-Jan	9-Jan to 19-Jan	23-Jan	25-Jan	3-Feb		5-Feb				
+Shenzhen-301	Nanshan	M	23		23岁男性患者，常住于深圳南山。1月9日前往武汉，然后乘车到湖北鄂州，19日抵达浙江杭州，21日前往福建厦门，22日到鼓浪屿，23日返回深圳。25日发病，2月3日入院，目前病情稳定。	Y		9-Jan	19-Jan	9-Jan to 19-Jan	23-Jan	25-Jan	3-Feb		5-Feb				
 Shenzhen-302	Nanshan	M	23		23岁男性患者，常住于深圳南山。1月18日从东莞返回深圳，自述近期无湖北相关旅居史。2月2日发病，2月4日入院，目前病情稳定。		Y	NO	NO		18-Jan	2-Feb	4-Feb		5-Feb				
-Shenzhen-303	Chengdu	F	57		57岁女性患者，常住于四川成都。1月18日前往武汉，后乘私家车到湖北孝感，21日乘私家车到湖北荆门，25日自驾到深圳。28日发病，2月4日入院，目前病情稳定。	Y	L	18-Jan	21-Jan	18-Jan to 25-Jan	25-Jan	28-Jan	4-Feb		5-Feb				
+Shenzhen-303	Chengdu	F	57		57岁女性患者，常住于四川成都。1月18日前往武汉，后乘私家车到湖北孝感，21日乘私家车到湖北荆门，25日自驾到深圳。28日发病，2月4日入院，目前病情稳定。	Y		18-Jan	21-Jan	18-Jan to 25-Jan	25-Jan	28-Jan	4-Feb		5-Feb				
 Shenzhen-304	Baoan	M	42		42岁男性患者，常住于深圳宝安。自述近期无湖北相关旅居史，曾接触湖北赤壁来深人员。1月20日发病，2月4日入院，目前病情稳定。	Y	Y	NO	NO		NO	20-Jan	4-Feb		5-Feb				
 Shenzhen-305	Luohu	F	30		30岁女性患者，常住于深圳罗湖。1月14日到泰国曼谷旅游，19日返回深圳。22号乘车到广东梅州兴宁，27日返回深圳。2月1日发病，2月3日入院，目前病情稳定。		Y	NO	NO		19-Jan	1-Feb	3-Feb		5-Feb				
 Shenzhen-306	Wuhan	F	28		28岁女性患者，常住于湖北武汉。1月19日到泰国普吉岛旅游，24日从普吉岛出发抵达深圳。当日发病，2月3日入院，目前病情稳定。	Y			19-Jan	? to 19-Jan	24-Jan	24-Jan	3-Feb		5-Feb				
@@ -361,7 +361,7 @@ Shenzhen-359	Luohu	F	72		72岁女性患者，常住于深圳罗湖。自述近�
 Shenzhen-360	Luohu	F	28	daughter-in-law of Shenzhen-337	28岁女性患者，常住于深圳罗湖。1月19日驾车到江西新余过年，2月1日返回深圳。2月5日发病，2月7日入院，目前病情稳定。	Y	Y	NO	NO		1-Feb	5-Feb	7-Feb		8-Feb				
 Shenzhen-361	Futian	F	49		49岁女性患者，常住于深圳福田。1月15日前往武汉，后自驾前往湖北黄石，19日返回武汉，22日再到黄石。24日从黄石驾车出发，经长沙、韶关，26日抵达深圳。29日发病，2月5日入院，目前病情稳定。	Y		15-Jan	22-Jan	15-Jan to 22-Jan	26-Jan	29-Jan	5-Feb		8-Feb				
 Shenzhen-362	Nanshan	M	69	husband of Shenzhen-335	69岁男性患者，常住于深圳南山。自述近期无湖北相关旅居史，1月18日接触过湖北赤壁返深人员。21日发病，25日入院，目前病情稳定。	Y	Y	NO	NO	18-Jan	NO	21-Jan	25-Jan		8-Feb				
-Shenzhen-363	Futian	F	36		36岁女性患者，常住于深圳福田。1月6日前往武汉，后到湖北随州，22日发病，24日从随州驾车返回深圳。30日入院，目前病情稳定。	Y	L	6-Jan	? to 24-Jan	6-Jan to ?	24-Jan	22-Jan	30-Jan		8-Feb	11-Feb			
+Shenzhen-363	Futian	F	36		36岁女性患者，常住于深圳福田。1月6日前往武汉，后到湖北随州，22日发病，24日从随州驾车返回深圳。30日入院，目前病情稳定。	Y		6-Jan	?	6-Jan to ?	24-Jan	22-Jan	30-Jan		8-Feb	11-Feb			
 Shenzhen-364	Futian	M	18		18岁男性患者，常住于深圳福田。2019年12月1日前往武汉探亲，有与家中新冠肺炎确诊病例接触史，1月13日前往湖北仙桃，20日返回深圳。23日发病，29日入院，目前病情稳定。	Y		1-Dec	13-Jan	? to 13-Jan	20-Jan	23-Jan	29-Jan		8-Feb				
 Shenzhen-365	Nanshan	F	32	wife of Shenzhen-329	32岁女性患者，常住于深圳南山。1月21日驾车到湖北黄冈探亲，26日驾车返回深圳。2月5日发病，2月7日入院，目前病情稳定。	Y	Y	NO	NO	21-Jan to ?	26-Jan	5-Feb	7-Feb		9-Feb				
 Shenzhen-366	Longgang	M	36		36岁男性患者，常住于深圳龙岗。1月19日驾车到湖北洪湖，24日驾车返回深圳。2月1日发病，2月8日入院，目前病情稳定。	Y	Y	NO	NO	19-Jan to 24-Jan	24-Jan	1-Feb	8-Feb		9-Feb				
@@ -599,7 +599,7 @@ Xinyang-06	Xinyang	M	46		吴某某	Y		18-Jan	18-Jan	18-Jan	18-Jan	19-Jan	23-Jan	
 Xinyang-07	Xinyang	F	80	mother of Xinyang-06	韩某某	Y	L	?	?	18-Jan to ?	?	19-Jan	21-Jan		25-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
 Xinyang-08	Xinyang	F	46	wife of Xinyang-06	刘某某	Y	L	?	?	18-Jan to ?	?	22-Jan	23-Jan		26-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
 Xinyang-09	Xinyang	F	45	baby-sitter of Xinyang-06	殷某某	Y	Y	NO	NO	18-Jan to ?	NO	22-Jan	25-Jan		27-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
-Xinyang-10	Xinyang	F	56	sister of Xinyang-06	吴某某	Y	L	NO	NO	18-Jan to ?	NO	25-Jan	27-Jan		29-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
+Xinyang-10	Xinyang	F	56	sister of Xinyang-06	吴某某	Y	Y	NO	NO	18-Jan to ?	NO	25-Jan	27-Jan		29-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
 Xinyang-11	Xinyang	M	52		张某某	Y	Y	NO	NO		NO	18-Jan	23-Jan		29-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
 Xinyang-12	Xinyang	M	46		肖某某	Y			19-Jan		19-Jan	19-Jan	23-Jan		25-Jan	8-Feb			http://www.scxww.cn/xww/xwsd/8683.shtml http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0209/4738.html
 Xinyang-13	Wuhan	M	54		毕某某	Y			19-Jan		19-Jan	13-Jan	23-Jan		25-Jan				http://www.scxww.cn/xww/xwsd/8683.shtml
@@ -818,7 +818,7 @@ Xinyang-225	Gushi	F	43		许某某		Y	NO	NO		NO	5-Feb	8-Feb		10-Feb				http://www
 Xinyang-226	Gushi in Wuhan	F	54		赵某某	Y			21-Jan		21-Feb	4-Feb	9-Feb		10-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0211/4766.html
 Xinyang-227	Gushi	M	51		孙某某	Y	Y	NO	NO		NO	25-Jan	6-Feb		10-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0211/4766.html
 Xinyang-228	Gushi	M	79		任某某		Y	NO	NO		NO	6-Feb	8-Feb		10-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0211/4766.html
-Xinyang-229	Gushi	M	27		张某某	Y	L		21-Jan		21-Jan	9-Feb	9-Feb		11-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0212/4789.html
+Xinyang-229	Gushi	M	27	son of Xinyang-238	张某某	Y	L		21-Jan		21-Jan	9-Feb	9-Feb		11-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0212/4789.html
 Xinyang-230	Gushi	M	55	contact with Xinyang-40	蔡某某	Y	Y	NO	NO		NO	27-Jan	2-Feb		11-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0212/4789.html
 Xinyang-231	Guangshan	M	68		刘某某, 自述其子1月22日从武汉返乡	Y	Y	NO	NO	22-Jan to ?	NO	3-Feb	10-Feb		11-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0212/4789.html
 Xinyang-232	Xinyang	M	31		翁某某	Y	Y	NO	NO		NO	11-Feb	11-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
@@ -827,7 +827,7 @@ Xinyang-234	Guangshan	M	37		马某某		Y	NO	NO		20-Jan	7-Feb	11-Feb		12-Feb				h
 Xinyang-235	Guangshan	F	81		王某某，女，81岁，光山县斛山乡良种场村居住，1月20日出现发热症状，2月10日就诊于光山县人民医院，自述其子1月17号由武汉返乡，2月12日确认为确诊病例。	Y	Y	NO	NO	17-Jan to ?	NO	20-Jan	10-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
 Xinyang-236	Huangchuan	F	54	contact with Xinyang-205	魏某某	Y	Y	NO	NO		NO	11-Feb	11-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
 Xinyang-237	Shangcheng	F	56		项某某		Y	NO	NO		NO	1-Feb	11-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
-Xinyang-238	Gushi in Wuhan	F	53	Mother of Xinyang-229	徐某某	Y	L		21-Jan		21-Jan	5-Feb	9-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
+Xinyang-238	Gushi in Wuhan	F	53	mother of Xinyang-229	徐某某	Y	L		21-Jan		21-Jan	5-Feb	9-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
 Xinyang-239	Xixian	F	79		张某某	Y	Y	NO	NO	20-Jan to ?	NO	27-Jan	10-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
 Xinyang-240	Xixian in Wuhan	M	46		张某某	Y			23-Jan		23-Jan	5-Feb	10-Feb		12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
 Xinyang-241	Xinyang	F	30		汪某某, asymptomatic	Y	Y	NO	NO		NO	NO			12-Feb				http://www.hnxywjw.gov.cn/a/news/tongzhi/2020/0213/4807.html
@@ -957,7 +957,7 @@ Zhanjiang-09	HongKong	M	55				Y	NO	NO		23-Jan	23-Jan	26-Jan		30-Jan
 Zhanjiang-10	Wuhan	F	42			Y			21-Jan		22-Jan	?	27-Jan		31-Jan				
 Zhanjiang-11	Wuhan in Beijing	M	69			Y			20-Jan		20-Jan	?	27-Jan		31-Jan				
 Zhanjiang-12	Zhanjiang	F	23			Y	Y	NO	NO	19-Jan	23-Jan	27-Jan	24-Jan		1-Feb				
-Zhanjiang-13	Wuhan	M	29			Y	L		16-Jan		16-Jan	?	28-Jan		1-Feb				
+Zhanjiang-13	Wuhan	M	29			Y			16-Jan		16-Jan	?	28-Jan		1-Feb				
 Zhanjiang-14	Suizhou	M	30			Y	Y	NO	NO	? to 24-Jan	26-Jan	26-Jan	26-Jan		2-Feb				
 Zhanjiang-15	Zhanjiang	M	53				Y	NO	NO		NO	30-Jan	1-Feb		3-Feb				
 Zhanjiang-16	Zhanjiang in Guangzhou	F	25	colleague of Zhanjiang-12		Y	Y	NO	NO	23-Jan to 24-Jan	21-Jan	31-Jan	31-Jan		4-Feb				
@@ -998,7 +998,7 @@ Shaanxi-05	Yanan	M	23			Y			22-Jan		22-Jan	?	22-Jan		24-Jan				http://sxwjw.shaa
 Shaanxi-06	Xianyang	F	24			Y			21-Jan		21-Jan	19-Jan			25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
 Shaanxi-07	Ankang	M	28			Y			20-Jan		20-Jan	21-Jan	23-Jan		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
 Shaanxi-08	Ankang	M	41			Y		6-Jan	7-Jan		7-Jan	14-Jan	23-Jan		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
-Shaanxi-09	Wuhan	M	46			Y	L		20-Jan		20-Jan	23-Jan	?		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
+Shaanxi-09	Wuhan	M	46	father of Shaanxi-11		Y	L		20-Jan		20-Jan	23-Jan	?		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
 Shaanxi-10	Wuhan	F	45	wife of Shaanxi-09		Y	L		20-Jan		20-Jan	23-Jan	?		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
 Shaanxi-11	Wuhan	F	9	daughter of Shaanxi-09		Y			20-Jan		20-Jan	21-Jan	?		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
 Shaanxi-12	Xian	M	40			Y			23-Jan		23-Jan	23-Jan	23-Jan		25-Jan				http://sxwjw.shaanxi.gov.cn/art/2020/1/25/art_9_67412.html
@@ -1080,7 +1080,7 @@ Shaanxi-87	Xian	F	57	wife of Shaanxi-49		Y	Y	NO	NO		NO	18-Jan	26-Jan		1-Feb				h
 Shaanxi-88	Xian	M	42	son of Shaanxi-45		Y	Y	NO	NO		NO	29-Jan	27-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-89	Xian	M	48			Y	Y	NO	NO		NO	24-Jan	24-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-90	Tianmen	M	62	husband of Shaanxi-17		Y	L		14-Jan		14-Jan	26-Jan to 29-Jan	26-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
-Shaanxi-91	Xian	F	39			Y	L		20-Jan		20-Jan	28-Jan	29-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
+Shaanxi-91	Xian	F	39	wife of Shaanxi-92		Y	L		20-Jan		20-Jan	28-Jan	29-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-92	Xian	M	41	husband of Shaanxi-91		Y			20-Jan		20-Jan	27-Jan	29-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-93	Nanjing	M	40			Y			18-Jan		18-Jan	28-Jan	28-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-94	Xian	M	67				Y	NO	NO		NO	29-Jan	30-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
@@ -1088,7 +1088,7 @@ Shaanxi-95	Xianyang	F	31			Y	Y	NO	NO		NO	25-Jan	30-Jan		1-Feb				http://sxwjw.sh
 Shaanxi-96	Ankang	M	26			Y			23-Jan		23-Jan	25-Jan	26-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-97	Wuhan	M	27			Y			22-Jan		22-Jan	24-Jan	26-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-98	Baoji	F	43	wife of Shaanxi-54		Y	Y	NO	NO	13-Jan to ?	NO	27-Jan	29-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
-Shaanxi-99	Hanzhong	F	48			Y			19-Jan		NO	?	30-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
+Shaanxi-99	Hanzhong	F	48			Y			19-Jan		19-Jan	?	30-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-100	Hanzhong	M	41	contact with Shaanxi-25&Shaanxi-26		Y	Y	NO	NO	17-Jan to 22-Jan	NO	29-Jan	27-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-101	Yichang	M	37			Y	Y	NO	NO	? to 24-Jan	24-Jan	26-Jan	26-Jan		1-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/1/art_9_67591.html
 Shaanxi-102	Baoji	M	64	cousin of Shaanxi-54		Y	Y	NO	NO	13-Jan to ?	NO	29-Jan	30-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
@@ -1099,7 +1099,7 @@ Shaanxi-106	Ankang	F	51			Y	Y	NO	NO		NO	19-Jan	28-Jan		2-Feb				http://sxwjw.sha
 Shaanxi-107	Suizhou	F	68			Y	Y	NO	NO	? to 18-Jan	18-Jan	28-Jan	31-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
 Shaanxi-108	Suizhou	M	70	husband of Shaanxi-107		Y	Y	NO	NO		18-Jan	?	31-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
 Shaanxi-109	Wuhan	M	39			Y			19-Jan		19-Jan	28-Jan	29-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
-Shaanxi-110	Wuhan	M	48			Y	L	?	?		27-Jan	?	27-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
+Shaanxi-110	Wuhan	M	48	son of Shaanxi-111		Y	L	?	?		27-Jan	?	27-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
 Shaanxi-111	Wuhan	M	77	father of Shaanxi-110		Y	L	?	?		27-Jan	29-Jan	27-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
 Shaanxi-112	Wuhan	F	73	mother of Shaanxi-110		Y	L	?	?		27-Jan	31-Jan	27-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html
 Shaanxi-113	Xian	F	34	daugther of Shaanxi-90		Y	Y	NO	NO	14-Jan to ?	NO	22-Jan	22-Jan		2-Feb				http://sxwjw.shaanxi.gov.cn/art/2020/2/2/art_9_67618.html

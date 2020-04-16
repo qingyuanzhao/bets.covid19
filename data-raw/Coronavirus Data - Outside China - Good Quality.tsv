@@ -78,7 +78,7 @@ Japan-19	Japanese	M	70s		28th case		Y	NO	NO		NO	29-Jan	29-Jan	6-Feb	13-Feb				ht
 Japan-20	Japanese	M	50s		29th case		Y	NO	NO		NO	31-Jan	8-Feb	10-Feb	13-Feb				https://www.mhlw.go.jp/stf/newpage_09505.html
 Japan-21	Japanese	M	20s		30th case		Y	NO	NO		NO	2-Feb	10-Feb		13-Feb				https://www.mhlw.go.jp/stf/newpage_09506.html
 Japan-22	Japanese	M	70s		31st case		Y	NO	NO		NO	1-Feb	1-Feb	6-Feb	13-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
-Japan-23	Japanese	F	60s		32nd case	3	Y	NO	NO		NO	5-Feb	12-Feb	13-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
+Japan-23	Japanese	F	60s	contact with Diamond Princess	32nd case	Y	Y	NO	NO	1-Feb	NO	5-Feb	12-Feb	13-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
 Japan-24	Japanese	F	50s		33rd case		Y	NO	NO		NO	4-Feb	7-Feb	10-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
 Japan-25	Japanese	M	70s		34th case		Y	NO	NO	15-Jan	NO	20-Jan	21-Jan	27-Jan	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
 Japan-26	Japanese	M	60s		35th case		Y	NO	NO		7-Feb	3-Feb	8-Feb	13-Feb	14-Feb				https://www.mhlw.go.jp/stf/newpage_09539.html
@@ -93,13 +93,13 @@ Korea-03	Korean	M	54			Y			20-Jan		20-Jan	22-Jan	25-Jan		26-Jan	12-Feb			https:/
 Korea-04	Korean	M	55			Y			20-Jan		20-Jan	21-Jan	25-Jan	26-Jan	27-Jan	9-Feb			https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=365876&tag=&nPage=1 https://en.yna.co.kr/view/AEN20200209000754320
 Korea-05	Korean	M	32			Y			24-Jan		24-Jan	26-Jan			30-Jan				https://www.bbc.com/korean/news-51320986 https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=365926&tag=&nPage=15
 Korea-06	Korean	M	56	contact with Korea-03		Y	Y	NO	NO	22-Jan	NO				30-Jan				https://www.bbc.com/korean/news-51320986
-Korea-07	Korean	M	28		Transit via Qingdao	Y	L		23-Jan		23-Jan	26-Jan	29-Jan		30-Jan	15-Feb			https://www.bbc.com/korean/news-51320986
+Korea-07	Korean	M	28	contact with Korea-08	Transit via Qingdao	Y	L		23-Jan		23-Jan	26-Jan	29-Jan		30-Jan	15-Feb			https://www.bbc.com/korean/news-51320986
 Korea-08	Korean	F	62	contact with Korea-07	Transit via Qingdao	Y			23-Jan		23-Jan	21-Jan			31-Jan	12-Feb			https://www.bbc.com/korean/news-51320986 http://www.hitnews.co.kr/news/articleView.html?idxno=14580
 Korea-09	Korean	M	28	contact with Korea-05		Y	Y	NO	NO	24-Jan to ?					31-Jan				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
 Korea-10	Korean	F	52	family of Korea-06		Y	Y	NO	NO	22-Jan to ?	NO	29-Jan			31-Jan				http://english.hani.co.kr/arti/english_edition/e_international/926436.html https://www.mdon.co.kr/news/article.html?no=25327
 Korea-11	Korean	F	25	family of Korea-06		Y	Y	NO	NO	22-Jan to ?	NO	30-Jan			31-Jan	10-Feb			http://english.hani.co.kr/arti/english_edition/e_international/926436.html https://www.mdon.co.kr/news/article.html?no=25327
 Korea-12	Chinese	M	49		Visited from Japan (a tour guide), contact with a Japan case	Y	Y	NO	NO	? to 19-Jan	19-Jan	20-Jan			1-Feb				http://www.hitnews.co.kr/news/articleView.html?idxno=14580
-Korea-13	Korean	M	28		evacuee	Y	E		31-Jan		31-Jan	1-Feb			2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
+Korea-13	Korean	M	28		evacuee	Y			31-Jan	? to 31-Jan	31-Jan	1-Feb			2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
 Korea-14	Chinese	F	40	wife of Korea-12		Y	Y	NO	NO		NO	25-Jan			2-Feb				http://www.koreaherald.com/view.php?ud=20200202000041
 Korea-15	Korean	M	43	contact with Korea-4		Y	Y		20-Jan	20-Jan	20-Jan	1-Feb			2-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=365941&tag=&nPage=1
 Korea-16	Korean	F	42		Arrived from Thailand		Y	NO	NO		19-Jan	25-Jan			4-Feb				https://en.yna.co.kr/view/AEN20200204003153320
@@ -110,7 +110,7 @@ Korea-20	Korean	F	41	family of Korea-15		Y	Y	NO	NO	20-Jan to ?	NO	5-Feb			5-Feb	
 Korea-21	Korean	M	59	contact of Korea-06		Y	Y	NO	NO	22-Jan to ?	NO	5-Feb			5-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366006&tag=&nPage=2
 Korea-22	Korean	M	46	family of Korea-16		Y	Y	NO	NO	19-Jan to ?	NO				6-Feb	15-Feb			https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366006&tag=&nPage=2
 Korea-23	Chinese	F	58			Y			23-Jan		23-Jan	2-Feb			6-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366006&tag=&nPage=2 https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366012&tag=&nPage=14 https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366108&tag=&nPage=14
-Korea-24	Korean	M	18			Y	E	NO	NO			6-Feb			7-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366054&tag=&nPage=2
+Korea-24	Korean	M	18		evacuee	Y		NO	?			6-Feb			7-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366054&tag=&nPage=2
 Korea-25	Korean	F	73			Y	Y	NO	NO	31-Jan to ?	NO	6-Feb			9-Feb				
 Korea-26	Korean	M	51	son of Korea-25	visited Guangdong	Y	Y	NO	NO		31-Jan	8-Feb			9-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366134&tag=&nPage=1
 Korea-27	Chinese	F	37	daughter-in-law of Korea-25	visited Guangdong		Y	NO	NO		31-Jan	4-Feb			9-Feb				https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366134&tag=&nPage=1
@@ -135,22 +135,22 @@ Singapore-04	Wuhan	M	36			Y			22-Jan		22-Jan	23-Jan	24-Jan		25-Jan				https://ww
 Singapore-05	Wuhan	F	56			Y			18-Jan		18-Jan	24-Jan	26-Jan		27-Jan				https://www.moh.gov.sg/news-highlights/details/fifth-confirmed-imported-case-of-wuhan-coronavirus-infection-in-singapore-27Jan
 Singapore-06	Wuhan	M	56			Y			19-Jan		19-Jan	25-Jan	26-Jan		27-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
 Singapore-07	Wuhan	M	35			Y			23-Jan		23-Jan	24-Jan	24-Jan		27-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
-Singapore-08	Wuhan	M	56			Y	L		19-Jan		19-Jan	24-Jan	27-Jan		28-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
+Singapore-08	Wuhan	M	56	Husband of Singapore-07		Y	L		19-Jan		19-Jan	24-Jan	27-Jan		28-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
 Singapore-09	Wuhan	F	56	Wife of Singapore-08		Y			19-Jan		19-Jan	22-Jan	27-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30528-6/fulltext#tbl1
 Singapore-10	Wuhan	M	56			Y			20-Jan		20-Jan	21-Jan	28-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore
 Singapore-11	Wuhan	F	31	travel companion with Singapore-04		Y	L		22-Jan		22-Jan	27-Jan	NO		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
 Singapore-12	Wuhan	F	37			Y			22-Jan		22-Jan	26-Jan	29-Jan		29-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-30Jan
 Singapore-13	Wuhan	F	73	Close contact with Singapore-02		Y	L		21-Jan	21-Jan	21-Jan	28-Jan	NO		30-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
 Singapore-14	Chinese in Singapore	M	31			Y		?	?	? to 26-Jan	26-Jan	28-Jan	30-Jan		30-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
-Singapore-15	Singaporean	F	47		Evacuee	Y	E		30-Jan		30-Jan	30-Jan	NO		31-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
+Singapore-15	Singaporean	F	47		Evacuee	Y			30-Jan	? to 30-Jan	30-Jan	30-Jan	NO		31-Jan				https://www.moh.gov.sg/news-highlights/details/three-more-confirmed-imported-cases-of-wuhan-coronavirus-infection-in-singapore-31-jan
 Singapore-16	Wuhan	M	38			Y			22-Jan		22-Jan	23-Jan	31-Jan		31-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
-Singapore-17	Singaporean	F	47		Evacuee (not Singpoare-15??)	Y	E		30-Jan		30-Jan	30-Jan	NO		31-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
+Singapore-17	Singaporean	F	47		Evacuee	Y			30-Jan	? to 30-Jan	30-Jan	30-Jan	NO		31-Jan				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-18	Wuhan	F	31	close contact with Singapore-12		Y	L		22-Jan		22-Jan	30-Jan	31-Jan		1-Feb				https://www.moh.gov.sg/news-highlights/details/two-more-confirmed-imported-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-19	Singapore	F	28				Y	NO	NO		NO	29-Jan	29-Jan	3-Feb	3-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
 Singapore-20	Singapore	F	48	colleague of Singapore-19		Y	Y	NO	NO		NO	25-Jan	3-Feb		4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
 Singapore-21	Indonesian	F	44	foreign domestic colleague of Singapore-19		Y	Y	NO	NO		NO	2-Feb	3-Feb		4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
-Singapore-22	Singaporean in Wuhan	M	41		Evacuee, no symptom during flight	Y	E		30-Jan		30-Jan	NO			4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
-Singapore-23	Singaporean in Wuhan	M	17		Evacuee, no symptom during flight	Y	E		30-Jan		30-Jan	NO			4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
+Singapore-22	Singaporean in Wuhan	M	41		Evacuee, no symptom during flight	Y			30-Jan	? to 30-Jan	30-Jan	NO			4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
+Singapore-23	Singaporean in Wuhan	M	17		Evacuee, no symptom during flight	Y			30-Jan	? to 30-Jan	30-Jan	NO			4-Feb				https://www.moh.gov.sg/news-highlights/details/confirmed-cases-of-local-transmission-of-novel-coronavirus-infection-in-singapore
 Singapore-24	Singaporean	F	32	contact with Singapore-19, Singapore-20		Y	Y	NO	NO		NO	30-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-25	Singaporean	M	40	husband of Singapore-24		Y	Y	NO	NO		NO	24-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
 Singapore-26	Chinese	F	42	daughter of Singapore-13	asymptomatic	Y	L		21-Jan		21-Jan	28-Jan			4-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-confirmed-cases-of-novel-coronavirus-infection-in-singapore
@@ -172,7 +172,7 @@ Singapore-41	Singaporean	M	71				Y	NO	NO		NO	1-Feb	1-Feb	7-Feb	8-Feb				https://
 Singapore-42	Bangladeshi in Singapore	M	39				Y	NO	NO		NO	1-Feb	3-Feb	7-Feb	8-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-cases-discharged-three-new-cases-of-novel-coronavirus-infection-confirmed
 Singapore-43	Singaporean	M	54				Y	NO	NO		NO	30-Jan	30-Jan	7-Feb	8-Feb				https://www.moh.gov.sg/news-highlights/details/four-more-cases-discharged-three-new-cases-of-novel-coronavirus-infection-confirmed
 Singapore-44	Singaporean	M	37	contact with Singapore-13, Singapore-26		Y	Y	NO	NO		NO	31-Jan	2-Feb	6-Feb	9-Feb				https://www.moh.gov.sg/news-highlights/details/one-more-case-discharged-two-new-cases-of-novel-coronavirus-infection-confirmed-10feb
-Singapore-45	Singaporean	F	2		Evacuee	Y	E	NO	30-Jan		30-Jan		7-Feb		10-Feb	14-Feb			https://www.moh.gov.sg/news-highlights/details/one-more-case-discharged-two-new-cases-of-novel-coronavirus-infection-confirmed-10feb
+Singapore-45	Singaporean	F	2		Evacuee	Y		NO	30-Jan	? to 30-Jan	30-Jan		7-Feb		10-Feb	14-Feb			https://www.moh.gov.sg/news-highlights/details/one-more-case-discharged-two-new-cases-of-novel-coronavirus-infection-confirmed-10feb
 Singapore-46	Singapore	M	35				Y	NO	NO		NO	5-Feb	9-Feb		10-Feb				https://www.moh.gov.sg/news-highlights/details/two-more-cases-discharged-two-new-cases-of-novel-coronavirus-infection-confirmed
 Singapore-47	Bangladeshi in Singapore	M	39	Worked at same location as Singapore-42		Y	Y	NO	NO		NO	6-Feb	7-Feb		10-Feb				https://www.moh.gov.sg/news-highlights/details/two-more-cases-discharged-two-new-cases-of-novel-coronavirus-infection-confirmed
 Singapore-48	Singaporean	M	34		in Malaysia on 26-Jan		Y	NO	NO		26-Jan	1-Feb	2-Feb	10-Feb	11-Feb				https://www.moh.gov.sg/news-highlights/details/six-more-cases-discharged-three-new-cases-of-covid-19-infection-confirmed
@@ -213,8 +213,8 @@ Taiwan-07	Wuhan	F	70s	Same tour as Taiwan-06		Y	L		22-Jan		22-Jan	25-Jan			28-Ja
 Taiwan-08	Taiwan	M	50s	Husband of Taiwan-05		Y	Y	NO	NO		NO	27-Jan	28-Jan		30-Jan				https://www.cdc.gov.tw/En/Bulletin/Detail/-dU_LiC4WQm82jB-lb9KqQ?typeid=158
 Taiwan-09	Taiwan	F	40s	Wife of Taiwan-10		Y	Y	NO	NO		NO	27-Jan	28-Jan		30-Jan				https://heho.com.tw/archives/65879
 Taiwan-10	Taiwan in Wuhan	M				Y			12-Jan		12-Jan	21-Jan	22-Jan		31-Jan				https://news.cts.com.tw/cts/society/202001/202001311989092.html
-Taiwan-11	Taiwan in Wuhan	M	50s		evacuee	Y	E		4-Feb		4-Feb				4-Feb				https://www.cdc.gov.tw/Bulletin/Detail/UkMLn272PYqss-tXBbIFoQ?typeid=9
-Taiwan-12	Taiwan in Wuhan	M	40s		Left Wuhan on 17-Jan	Y	L		17-Jan		2-Feb	3-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
+Taiwan-11	Taiwan in Wuhan	M	50s		evacuee	Y			4-Feb	? to 4-Feb	4-Feb				4-Feb				https://www.cdc.gov.tw/Bulletin/Detail/UkMLn272PYqss-tXBbIFoQ?typeid=9
+Taiwan-12	Taiwan in Wuhan	M	40s		Left Wuhan on 17-Jan	Y			17-Jan		2-Feb	3-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
 Taiwan-13	Wuhan	F	20s		via Shenzhen	Y			21-Jan		21-Jan	1-Feb	4-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/NXDgwOfx8WDoXHrXHPIzAw?typeid=9
 Taiwan-14	Taiwan	M	50s		transit to Italy via Hong Kong on 22-Jan and 1-Feb		Y	NO	NO	22-Jan?	1-Feb	26-Jan	1-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/IvbkRyP8-l32MqhrMakCBw?typeid=9
 Taiwan-15	Taiwan	F	50s	Wife of Taiwan-14	transit to Italy via Hong Kong on 22-Jan and 1-Feb	Y	Y	NO	NO	22-Jan?	1-Feb	28-Jan	3-Feb		6-Feb				https://www.cdc.gov.tw/Bulletin/Detail/IvbkRyP8-l32MqhrMakCBw?typeid=9
