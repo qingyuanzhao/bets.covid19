@@ -37,8 +37,19 @@ here is a summary of the procedures
 }
 \examples{
 
-data <- cases.in.china
-head(preprocess.data(data))
+data(covid19_data)
+head(data <- preprocess.data(covid19_data))
+
+\dontrun{ ## This is how the wuhan_exported data frame is created
+data <- subset(data, Arrived <= 54)
+data <- subset(data, Symptom < Inf)
+data$Location <- do.call(rbind, strsplit(as.character(data$Case), "-"))[, 1]
+wuhan_exported <- data.frame(Location = data$Location,
+                             B = data$Begin_Wuhan,
+                             E = data$End_Wuhan,
+                             S = data$Symptom)
+devtools::use_data(wuhan_exported)
+}
 
 }
 \author{

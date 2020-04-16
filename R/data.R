@@ -26,3 +26,14 @@
 #'   \item{Source}{URLs to the information recorded (usually government websites or news reports).}
 #' }
 "covid19_data"
+
+#' COVID-19 exported from Wuhan
+#'
+#' @format A data frame with 378 rows and 4 variables:
+#' \describe{
+#'   \item{Location}{Where the case is confirmed.}
+#'   \item{B}{Beginning of stay in Wuhan}
+#'   \item{E}{End of stay in Wuhan}
+#'   \item{S}{Symptom onset}
+#' }
+"wuhan_exported"
