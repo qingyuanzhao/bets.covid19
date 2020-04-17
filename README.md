@@ -50,4 +50,4 @@ This project first started from a preliminary analysis of some
 international COVID-19 cases exported from Wuhan. The report of the
 first analysis can be found on
 [medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). Code
-for that analysis can be found in the (report1)[https://github.com/qingyuanzhao/2019-nCov-Data/tree/report1] branch.
+for that analysis can be found in the [report1](https://github.com/qingyuanzhao/2019-nCov-Data/tree/report1) branch.
