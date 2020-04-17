@@ -21,7 +21,7 @@ We have developed a generative model for four key epidemiological events: Beginn
 help(BETS.inference)
 example(BETS.inference)
 ```
-Details of the model and methodology can be found in [this preprint](https://arxiv.org/abs/2004.07743) on arXiv. In short, we find that several published early analyses were severely biased by sample selection. All our analyses, regardless of which subsample and model were being used, point to _an epidemic doubling time of 2 to 2.5 days_ during the early outbreak in Wuhan. A Bayesian nonparametric analysis further suggests that _5% of the symptomatic cases may not develop symptoms within 14 days since infection_.
+Details of the model and methodology can be found in [this preprint](https://arxiv.org/abs/2004.07743) on arXiv. In short, we find that several published early analyses were severely biased by sample selection. All our analyses, regardless of which subsample and model were being used, point to **an epidemic doubling time of 2 to 2.5 days** during the early outbreak in Wuhan. A Bayesian nonparametric analysis further suggests that **5% of the symptomatic cases may not develop symptoms within 14 days since infection**.
 
 ## Reference
 
