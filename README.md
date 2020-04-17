@@ -21,7 +21,19 @@ We have developed a generative model for four key epidemiological events: Beginn
 help(BETS.inference)
 example(BETS.inference)
 ```
-Details of the model and methodology can be found in [this preprint](https://arxiv.org/abs/2004.07743) on arXiv. In short, we find that several published early analyses were severely biased by sample selection. All our analyses, regardless of which subsample and model were being used, point to **an epidemic doubling time of 2 to 2.5 days** during the early outbreak in Wuhan. A Bayesian nonparametric analysis further suggests that **5% of the symptomatic cases may not develop symptoms within 14 days since infection**.
+Details of the model and methodology can be found in [this
+preprint](https://arxiv.org/abs/2004.07743) on arXiv. In short, we
+find that several published early analyses were severely biased by
+sample selection. All our analyses, regardless of which subsample and
+model were being used, point to **an epidemic doubling time of 2 to
+2.5 days** during the early outbreak in Wuhan.
+
+A Bayesian
+nonparametric analysis further suggests that **5% of the symptomatic
+cases may not develop symptoms within 14 days since infection**. Code
+for the Bayesian model and MCMC sampler can be found under the
+[bayesian
+folder](https://github.com/qingyuanzhao/2019-nCov-Data/tree/master/bayesian).
 
 ## Reference
 
@@ -34,7 +46,7 @@ Many people have contributed to the data collection and given helpful suggestion
 
 ## Earlier work
 
-This project first started from a preliminary analysis of some international COVID-19 cases exported from Wuhan. The report of the first analysis can be found on [medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). 
+This project first started from a preliminary analysis of some international COVID-19 cases exported from Wuhan. The report of the first analysis can be found on [medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1).
 
 Code for that analysis can be found in the (report1)[https://github.com/qingyuanzhao/2019-nCov-Data/tree/report1] branch. The medRxiv preprint is based on the analysis in [Feb6.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb6.R) and [Feb6.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb6.Rmd) (results available [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb6.html)). A (subsequent version)[http://www.statslab.cam.ac.uk/~qz280/papers/covid-2019-1.pdf] is based on [Feb15.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb15.R) and [Feb15.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb15.Rmd)
 
