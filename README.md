@@ -1,20 +1,42 @@
-# Data for the 2019-nCoV outbreak
+# An early analysis of the COVID-19 pandemic
 
-On 30th of January, 2020, The World Health Organization has declared the [2019-nCoV outbreak a Public Health Emergency of International Concern](https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)). **The outbreak originated from my hometown, Wuhan.**
+## Dataset
 
-This dataset is collected from public agencies or news media, containing information about the 2019-nCov cases confirmed in and outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)). It can be loaded in R as a package:
+This dataset is collected from public agencies or news media, containing detailed information about some 1400 COVID-19 cases confirmed in and outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)). It can be loaded in R as a package:
 ```r
 devtools::install_github("qingyuanzhao/2019-nCov-Data")
-library(nCoV2019.data)
-data(cases.in.china)
-data(cases.outside.china)
+library(BETS)
+head(covid19_data)
 ```
+More details about the dataset can be found in
+```r
+help(covid19_data)
+```
+and in [this arXiv preprint](https://arxiv.org/abs/2004.07743).
 
-A preliminary report is avaiable as a preprint on [medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). This report is currently being peer-reviewed. It is based on the analysis in [Feb6.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.R) and [Feb6.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.Rmd) (results available [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/master/1st-Report/Feb6.html)).
+## Statistical inference: the BETS model
 
-## To Contribute
+We have developed a generative model for four key epidemiological events: Beginning of exposure, End of exposure, time of Transmission, and time of Symptom onset (BETS). This package implements a likelihood inference for the BETS model. Try:
+```r
+help(BETS.inference)
+example(BETS.inference)
+```
+Details of the model and methodology can be found in [this preprint](https://arxiv.org/abs/2004.07743) on arXiv. In short, we find that several published early analyses were severely biased by sample selection. All our analyses, regardless of which subsample and model were being used, point to *an epidemic doubling time of 2 to 2.5 days* during the early outbreak in Wuhan. A Bayesian nonparametric analysis further suggests that *5% of the symptomatic cases may not develop symptoms within 14 days since infection*.
 
-I am hoping this can become a collaborative and transparent project by people across the world. You can contribute by either updating the dataset or by forming a team to analyze the dataset.
+## Reference
+
+- First report: Qingyuan Zhao, Yang Chen, Dylan S Small. Analysis of the epidemic growth of the early 2019-nCoV outbreak using internationally confirmed cases. medRxiv 2020.02.06.20020941; doi: https://doi.org/10.1101/2020.02.06.20020941
+- Full model: Qingyuan Zhao, Niaoqiao Ju, Sergio Bacallado. BETS: The dangers of selection bias in early analyses of the coronavirus disease (COVID-19) pandemic. [arXiv:2004.07743](https://arxiv.org/abs/2004.07743).
+
+## Acknowledgement
+
+Many people have contributed to the data collection and given helpful suggestions. We thank Rajen Shah, Yachong Yang, Cindy Chen, Yang Chen, Dylan Small, Michael Levy, Hera He, Zilu Zhou, Yunjin Choi, James Robins, Marc Lipsitch, Andrew Rosenfeld.
+
+## Earlier work
+
+This project first started from a preliminary analysis of some international COVID-19 cases exported from Wuhan. The report of the first analysis can be found on [medRxiv](https://www.medrxiv.org/content/10.1101/2020.02.06.20020941v1). 
+
+Code for that analysis can be found in the (report1)[https://github.com/qingyuanzhao/2019-nCov-Data/tree/report1] branch. The medRxiv preprint is based on the analysis in [Feb6.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb6.R) and [Feb6.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb6.Rmd) (results available [here](https://htmlpreview.github.io/?https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb6.html)). A (subsequent version)[http://www.statslab.cam.ac.uk/~qz280/papers/covid-2019-1.pdf] is based on [Feb15.R](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb15.R) and [Feb15.Rmd](https://github.com/qingyuanzhao/2019-nCov-Data/blob/report1/1st-Report/Feb15.Rmd)
 
 ### Dataset
 
