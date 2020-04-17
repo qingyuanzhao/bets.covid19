@@ -1,0 +1,5 @@
+~/Dropbox/Coronavirus-Data/bayesian_results/compare_prior_post/prior_post_p14.csv
+df <- read.csv(~/Dropbox/Coronavirus-Data/bayesian_results/compare_prior_post/prior_post_p14.csv)
+df <- read.csv("~/Dropbox/Coronavirus-Data/bayesian_results/compare_prior_post/prior_post_p14.csv")
+head(df)
+dim(df)
