@@ -2,7 +2,7 @@
 % Please edit documentation in R/simulate.R
 \name{simulate.case}
 \alias{simulate.case}
-\title{Simulate case information from statistical model}
+\title{Simulate case information from the generative BETS model}
 \usage{
 \method{simulate}{case}(
   n = 1e+07,
@@ -11,5 +11,6 @@
 )
 }
 \description{
-Simulate case information from statistical model
+Simulate case information from the generative BETS model
 }
+\keyword{internal}

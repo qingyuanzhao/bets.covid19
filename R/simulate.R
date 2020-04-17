@@ -1,5 +1,6 @@
-#' Simulate case information from statistical model
+#' Simulate case information from the generative BETS model
 #'
+#' @keywords internal
 #'
 simulate.case <- function(n = 1e7,
                           params = c(pi = 0.1,

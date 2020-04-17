@@ -21,4 +21,4 @@ When \code{params} contains all the parameters (rho, r, ip_q50, ip_q95), returns
 \description{
 Approximate profile likelihood
 }
-\keyword{}
+\keyword{internal}

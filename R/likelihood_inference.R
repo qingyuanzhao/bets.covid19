@@ -7,7 +7,7 @@
 #'
 #' @return When \code{params} contains all the parameters (rho, r, ip_q50, ip_q95), returns the approximate log-likelihood of \code{data}. When \code{params} contains some but not all the parameters, returns the profile log-likelihood.
 #'
-#' @keywords
+#' @keywords internal
 #'
 BETS.likelihood.unconditional <- function(params, data, params_init = NULL, L = NULL) {
 
