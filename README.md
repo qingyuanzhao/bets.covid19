@@ -2,7 +2,12 @@
 
 ## Dataset
 
-This dataset is collected from public agencies or news media, containing detailed information about some 1400 COVID-19 cases confirmed in and outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)). It can be loaded in R as a package:
+This dataset is collected from public agencies or news media,
+containing detailed information about some 1400 COVID-19 cases
+confirmed in and outside China. This dataset is free to use and share
+given that appropriate credits are given under the [CC-BY-4.0
+license](https://github.com/qingyuanzhao/bets.covid19/blob/master/LICENSE.md). It
+can be loaded in R as a package:
 ```r
 devtools::install_github("qingyuanzhao/bets.covid19")
 library(bets.covid19)

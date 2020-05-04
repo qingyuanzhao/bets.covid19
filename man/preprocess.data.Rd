@@ -28,7 +28,7 @@ A summary of the procedures:
 \enumerate{
   \item Convert all dates to number of days since 1-Dec-2019.
   \item Separates data into those returned from Wuhan and those infected outside of wuhan.
-  \item Restrict to cases with a known symtom onset date.
+  \item Restrict to cases with a known symptom onset date.
   \item Parse column 'Infected' into two columns: Infected_first and Infected_last.
   \item For all cases, set Infected_first to 1 if it is missing.
   \item For outside cases, set Infected_last to be no later than symptom onset.
