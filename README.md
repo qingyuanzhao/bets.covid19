@@ -4,8 +4,8 @@
 
 This dataset is collected from public agencies or news media, containing detailed information about some 1400 COVID-19 cases confirmed in and outside China. This dataset is free to use and share given that appropriate credits are given (see the [license](./LICENSE.md)). It can be loaded in R as a package:
 ```r
-devtools::install_github("qingyuanzhao/2019-nCov-Data")
-library(BETS)
+devtools::install_github("qingyuanzhao/bets.covid19")
+library(bets.covid19)
 head(covid19_data)
 ```
 More details about the dataset can be found in
@@ -18,8 +18,8 @@ and in [this arXiv preprint](https://arxiv.org/abs/2004.07743).
 
 We have developed a generative model for four key epidemiological events: Beginning of exposure, End of exposure, time of Transmission, and time of Symptom onset (BETS). This package implements a likelihood inference for the BETS model. Try:
 ```r
-help(BETS.inference)
-example(BETS.inference)
+help(bets.inference)
+example(bets.inference)
 ```
 Details of the model and methodology can be found in [this
 preprint](https://arxiv.org/abs/2004.07743) on arXiv. In short, we
@@ -33,12 +33,12 @@ nonparametric analysis further suggests that **5% of the symptomatic
 cases may not develop symptoms within 14 days since infection**. Code
 for the Bayesian model and MCMC sampler can be found under the
 [bayesian
-folder](https://github.com/qingyuanzhao/2019-nCov-Data/tree/master/bayesian).
+folder](https://github.com/qingyuanzhao/bets.covid19/tree/master/bayesian).
 
 ## Reference
 
 - First report: Qingyuan Zhao, Yang Chen, Dylan S Small. Analysis of the epidemic growth of the early 2019-nCoV outbreak using internationally confirmed cases. medRxiv 2020.02.06.20020941; doi: https://doi.org/10.1101/2020.02.06.20020941
-- Full model: Qingyuan Zhao, Niaoqiao Ju, Sergio Bacallado. BETS: The dangers of selection bias in early analyses of the coronavirus disease (COVID-19) pandemic. [arXiv:2004.07743](https://arxiv.org/abs/2004.07743).
+- Full model: Qingyuan Zhao, Niaoqiao Ju, Sergio Bacallado, Rajen Shah. BETS: The dangers of selection bias in early analyses of the coronavirus disease (COVID-19) pandemic. [arXiv:2004.07743](https://arxiv.org/abs/2004.07743).
 
 ## Acknowledgement
 
