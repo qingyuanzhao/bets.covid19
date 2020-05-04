@@ -15,3 +15,4 @@ the data frame with two new columns, Infected_first and Infected_last
 \description{
 Deprecated. Used in the previous analysis, now replaced by \code{preprocess.data}.
 }
+\keyword{internal}

@@ -7,14 +7,16 @@
 \format{A data frame with 378 rows and 4 variables:
 \describe{
   \item{Location}{Where the case is confirmed.}
-  \item{B}{Beginning of stay in Wuhan}
-  \item{E}{End of stay in Wuhan}
-  \item{S}{Symptom onset}
+  \item{Gender}{Gender of the patient.}
+  \item{Age}{Age of the patient.}
+  \item{B}{Beginning of stay in Wuhan.}
+  \item{E}{End of stay in Wuhan.}
+  \item{S}{Symptom onset.}
 }}
 \usage{
 wuhan_exported
 }
 \description{
-COVID-19 exported from Wuhan
+Constructed from \code{covid19_data}, see \code{example(preprocess.data)}.
 }
 \keyword{datasets}

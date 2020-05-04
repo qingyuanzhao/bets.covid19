@@ -6,7 +6,7 @@
 #'
 #' @return the data frame with two new columns, Infected_first and Infected_last
 #'
-#' @export
+#' @keywords internal
 #'
 parse.infected <- function(data) {
 
@@ -37,6 +37,8 @@ parse.infected <- function(data) {
 #' @param infected A string of the form "DATE1" or "DATE1 to DATE2".
 #' @return A vector of length 2 for the infection window
 #'
+#' @keywords internal
+#'
 parse.one.infected <- function(infected) {
     tmp <- strsplit(as.character(infected), "&")[[1]]
     if (length(tmp) > 1) {
@@ -61,7 +63,7 @@ parse.one.infected <- function(infected) {
 #' @param symptom_impute Whether to use initial medical visit and confirmation to impute missing symptom onset.
 #'
 #' @return A data frame
-#' @details here is a summary of the procedures
+#' @details A summary of the procedures:
 #' \enumerate{
 #'   \item Convert all dates to number of days since 1-Dec-2019.
 #'   \item Separates data into those returned from Wuhan and those infected outside of wuhan.
@@ -106,14 +108,14 @@ preprocess.data <- function(data, infected_in = c("Wuhan", "Outside"), symptom_i
 
     ## Step 2: separates data into two parts: Wuhan-exported and local transmitted
     data <- switch(infected_in,
-                   Wuhan = subset(data, Outside == '' ),
-                   Outside = subset(data, Outside != '' ))
+                   Wuhan = data[data$Outside == '',],
+                   Outside = data[data$Outside != '',])
     print(paste0("Only keeping cases who were infected in ", infected_in, ": ", nrow(data), " cases left."))
 
     ## Step 3: Considers only cases with a known symtom onset date
     if (!symptom_impute) {
         print(paste("Removing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates:", sum(!is.na(data$Symptom)), "cases left."))
-        data <- subset(data, !is.na(Symptom))
+        data <- data[!is.na(data$Symptom), ]
     } else {
         print(paste("Imputing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates."))
         data$Symptom[is.na(data$Symptom)] <- data$Initial[is.na(data$Symptom)] - 2

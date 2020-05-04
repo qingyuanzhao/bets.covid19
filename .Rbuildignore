@@ -1,0 +1,16 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^bayesian$
+^paper$
+^scripts$
+^1st-Report$
+^BTSE model$
+^data-raw$
+^Figures$
+^letter$
+^LICENSE\.md$
+^R/scrape_data\.R$
+^Icon\015$
+^arXiv_v1\.zip$
+^arXiv_v2\.zip$
+^Corpus$

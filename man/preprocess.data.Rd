@@ -24,7 +24,7 @@ A data frame
 Prepare data frame for analysis
 }
 \details{
-here is a summary of the procedures
+A summary of the procedures:
 \enumerate{
   \item Convert all dates to number of days since 1-Dec-2019.
   \item Separates data into those returned from Wuhan and those infected outside of wuhan.

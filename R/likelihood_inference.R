@@ -7,9 +7,11 @@
 #'
 #' @return When \code{params} contains all the parameters (rho, r, ip_q50, ip_q95), returns the approximate log-likelihood of \code{data}. When \code{params} contains some but not all the parameters, returns the profile log-likelihood.
 #'
+#' @import stats
+#'
 #' @keywords internal
 #'
-BETS.likelihood.unconditional <- function(params, data, params_init = NULL, L = NULL) {
+bets.likelihood.unconditional <- function(params, data, params_init = NULL, L = NULL) {
 
     if (is.null(L)) {
         stop("Time of travel quarantine L is needed for unconditional inference.")
@@ -59,7 +61,7 @@ BETS.likelihood.unconditional <- function(params, data, params_init = NULL, L = 
         }
 
         suppressWarnings(optim(params_init,
-                               function(params_now) BETS.likelihood.unconditional(c(params, params_now), data, L = L),
+                               function(params_now) bets.likelihood.unconditional(c(params, params_now), data, L = L),
                                control=list(fnscale=-1))$value)
 
     }
@@ -77,9 +79,11 @@ BETS.likelihood.unconditional <- function(params, data, params_init = NULL, L = 
 #'
 #' @return Conditional log-likelihood.
 #'
+#' @import stats
+#'
 #' @keywords internal
 #'
-BETS.likelihood.conditional <- function(params, data, M = Inf, r = NULL, params_init = NULL) {
+bets.likelihood.conditional <- function(params, data, M = Inf, r = NULL, params_init = NULL) {
 
     if (!is.null(r)) {
         params["r"] <- r
@@ -127,7 +131,7 @@ BETS.likelihood.conditional <- function(params, data, M = Inf, r = NULL, params_
 
             if (r == 0) {
                 myfun <- function(x) {
-                    x * pgamma(x, alpha, beta) - (akoha / beta) * pgamma(x, alpha + 1, beta)
+                    x * pgamma(x, alpha, beta) - (alpha / beta) * pgamma(x, alpha + 1, beta)
                 }
                 ll <- 0
                 for (i in 1:n) {
@@ -154,7 +158,7 @@ BETS.likelihood.conditional <- function(params, data, M = Inf, r = NULL, params_
         }
 
         suppressWarnings(ll <- optim(params_init,
-                                     function(params_now) BETS.likelihood.conditional(c(params, params_now), data, M = M, r = r),
+                                     function(params_now) bets.likelihood.conditional(c(params, params_now), data, M = M, r = r),
                                      control=list(fnscale=-1))$value)
 
     }
@@ -165,15 +169,16 @@ BETS.likelihood.conditional <- function(params, data, M = Inf, r = NULL, params_
 
 #' (Profile) Likelihood function
 #'
-#' @inheritParams BETS.likelihood.unconditional
-#' @inheritParams BETS.likelihood.conditional
+#' @inheritParams bets.likelihood.unconditional
+#' @inheritParams bets.likelihood.conditional
 #' @param params A vector of parameters (with at least one of the following entries: rho, r, ip_q50, ip_q95)
 #' @param likelihood Use the conditional or unconditional likelihood function
 #'
-#' @return Log-likelihood function if \code{params} has all four entries, rho, r, ip_q50, ip_q95 (or three entires---r, ip_q50, ip_q95---if computing the conditional likelihood). Otherwise returns the profile likelihood for the parameters in \code{{params}}.
+#' @return Log-likelihood function if \code{params} has all four entries, rho, r, ip_q50, ip_q95 (or three entires---r, ip_q50, ip_q95---if computing the conditional likelihood). Otherwise returns the profile likelihood for the parameters in \code{params}.
 #'
 #' @details Non-default values of \code{M} and \code{r} are only available for conditional likelihood.
 #'
+#' @import stats
 #' @export
 #'
 #' @examples
@@ -190,27 +195,27 @@ BETS.likelihood.conditional <- function(params, data, M = Inf, r = NULL, params_
 #'             ip_q95 = 12)
 #'
 #' # Conditional likelihood
-#' BETS.likelihood(params, data)
+#' bets.likelihood(params, data)
 #'
 #' # Conditional likelihood with right truncation
-#' BETS.likelihood(params, subset(data, S <= 60), M = 60)
+#' bets.likelihood(params, subset(data, S <= 60), M = 60)
 #'
 #' # Conditional likelihood with fixed r (not recommended)
-#' BETS.likelihood(params, data, r = 0)
+#' bets.likelihood(params, data, r = 0)
 #'
 #' # Unconditional likelihood
 #' params["rho"] <- 1
-#' BETS.likelihood(params, data, likelihood = "unconditional", L = 54)
+#' bets.likelihood(params, data, likelihood = "unconditional", L = 54)
 #'
 #' # Profile conditional likelihood
-#' BETS.likelihood(c(r = 0.2), data, params_init = params)
+#' bets.likelihood(c(r = 0.2), data, params_init = params)
 #'
-BETS.likelihood <- function(params, data, likelihood = c("conditional", "unconditional"), M = Inf, r = NULL, L = NULL, params_init = NULL) {
+bets.likelihood <- function(params, data, likelihood = c("conditional", "unconditional"), M = Inf, r = NULL, L = NULL, params_init = NULL) {
 
     likelihood <- match.arg(likelihood, c("conditional", "unconditional"))
     switch(likelihood,
-           conditional = BETS.likelihood.conditional(params, data, M = M, r = r, params_init = params_init),
-           unconditional = BETS.likelihood.unconditional(params, data, params_init = params_init, L = L))
+           conditional = bets.likelihood.conditional(params, data, M = M, r = r, params_init = params_init),
+           unconditional = bets.likelihood.unconditional(params, data, params_init = params_init, L = L))
 
 }
 
@@ -230,6 +235,7 @@ BETS.likelihood <- function(params, data, likelihood = c("conditional", "uncondi
 #'
 #' @details The confidence interval is either not computed (\code{"point"}), or computed by inverting the likelihood ratio test (\code{"lrt"}) or basic bootstrap (\code{"bootstrap"})
 #'
+#' @import stats
 #' @import rootSolve
 #' @importFrom parallel mclapply
 #'
@@ -246,20 +252,20 @@ BETS.likelihood <- function(params, data, likelihood = c("conditional", "uncondi
 #' data$S <- data$S - 0.5
 #'
 #' # Conditional likelihood inference
-#' BETS.inference(data, "conditional")
-#' BETS.inference(data, "conditional", "bootstrap", bootstrap = 100, level = 0.5)
+#' bets.inference(data, "conditional")
+#' bets.inference(data, "conditional", "bootstrap", bootstrap = 100, level = 0.5)
 #'
 #' # Unconditional likelihood inference
-#' BETS.inference(data, "unconditional", L = 54)
+#' bets.inference(data, "unconditional", L = 54)
 #'
 #' # Conditional likelihood inference for data with right truncation
-#' BETS.inference(subset(data, S <= 60), "conditional", M = 60)
+#' bets.inference(subset(data, S <= 60), "conditional", M = 60)
 #'
 #' # Conditional likelihood inference with r fixed at 0 (not recommended)
-#' BETS.inference(data, "conditional", r = 0)
+#' bets.inference(data, "conditional", r = 0)
 #' }
 #'
-BETS.inference <- function(data, likelihood = c("conditional", "unconditional"), ci = c("lrt", "point", "bootstrap"), M = Inf, r = NULL, L = NULL, level = 0.95, bootstrap = 1000, mc.cores = 1) {
+bets.inference <- function(data, likelihood = c("conditional", "unconditional"), ci = c("lrt", "point", "bootstrap"), M = Inf, r = NULL, L = NULL, level = 0.95, bootstrap = 1000, mc.cores = 1) {
 
     likelihood <- match.arg(likelihood, c("conditional", "unconditional"))
     ci <- match.arg(ci, c("lrt", "point", "bootstrap"))
@@ -279,7 +285,7 @@ BETS.inference <- function(data, likelihood = c("conditional", "unconditional"),
     }
 
     suppressWarnings(tmp <- optim(params_init,
-                                  function(params) BETS.likelihood(params, data, likelihood = likelihood, M = M, r = r, L = L),
+                                  function(params) bets.likelihood(params, data, likelihood = likelihood, M = M, r = r, L = L),
                                   control=list(fnscale=-1)))
     params_mle <- tmp$par
     ml <- tmp$value
@@ -309,7 +315,7 @@ BETS.inference <- function(data, likelihood = c("conditional", "unconditional"),
 
     } else if (ci == "lrt") {
         if (likelihood == "unconditional") {
-            rho_lrt <- function(rho_now) ml - BETS.likelihood(c(rho = rho_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
+            rho_lrt <- function(rho_now) ml - bets.likelihood(c(rho = rho_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
             suppressWarnings(rho_lower <- tryCatch(uniroot(rho_lrt, c(rho_mle*0.2, rho_mle))$root, error = function(e) NA))
             suppressWarnings(rho_upper <- tryCatch(uniroot(rho_lrt, c(rho_mle, rho_mle*5))$root, error = function(e) NA))
         } else {
@@ -317,18 +323,18 @@ BETS.inference <- function(data, likelihood = c("conditional", "unconditional"),
         }
 
         if (is.null(r)) {
-            r_lrt <- function(r_now) ml - BETS.likelihood(c(r = r_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
+            r_lrt <- function(r_now) ml - bets.likelihood(c(r = r_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
             suppressWarnings(r_lower <- tryCatch(uniroot(r_lrt, c(0.1, r_mle))$root, error = function(e) NA))
             suppressWarnings(r_upper <- tryCatch(uniroot(r_lrt, c(r_mle, 0.8))$root, error = function(e) NA))
         } else {
             r_lower <- r_upper <- NA
         }
 
-        ip_q95_lrt <- function(ip_q95_now) ml - BETS.likelihood(c(ip_q95 = ip_q95_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
+        ip_q95_lrt <- function(ip_q95_now) ml - bets.likelihood(c(ip_q95 = ip_q95_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
         suppressWarnings(ip_q95_lower <- tryCatch(uniroot(ip_q95_lrt, c(ip_q95_mle*0.75, ip_q95_mle))$root, error = function(e) NA))
         suppressWarnings(ip_q95_upper <- tryCatch(uniroot(ip_q95_lrt, c(ip_q95_mle, ip_q95_mle*1.5))$root, error = function(e) NA))
 
-        ip_q50_lrt <- function(ip_q50_now) ml - BETS.likelihood(c(ip_q50 = ip_q50_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
+        ip_q50_lrt <- function(ip_q50_now) ml - bets.likelihood(c(ip_q50 = ip_q50_now), data, likelihood = likelihood, M = M, r = r, L = L, params_init = params_mle) - qchisq(level, 1) / 2
         suppressWarnings(ip_q50_lower <- tryCatch(uniroot(ip_q50_lrt, c(ip_q50_mle*0.5, ip_q50_mle))$root, error = function(e) NA))
         suppressWarnings(ip_q50_upper <- tryCatch(uniroot(ip_q50_lrt, c(ip_q50_mle, ip_q50_mle*1.5))$root, error = function(e) NA))
 
@@ -338,7 +344,7 @@ BETS.inference <- function(data, likelihood = c("conditional", "unconditional"),
             if (iter %% 50 == 0) {
                 print(paste("Bootstrap resample:", iter))
             }
-            BETS.inference(data[sample(1:nrow(data), replace = TRUE), ], likelihood, ci = "point", M = M, r = r, L = L)
+            bets.inference(data[sample(1:nrow(data), replace = TRUE), ], likelihood, ci = "point", M = M, r = r, L = L)
         }, mc.cores = mc.cores)
 
         res_bootstrap <- do.call(rbind, res_bootstrap)

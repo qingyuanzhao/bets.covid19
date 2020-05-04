@@ -15,3 +15,4 @@ A vector of length 2 for the infection window
 \description{
 Parse infected date (basic)
 }
+\keyword{internal}

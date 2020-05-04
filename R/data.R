@@ -1,15 +1,14 @@
 #' Confirmed cases of COVID-19
 #'
-#' A dataset containing the trajectory of cases of COVID-19
+#' A dataset containing the trajectory of cases of COVID-19.
 #'
 #' @format A data frame with 1091 rows and 20 variables:
 #' \describe{
-#'   \item{Cases}{Label of the case, in the format of Country-Case number.}
+#'   \item{Case}{Label of the case, in the format of Country-Case number.}
 #'   \item{Nationality/Residence}{Nationality or residence of the patient.}
 #'   \item{Gender}{Male (M) or Female (F).}
 #'   \item{Age}{Age of the patient, either an integer or age by decade (for example, 40s).}
 #'   \item{Cluster}{Other confirmed cases that this patient had contacts with.}
-#'   \item{Note}{Any note taken during the data collection.}
 #'   \item{Known Contact}{Whether the case has contact with earlier confirmed cases or visited Hubei province.}
 #'   \item{Outside}{Was the patient infected outside Wuhan? Yes (Y), Likely (L), or No (empty string and the default).}
 #'   \item{Begin_Wuhan}{Begin of stay in Wuhan.}
@@ -29,11 +28,15 @@
 
 #' COVID-19 exported from Wuhan
 #'
+#' Constructed from \code{covid19_data}, see \code{example(preprocess.data)}.
+#'
 #' @format A data frame with 378 rows and 4 variables:
 #' \describe{
 #'   \item{Location}{Where the case is confirmed.}
-#'   \item{B}{Beginning of stay in Wuhan}
-#'   \item{E}{End of stay in Wuhan}
-#'   \item{S}{Symptom onset}
+#'   \item{Gender}{Gender of the patient.}
+#'   \item{Age}{Age of the patient.}
+#'   \item{B}{Beginning of stay in Wuhan.}
+#'   \item{E}{End of stay in Wuhan.}
+#'   \item{S}{Symptom onset.}
 #' }
 "wuhan_exported"
