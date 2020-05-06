@@ -81,8 +81,8 @@ parse.one.infected <- function(infected) {
 #' head(data <- preprocess.data(covid19_data))
 #'
 #' \dontrun{ ## This is how the wuhan_exported data frame is created
-#' data <- subset(data, Arrived <= 54)
 #' data <- subset(data, Symptom < Inf)
+#' data <- subset(data, Arrived <= 54)
 #' data$Location <- do.call(rbind, strsplit(as.character(data$Case), "-"))[, 1]
 #' wuhan_exported <- data.frame(Location = data$Location,
 #'                              B = data$Begin_Wuhan,
