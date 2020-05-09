@@ -1,9 +1,9 @@
 Package: bets.covid19
 Title: The BETS Model for Early Epidemic Data
 Version: 1.0.0
-Date: 2020-05-04
-Authors@R: c(person("Qingyuan", "Zhao", email = "qyzhao@statslab.cam.ac.uk", role = c("aut", "cre")),person("Phyllis", "Ju", email = "nju@g.harvard.edu", role = "aut"))
-Description: Implements likelihood inference for epidemic analysis and contains a dataset of the trajectory of confirmed cases during the COVID-19 early outbreak. More detail of the statistical methods can be found in Zhao et al. (2020) <arXiv:2004.07743>.
+Date: 2020-05-07
+Authors@R: c(person("Qingyuan", "Zhao", email = "qyzhao@statslab.cam.ac.uk", role = c("aut", "cre")),person("Nianqiao", "Ju", email = "nju@g.harvard.edu", role = "aut"))
+Description: Implements likelihood inference for early epidemic analysis. BETS is short for the four key epidemiological events being modeled: Begin of exposure, End of exposure, time of Transmission, and time of Symptom onset. The package contains a dataset of the trajectory of confirmed cases during the coronavirus disease (COVID-19) early outbreak. More detail of the statistical methods can be found in Zhao et al. (2020) <arXiv:2004.07743>.
 Depends: R (>= 3.4.0),
 Imports: stats, rootSolve, parallel
 License: CC BY 4.0

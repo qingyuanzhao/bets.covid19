@@ -29,9 +29,6 @@ age.process <- function(age) {
 #'
 date.process <- function(date) {
 
-    options(tz="UTC")
-    Sys.setenv(TZ = "UTC")
-
     tmp <- as.numeric(as.Date(date, "%d-%b") - as.Date("2019-12-01")) + 1
 
     for (i in which(!is.na(tmp))) {

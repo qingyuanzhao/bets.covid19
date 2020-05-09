@@ -80,7 +80,7 @@ parse.one.infected <- function(infected) {
 #' data(covid19_data)
 #' head(data <- preprocess.data(covid19_data))
 #'
-#' \dontrun{ ## This is how the wuhan_exported data frame is created
+#' \donttest{ ## This is how the wuhan_exported data frame is created
 #' data <- subset(data, Symptom < Inf)
 #' data <- subset(data, Arrived <= 54)
 #' data$Location <- do.call(rbind, strsplit(as.character(data$Case), "-"))[, 1]
@@ -110,14 +110,14 @@ preprocess.data <- function(data, infected_in = c("Wuhan", "Outside"), symptom_i
     data <- switch(infected_in,
                    Wuhan = data[data$Outside == '',],
                    Outside = data[data$Outside != '',])
-    print(paste0("Only keeping cases who were infected in ", infected_in, ": ", nrow(data), " cases left."))
+    message(paste0("Only keeping cases who were infected in ", infected_in, ": ", nrow(data), " cases left."))
 
     ## Step 3: Considers only cases with a known symtom onset date
     if (!symptom_impute) {
-        print(paste("Removing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates:", sum(!is.na(data$Symptom)), "cases left."))
+        message(paste("Removing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates:", sum(!is.na(data$Symptom)), "cases left."))
         data <- data[!is.na(data$Symptom), ]
     } else {
-        print(paste("Imputing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates."))
+        message(paste("Imputing", sum(is.na(data$Symptom)), "cases with unknown symptom onset dates."))
         data$Symptom[is.na(data$Symptom)] <- data$Initial[is.na(data$Symptom)] - 2
         data$Symptom[is.na(data$Symptom)] <- data$Confirmed[is.na(data$Symptom)] - 7
     }

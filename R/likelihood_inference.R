@@ -342,7 +342,7 @@ bets.inference <- function(data, likelihood = c("conditional", "unconditional"),
 
         res_bootstrap <- parallel::mclapply(1:bootstrap, function(iter) {
             if (iter %% 50 == 0) {
-                print(paste("Bootstrap resample:", iter))
+                message(paste("Bootstrap resample:", iter))
             }
             bets.inference(data[sample(1:nrow(data), replace = TRUE), ], likelihood, ci = "point", M = M, r = r, L = L)
         }, mc.cores = mc.cores)
