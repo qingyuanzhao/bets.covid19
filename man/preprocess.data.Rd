@@ -48,7 +48,7 @@ wuhan_exported <- data.frame(Location = data$Location,
                              B = data$Begin_Wuhan,
                              E = data$End_Wuhan,
                              S = data$Symptom)
-devtools::use_data(wuhan_exported)
+## devtools::use_data(wuhan_exported)
 }
 
 }
