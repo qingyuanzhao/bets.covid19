@@ -1,4 +1,4 @@
-# An early analysis of the COVID-19 pandemic
+# An analysis of the initial COVID-19 outbreak
 
 ## Dataset
 
@@ -47,7 +47,7 @@ folder](https://github.com/qingyuanzhao/bets.covid19/tree/master/bayesian).
 
 ## Acknowledgement
 
-Many people have contributed to the data collection and given helpful suggestions. We thank Rajen Shah, Yachong Yang, Cindy Chen, Yang Chen, Dylan Small, Michael Levy, Hera He, Zilu Zhou, Yunjin Choi, James Robins, Marc Lipsitch, Andrew Rosenfeld.
+Many people have contributed to the data collection and given helpful suggestions. We thank Yachong Yang, Cindy Chen, Yang Chen, Dylan Small, Michael Levy, Hera He, Zilu Zhou, Yunjin Choi, James Robins, Marc Lipsitch, Andrew Rosenfeld.
 
 ## Earlier work
 
