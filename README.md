@@ -42,8 +42,12 @@ folder](https://github.com/qingyuanzhao/bets.covid19/tree/master/bayesian).
 
 ## Reference
 
-- First report: Qingyuan Zhao, Yang Chen, Dylan S Small. Analysis of the epidemic growth of the early 2019-nCoV outbreak using internationally confirmed cases. medRxiv 2020.02.06.20020941; doi: https://doi.org/10.1101/2020.02.06.20020941
 - Full model: Qingyuan Zhao, Niaoqiao Ju, Sergio Bacallado, Rajen Shah. BETS: The dangers of selection bias in early analyses of the coronavirus disease (COVID-19) pandemic. [arXiv:2004.07743](https://arxiv.org/abs/2004.07743).
+
+## Related articles
+- First report: Qingyuan Zhao, Yang Chen, Dylan S Small. Analysis of the epidemic growth of the early 2019-nCoV outbreak using internationally confirmed cases. medRxiv 2020.02.06.20020941; doi: https://doi.org/10.1101/2020.02.06.20020941
+- Comment (non-peer reviewed) on the Lauer et al. study of the incubation period of COVID-19: https://www.acpjournals.org/doi/10.7326/M20-0504.
+- Comment (non-peer reviewed) on the Pan et al. study of the effectiveness of public health interventions in Wuhan: https://jamanetwork.com/journals/jama/fullarticle/2764658.
 
 ## Acknowledgement
 
